@@ -81,6 +81,7 @@ meta.instance.scenic
 meta.item-access.scenic
 meta.lambda-function.scenic
 meta.named.regexp
+meta.property.scenic
 meta.specifier.scenic
 meta.typehint.comment.scenic
 punctuation.character.set.begin.regexp
@@ -134,6 +135,7 @@ punctuation.separator.slice.scenic
 punctuation.separator.specifier.scenic
 storage.modifier.declaration.scenic
 storage.modifier.flag.regexp
+storage.scenic
 storage.type.class.scenic
 storage.type.format.scenic
 storage.type.function.async.scenic
@@ -141,6 +143,7 @@ storage.type.function.lambda.scenic
 storage.type.function.scenic
 storage.type.imaginary.number.scenic
 storage.type.number.scenic
+storage.type.property.scenic
 storage.type.string.scenic
 string.interpolated.scenic
 string.quoted.binary.multi.scenic

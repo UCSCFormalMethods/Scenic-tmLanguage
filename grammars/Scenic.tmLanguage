@@ -196,13 +196,20 @@
         <key>patterns</key>
         <array>
           <dict>
-            <key>match</key>
+            <key>name</key>
+            <string>meta.property.scenic</string>
+            <key>begin</key>
             <string>(?x)
   ^\s+
-  (?!else)
-  ([[:alpha:]_]\w*)(:)\s+
+  (?!else) ([[:alpha:]_]\w*)
+  \s* (\[)?
+  (?= [\w\s,]* \]? \s* :)
 </string>
-            <key>captures</key>
+            <key>end</key>
+            <string>(?x)
+  (\])? \s* (:)
+</string>
+            <key>beginCaptures</key>
             <dict>
               <key>1</key>
               <dict>
@@ -212,9 +219,55 @@
               <key>2</key>
               <dict>
                 <key>name</key>
+                <string>punctuation.definition.arguments.begin.scenic</string>
+              </dict>
+            </dict>
+            <key>endCaptures</key>
+            <dict>
+              <key>1</key>
+              <dict>
+                <key>name</key>
+                <string>punctuation.definition.arguments.end.scenic</string>
+              </dict>
+              <key>2</key>
+              <dict>
+                <key>name</key>
                 <string>punctuation.separator.colon.scenic</string>
               </dict>
             </dict>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>#property-attribute</string>
+              </dict>
+              <dict>
+                <key>name</key>
+                <string>punctuation.separator.element.scenic</string>
+                <key>match</key>
+                <string>,</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>property-attribute</key>
+      <dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>storage.type.property.scenic</string>
+            <key>match</key>
+            <string>\b(additive|dynamic|final)\b</string>
+          </dict>
+          <dict>
+            <key>comment</key>
+            <string>Allow unknown attributes just in case.</string>
+            <key>name</key>
+            <string>storage.scenic</string>
+            <key>match</key>
+            <string>\b[[:alpha:]_]\w*\b</string>
           </dict>
         </array>
       </dict>

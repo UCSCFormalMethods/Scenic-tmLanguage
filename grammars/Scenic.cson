@@ -136,18 +136,51 @@ repository:
   "property-declaration":
     patterns: [
       {
-        match: '''
+        name: "meta.property.scenic"
+        begin: '''
           (?x)
             ^\\s+
-            (?!else)
-            ([[:alpha:]_]\\w*)(:)\\s+
+            (?!else) ([[:alpha:]_]\\w*)
+            \\s* (\\[)?
+            (?= [\\w\\s,]* \\]? \\s* :)
           
         '''
-        captures:
+        end: '''
+          (?x)
+            (\\])? \\s* (:)
+          
+        '''
+        beginCaptures:
           "1":
             name: "entity.name.property.scenic"
           "2":
+            name: "punctuation.definition.arguments.begin.scenic"
+        endCaptures:
+          "1":
+            name: "punctuation.definition.arguments.end.scenic"
+          "2":
             name: "punctuation.separator.colon.scenic"
+        patterns: [
+          {
+            include: "#property-attribute"
+          }
+          {
+            name: "punctuation.separator.element.scenic"
+            match: ","
+          }
+        ]
+      }
+    ]
+  "property-attribute":
+    patterns: [
+      {
+        name: "storage.type.property.scenic"
+        match: "\\b(additive|dynamic|final)\\b"
+      }
+      {
+        comment: "Allow unknown attributes just in case."
+        name: "storage.scenic"
+        match: "\\b[[:alpha:]_]\\w*\\b"
       }
     ]
   semicolon:
