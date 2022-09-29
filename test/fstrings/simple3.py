@@ -3,26 +3,26 @@ a = f'hello { foo("bar")/23 !r:f} times'
 
 
 
-a             : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-f             : meta.fstring.python, source.python, storage.type.string.python, string.interpolated.python, string.quoted.single.python
-'             : meta.fstring.python, punctuation.definition.string.begin.python, source.python, string.interpolated.python, string.quoted.single.python
-hello         : meta.fstring.python, source.python, string.interpolated.python, string.quoted.single.python
-{             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-              : meta.fstring.python, source.python
-foo           : meta.fstring.python, meta.function-call.generic.python, meta.function-call.python, source.python
-(             : meta.fstring.python, meta.function-call.python, punctuation.definition.arguments.begin.python, source.python
-"             : meta.fstring.python, meta.function-call.arguments.python, meta.function-call.python, punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-bar           : meta.fstring.python, meta.function-call.arguments.python, meta.function-call.python, source.python, string.quoted.single.python
-"             : meta.fstring.python, meta.function-call.arguments.python, meta.function-call.python, punctuation.definition.string.end.python, source.python, string.quoted.single.python
-)             : meta.fstring.python, meta.function-call.python, punctuation.definition.arguments.end.python, source.python
-/             : keyword.operator.arithmetic.python, meta.fstring.python, source.python
-23            : constant.numeric.dec.python, meta.fstring.python, source.python
-              : meta.fstring.python, source.python
-!r            : meta.fstring.python, source.python, storage.type.format.python
-:f            : meta.fstring.python, source.python, storage.type.format.python
-}             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
- times        : meta.fstring.python, source.python, string.interpolated.python, string.quoted.single.python
-'             : meta.fstring.python, punctuation.definition.string.end.python, source.python, string.interpolated.python, string.quoted.single.python
+a             : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+f             : meta.fstring.scenic, source.scenic, storage.type.string.scenic, string.interpolated.scenic, string.quoted.single.scenic
+'             : meta.fstring.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic
+hello         : meta.fstring.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic
+{             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+              : meta.fstring.scenic, source.scenic
+foo           : meta.fstring.scenic, meta.function-call.generic.scenic, meta.function-call.scenic, source.scenic
+(             : meta.fstring.scenic, meta.function-call.scenic, punctuation.definition.arguments.begin.scenic, source.scenic
+"             : meta.fstring.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+bar           : meta.fstring.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic, string.quoted.single.scenic
+"             : meta.fstring.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, punctuation.definition.string.end.scenic, source.scenic, string.quoted.single.scenic
+)             : meta.fstring.scenic, meta.function-call.scenic, punctuation.definition.arguments.end.scenic, source.scenic
+/             : keyword.operator.arithmetic.scenic, meta.fstring.scenic, source.scenic
+23            : constant.numeric.dec.scenic, meta.fstring.scenic, source.scenic
+              : meta.fstring.scenic, source.scenic
+!r            : meta.fstring.scenic, source.scenic, storage.type.format.scenic
+:f            : meta.fstring.scenic, source.scenic, storage.type.format.scenic
+}             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+ times        : meta.fstring.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic
+'             : meta.fstring.scenic, punctuation.definition.string.end.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic

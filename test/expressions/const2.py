@@ -3,21 +3,21 @@ _A __A ___A A1 A_1 _A_1 A_foo
 
 
 
-_AA           : constant.other.caps.python, source.python
-              : source.python
-__AB          : constant.other.caps.python, source.python
-              : source.python
-___AA         : constant.other.caps.python, source.python
-_A            : source.python
-              : source.python
-__A           : source.python
-              : source.python
-___A          : source.python
-              : source.python
-A1            : source.python
-              : source.python
-A_1           : source.python
-              : source.python
-_A_1          : source.python
-              : source.python
-A_foo         : source.python
+_AA           : constant.other.caps.scenic, source.scenic
+              : source.scenic
+__AB          : constant.other.caps.scenic, source.scenic
+              : source.scenic
+___AA         : constant.other.caps.scenic, source.scenic
+_A            : source.scenic
+              : source.scenic
+__A           : source.scenic
+              : source.scenic
+___A          : source.scenic
+              : source.scenic
+A1            : source.scenic
+              : source.scenic
+A_1           : source.scenic
+              : source.scenic
+_A_1          : source.scenic
+              : source.scenic
+A_foo         : source.scenic

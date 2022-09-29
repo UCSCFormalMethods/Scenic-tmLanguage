@@ -1,6 +1,6 @@
 {
-  "name": "MagicPython",
-  "version": "1.1.1",
+  "name": "Scenic",
+  "version": "1.0",
   "engines": {
     "atom": "*",
     "node": "*",
@@ -8,66 +8,48 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MagicStack/MagicPython.git"
+    "url": "https://github.com/UCSCFormalMethods/Scenic-tmLanguage.git"
   },
   "bugs": {
-    "url": "https://github.com/MagicStack/MagicPython/issues"
+    "url": "https://github.com/UCSCFormalMethods/Scenic-tmLanguage/issues"
   },
-  "description": "Syntax highlighter for cutting edge Python.",
+  "description": "Syntax highlighter for the Scenic scenario description language.",
   "license": "MIT",
-  "publisher": "magicstack",
+  "publisher": "Daniel J. Fremont",
   "categories": [
     "Languages"
   ],
   "keywords": [
-    "python",
+    "scenic",
     "highlighter",
-    "syntax",
-    "python3"
+    "syntax"
   ],
   "icon": "icon.png",
   "galleryBanner": {
-    "color": "#2c2c2c",
+    "color": "#003c6c",
     "theme": "dark"
   },
   "contributes": {
     "//": [
       "This section is for VSCode.",
-      "NOTE: remember to update grammar/src/MagicPython.syntax.yaml, too."
+      "NOTE: remember to update grammar/src/Scenic.syntax.yaml, too."
     ],
     "languages": [
       {
-        "id": "python",
+        "id": "scenic",
         "aliases": [
-          "MagicPython",
-          "python"
+          "scenic"
         ],
         "extensions": [
-          ".py",
-          ".py3",
-          ".rpy",
-          ".pyw",
-          ".cpy",
-          ".pyi",
-          ".SConstruct",
-          ".Sconstruct",
-          ".sconstruct",
-          ".SConscript",
-          ".gyp",
-          ".gypi",
-          ".wsgi",
-          ".kv",
-          "Snakefile",
-          ".smk",
-          ".tac"
+          ".scenic"
         ]
       }
     ],
     "grammars": [
       {
-        "language": "python",
-        "scopeName": "source.python",
-        "path": "./grammars/MagicPython.tmLanguage"
+        "language": "scenic",
+        "scopeName": "source.scenic",
+        "path": "./grammars/Scenic.tmLanguage"
       }
     ]
   },

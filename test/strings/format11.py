@@ -4,16 +4,16 @@ a = R'''\fr{still_ok}ac{m_{j \rightarrow i}(\mathrm{good})}
 
 
 
-a             : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-R             : source.python, storage.type.string.python, string.quoted.raw.multi.python
-'''           : punctuation.definition.string.begin.python, source.python, string.quoted.raw.multi.python
-\fr           : source.python, string.quoted.raw.multi.python
-{still_ok}    : constant.character.format.placeholder.other.python, meta.format.brace.python, source.python, string.quoted.raw.multi.python
-ac            : source.python, string.quoted.raw.multi.python
-{m_{j \rightarrow i}(\mathrm{good})} : source.python, string.quoted.raw.multi.python
-        {not_ok}  : source.python, string.quoted.raw.multi.python
-%d            : constant.character.format.placeholder.other.python, meta.format.percent.python, source.python, string.quoted.raw.multi.python
-'''           : punctuation.definition.string.end.python, source.python, string.quoted.raw.multi.python
+a             : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+R             : source.scenic, storage.type.string.scenic, string.quoted.raw.multi.scenic
+'''           : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.raw.multi.scenic
+\fr           : source.scenic, string.quoted.raw.multi.scenic
+{still_ok}    : constant.character.format.placeholder.other.scenic, meta.format.brace.scenic, source.scenic, string.quoted.raw.multi.scenic
+ac            : source.scenic, string.quoted.raw.multi.scenic
+{m_{j \rightarrow i}(\mathrm{good})} : source.scenic, string.quoted.raw.multi.scenic
+        {not_ok}  : source.scenic, string.quoted.raw.multi.scenic
+%d            : constant.character.format.placeholder.other.scenic, meta.format.percent.scenic, source.scenic, string.quoted.raw.multi.scenic
+'''           : punctuation.definition.string.end.scenic, source.scenic, string.quoted.raw.multi.scenic

@@ -5,40 +5,40 @@ for a, b, c, invariable in [2 in q, 2 in w]:
 
 
 
-forvariable   : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-None          : constant.language.python, source.python
-for           : keyword.control.flow.python, source.python
-              : source.python
-a             : source.python
-,             : punctuation.separator.element.python, source.python
-              : source.python
-b             : source.python
-,             : punctuation.separator.element.python, source.python
-              : source.python
-c             : source.python
-,             : punctuation.separator.element.python, source.python
-              : source.python
-invariable    : source.python
-              : source.python
-in            : keyword.control.flow.python, source.python
-              : source.python
-[             : punctuation.definition.list.begin.python, source.python
-2             : constant.numeric.dec.python, source.python
-              : source.python
-in            : keyword.operator.logical.python, source.python
-              : source.python
-q             : source.python
-,             : punctuation.separator.element.python, source.python
-              : source.python
-2             : constant.numeric.dec.python, source.python
-              : source.python
-in            : keyword.operator.logical.python, source.python
-              : source.python
-w             : source.python
-]             : punctuation.definition.list.end.python, source.python
-:             : punctuation.separator.colon.python, source.python
-              : source.python
-pass          : keyword.control.flow.python, source.python
+forvariable   : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+None          : constant.language.scenic, source.scenic
+for           : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+a             : source.scenic
+,             : punctuation.separator.element.scenic, source.scenic
+              : source.scenic
+b             : source.scenic
+,             : punctuation.separator.element.scenic, source.scenic
+              : source.scenic
+c             : source.scenic
+,             : punctuation.separator.element.scenic, source.scenic
+              : source.scenic
+invariable    : source.scenic
+              : source.scenic
+in            : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+[             : punctuation.definition.list.begin.scenic, source.scenic
+2             : constant.numeric.dec.scenic, source.scenic
+              : source.scenic
+in            : keyword.operator.logical.scenic, source.scenic
+              : source.scenic
+q             : source.scenic
+,             : punctuation.separator.element.scenic, source.scenic
+              : source.scenic
+2             : constant.numeric.dec.scenic, source.scenic
+              : source.scenic
+in            : keyword.operator.logical.scenic, source.scenic
+              : source.scenic
+w             : source.scenic
+]             : punctuation.definition.list.end.scenic, source.scenic
+:             : punctuation.separator.colon.scenic, source.scenic
+              : source.scenic
+pass          : keyword.control.flow.scenic, source.scenic

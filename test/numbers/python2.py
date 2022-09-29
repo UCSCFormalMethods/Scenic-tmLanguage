@@ -4,8 +4,8 @@
 
 
 
-123           : constant.numeric.bin.python, source.python
-l             : constant.numeric.bin.python, source.python, storage.type.number.python
-123           : constant.numeric.bin.python, source.python
-L             : constant.numeric.bin.python, source.python, storage.type.number.python
-1_234l        : invalid.illegal.name.python, source.python
+123           : constant.numeric.bin.scenic, source.scenic
+l             : constant.numeric.bin.scenic, source.scenic, storage.type.number.scenic
+123           : constant.numeric.bin.scenic, source.scenic
+L             : constant.numeric.bin.scenic, source.scenic, storage.type.number.scenic
+1_234l        : invalid.illegal.name.scenic, source.scenic

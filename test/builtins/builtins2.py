@@ -3,25 +3,25 @@ file reduce intern raw_input unicode cmp basestring execfile long xrange apply
 
 
 
-Error         : source.python
-file          : source.python, variable.legacy.builtin.python
-              : source.python
-reduce        : source.python, variable.legacy.builtin.python
-              : source.python
-intern        : source.python, variable.legacy.builtin.python
-              : source.python
-raw_input     : source.python, variable.legacy.builtin.python
-              : source.python
-unicode       : source.python, variable.legacy.builtin.python
-              : source.python
-cmp           : source.python, variable.legacy.builtin.python
-              : source.python
-basestring    : source.python, variable.legacy.builtin.python
-              : source.python
-execfile      : source.python, variable.legacy.builtin.python
-              : source.python
-long          : source.python, variable.legacy.builtin.python
-              : source.python
-xrange        : source.python, variable.legacy.builtin.python
-              : source.python
-apply         : source.python
+Error         : source.scenic
+file          : source.scenic, variable.legacy.builtin.scenic
+              : source.scenic
+reduce        : source.scenic, variable.legacy.builtin.scenic
+              : source.scenic
+intern        : source.scenic, variable.legacy.builtin.scenic
+              : source.scenic
+raw_input     : source.scenic, variable.legacy.builtin.scenic
+              : source.scenic
+unicode       : source.scenic, variable.legacy.builtin.scenic
+              : source.scenic
+cmp           : source.scenic, variable.legacy.builtin.scenic
+              : source.scenic
+basestring    : source.scenic, variable.legacy.builtin.scenic
+              : source.scenic
+execfile      : source.scenic, variable.legacy.builtin.scenic
+              : source.scenic
+long          : source.scenic, variable.legacy.builtin.scenic
+              : source.scenic
+xrange        : source.scenic, variable.legacy.builtin.scenic
+              : source.scenic
+apply         : source.scenic

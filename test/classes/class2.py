@@ -6,34 +6,34 @@ class Spam(Foo.Bar, Bar.name={'very': 'odd'}):
 
 
 
-@             : entity.name.function.decorator.python, meta.function.decorator.python, punctuation.definition.decorator.python, source.python
-dec           : entity.name.function.decorator.python, meta.function.decorator.python, source.python
-#             : comment.line.number-sign.python, punctuation.definition.comment.python, source.python
- Bar.name=... is not legal, but the test is for highlighter not breaking badly : comment.line.number-sign.python, source.python
-class         : meta.class.python, source.python, storage.type.class.python
-              : meta.class.python, source.python
-Spam          : entity.name.type.class.python, meta.class.python, source.python
-(             : meta.class.inheritance.python, meta.class.python, punctuation.definition.inheritance.begin.python, source.python
-Foo           : entity.other.inherited-class.python, meta.class.inheritance.python, meta.class.python, source.python
-.             : meta.class.inheritance.python, meta.class.python, meta.member.access.python, punctuation.separator.period.python, source.python
-Bar           : entity.other.inherited-class.python, meta.class.inheritance.python, meta.class.python, meta.member.access.python, source.python
-,             : meta.class.inheritance.python, meta.class.python, punctuation.separator.inheritance.python, source.python
-              : meta.class.inheritance.python, meta.class.python, source.python
-Bar           : entity.other.inherited-class.python, meta.class.inheritance.python, meta.class.python, source.python
-.             : meta.class.inheritance.python, meta.class.python, meta.member.access.python, punctuation.separator.period.python, source.python
-name          : entity.other.inherited-class.python, meta.class.inheritance.python, meta.class.python, meta.member.access.python, source.python
-=             : keyword.operator.assignment.python, meta.class.inheritance.python, meta.class.python, source.python
-{             : meta.class.inheritance.python, meta.class.python, punctuation.definition.dict.begin.python, source.python
-'             : meta.class.inheritance.python, meta.class.python, punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-very          : meta.class.inheritance.python, meta.class.python, source.python, string.quoted.single.python
-'             : meta.class.inheritance.python, meta.class.python, punctuation.definition.string.end.python, source.python, string.quoted.single.python
-:             : meta.class.inheritance.python, meta.class.python, punctuation.separator.dict.python, source.python
-              : meta.class.inheritance.python, meta.class.python, source.python
-'             : meta.class.inheritance.python, meta.class.python, punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-odd           : meta.class.inheritance.python, meta.class.python, source.python, string.quoted.single.python
-'             : meta.class.inheritance.python, meta.class.python, punctuation.definition.string.end.python, source.python, string.quoted.single.python
-}             : meta.class.inheritance.python, meta.class.python, punctuation.definition.dict.end.python, source.python
-)             : meta.class.inheritance.python, meta.class.python, punctuation.definition.inheritance.end.python, source.python
-:             : meta.class.python, punctuation.section.class.begin.python, source.python
-              : source.python
-pass          : keyword.control.flow.python, source.python
+@             : entity.name.function.decorator.scenic, meta.function.decorator.scenic, punctuation.definition.decorator.scenic, source.scenic
+dec           : entity.name.function.decorator.scenic, meta.function.decorator.scenic, source.scenic
+#             : comment.line.number-sign.scenic, punctuation.definition.comment.scenic, source.scenic
+ Bar.name=... is not legal, but the test is for highlighter not breaking badly : comment.line.number-sign.scenic, source.scenic
+class         : meta.class.scenic, source.scenic, storage.type.class.scenic
+              : meta.class.scenic, source.scenic
+Spam          : entity.name.type.class.scenic, meta.class.scenic, source.scenic
+(             : meta.class.inheritance.scenic, meta.class.scenic, punctuation.definition.inheritance.begin.scenic, source.scenic
+Foo           : entity.other.inherited-class.scenic, meta.class.inheritance.scenic, meta.class.scenic, source.scenic
+.             : meta.class.inheritance.scenic, meta.class.scenic, meta.member.access.scenic, punctuation.separator.period.scenic, source.scenic
+Bar           : entity.other.inherited-class.scenic, meta.class.inheritance.scenic, meta.class.scenic, meta.member.access.scenic, source.scenic
+,             : meta.class.inheritance.scenic, meta.class.scenic, punctuation.separator.inheritance.scenic, source.scenic
+              : meta.class.inheritance.scenic, meta.class.scenic, source.scenic
+Bar           : entity.other.inherited-class.scenic, meta.class.inheritance.scenic, meta.class.scenic, source.scenic
+.             : meta.class.inheritance.scenic, meta.class.scenic, meta.member.access.scenic, punctuation.separator.period.scenic, source.scenic
+name          : entity.other.inherited-class.scenic, meta.class.inheritance.scenic, meta.class.scenic, meta.member.access.scenic, source.scenic
+=             : keyword.operator.assignment.scenic, meta.class.inheritance.scenic, meta.class.scenic, source.scenic
+{             : meta.class.inheritance.scenic, meta.class.scenic, punctuation.definition.dict.begin.scenic, source.scenic
+'             : meta.class.inheritance.scenic, meta.class.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+very          : meta.class.inheritance.scenic, meta.class.scenic, source.scenic, string.quoted.single.scenic
+'             : meta.class.inheritance.scenic, meta.class.scenic, punctuation.definition.string.end.scenic, source.scenic, string.quoted.single.scenic
+:             : meta.class.inheritance.scenic, meta.class.scenic, punctuation.separator.dict.scenic, source.scenic
+              : meta.class.inheritance.scenic, meta.class.scenic, source.scenic
+'             : meta.class.inheritance.scenic, meta.class.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+odd           : meta.class.inheritance.scenic, meta.class.scenic, source.scenic, string.quoted.single.scenic
+'             : meta.class.inheritance.scenic, meta.class.scenic, punctuation.definition.string.end.scenic, source.scenic, string.quoted.single.scenic
+}             : meta.class.inheritance.scenic, meta.class.scenic, punctuation.definition.dict.end.scenic, source.scenic
+)             : meta.class.inheritance.scenic, meta.class.scenic, punctuation.definition.inheritance.end.scenic, source.scenic
+:             : meta.class.scenic, punctuation.section.class.begin.scenic, source.scenic
+              : source.scenic
+pass          : keyword.control.flow.scenic, source.scenic

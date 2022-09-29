@@ -2,17 +2,17 @@ a = `(1, `2`)`
 
 
 
-a             : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-`             : invalid.deprecated.backtick.python, source.python
-(             : invalid.deprecated.backtick.python, punctuation.parenthesis.begin.python, source.python
-1             : constant.numeric.dec.python, invalid.deprecated.backtick.python, source.python
-,             : invalid.deprecated.backtick.python, punctuation.separator.element.python, source.python
-              : invalid.deprecated.backtick.python, source.python
-`             : invalid.deprecated.backtick.python, source.python
-2             : constant.numeric.dec.python, invalid.deprecated.backtick.python, source.python
-`             : invalid.deprecated.backtick.python, source.python
-)             : invalid.deprecated.backtick.python, punctuation.parenthesis.end.python, source.python
-`             : invalid.deprecated.backtick.python, source.python
+a             : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+`             : invalid.deprecated.backtick.scenic, source.scenic
+(             : invalid.deprecated.backtick.scenic, punctuation.parenthesis.begin.scenic, source.scenic
+1             : constant.numeric.dec.scenic, invalid.deprecated.backtick.scenic, source.scenic
+,             : invalid.deprecated.backtick.scenic, punctuation.separator.element.scenic, source.scenic
+              : invalid.deprecated.backtick.scenic, source.scenic
+`             : invalid.deprecated.backtick.scenic, source.scenic
+2             : constant.numeric.dec.scenic, invalid.deprecated.backtick.scenic, source.scenic
+`             : invalid.deprecated.backtick.scenic, source.scenic
+)             : invalid.deprecated.backtick.scenic, punctuation.parenthesis.end.scenic, source.scenic
+`             : invalid.deprecated.backtick.scenic, source.scenic

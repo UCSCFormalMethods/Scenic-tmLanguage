@@ -3,37 +3,37 @@ self.assertEqual(f'{10:#{3 != {4:5} and width}x}', '       0xa')
 
 
 
-self          : source.python, variable.language.special.self.python
-.             : meta.member.access.python, punctuation.separator.period.python, source.python
-assertEqual   : meta.function-call.generic.python, meta.function-call.python, meta.member.access.python, source.python
-(             : meta.function-call.python, meta.member.access.python, punctuation.definition.arguments.begin.python, source.python
-f             : meta.fstring.python, meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, source.python, storage.type.string.python, string.interpolated.python, string.quoted.single.python
-'             : meta.fstring.python, meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, punctuation.definition.string.begin.python, source.python, string.interpolated.python, string.quoted.single.python
-{             : constant.character.format.placeholder.other.python, meta.fstring.python, meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, source.python
-10            : constant.numeric.dec.python, meta.fstring.python, meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, source.python
-:             : meta.fstring.python, meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, source.python, storage.type.format.python
-#             : meta.fstring.python, meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, source.python, storage.type.format.python
-{             : constant.character.format.placeholder.other.python, meta.fstring.python, meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, source.python
-3             : constant.numeric.dec.python, meta.fstring.python, meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, source.python
-              : meta.fstring.python, meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, source.python
-!=            : keyword.operator.comparison.python, meta.fstring.python, meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, source.python
-              : meta.fstring.python, meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, source.python
-{             : meta.fstring.python, meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, punctuation.definition.dict.begin.python, source.python
-4             : constant.numeric.dec.python, meta.fstring.python, meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, source.python
-:             : meta.fstring.python, meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, punctuation.separator.dict.python, source.python
-5             : constant.numeric.dec.python, meta.fstring.python, meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, source.python
-}             : meta.fstring.python, meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, punctuation.definition.dict.end.python, source.python
-              : meta.fstring.python, meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, source.python
-and           : keyword.operator.logical.python, meta.fstring.python, meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, source.python
-              : meta.fstring.python, meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, source.python
-width         : meta.fstring.python, meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, source.python
-}             : constant.character.format.placeholder.other.python, meta.fstring.python, meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, source.python
-x             : meta.fstring.python, meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, source.python, storage.type.format.python
-}             : constant.character.format.placeholder.other.python, meta.fstring.python, meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, source.python
-'             : meta.fstring.python, meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, punctuation.definition.string.end.python, source.python, string.interpolated.python, string.quoted.single.python
-,             : meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, punctuation.separator.arguments.python, source.python
-              : meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, source.python
-'             : meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-       0xa    : meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, source.python, string.quoted.single.python
-'             : meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, punctuation.definition.string.end.python, source.python, string.quoted.single.python
-)             : meta.function-call.python, meta.member.access.python, punctuation.definition.arguments.end.python, source.python
+self          : source.scenic, variable.language.special.self.scenic
+.             : meta.member.access.scenic, punctuation.separator.period.scenic, source.scenic
+assertEqual   : meta.function-call.generic.scenic, meta.function-call.scenic, meta.member.access.scenic, source.scenic
+(             : meta.function-call.scenic, meta.member.access.scenic, punctuation.definition.arguments.begin.scenic, source.scenic
+f             : meta.fstring.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, source.scenic, storage.type.string.scenic, string.interpolated.scenic, string.quoted.single.scenic
+'             : meta.fstring.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic
+{             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, source.scenic
+10            : constant.numeric.dec.scenic, meta.fstring.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, source.scenic
+:             : meta.fstring.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, source.scenic, storage.type.format.scenic
+#             : meta.fstring.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, source.scenic, storage.type.format.scenic
+{             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, source.scenic
+3             : constant.numeric.dec.scenic, meta.fstring.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, source.scenic
+              : meta.fstring.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, source.scenic
+!=            : keyword.operator.comparison.scenic, meta.fstring.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, source.scenic
+              : meta.fstring.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, source.scenic
+{             : meta.fstring.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, punctuation.definition.dict.begin.scenic, source.scenic
+4             : constant.numeric.dec.scenic, meta.fstring.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, source.scenic
+:             : meta.fstring.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, punctuation.separator.dict.scenic, source.scenic
+5             : constant.numeric.dec.scenic, meta.fstring.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, source.scenic
+}             : meta.fstring.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, punctuation.definition.dict.end.scenic, source.scenic
+              : meta.fstring.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, source.scenic
+and           : keyword.operator.logical.scenic, meta.fstring.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, source.scenic
+              : meta.fstring.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, source.scenic
+width         : meta.fstring.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, source.scenic
+}             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, source.scenic
+x             : meta.fstring.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, source.scenic, storage.type.format.scenic
+}             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, source.scenic
+'             : meta.fstring.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, punctuation.definition.string.end.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic
+,             : meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, punctuation.separator.arguments.scenic, source.scenic
+              : meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, source.scenic
+'             : meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+       0xa    : meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, source.scenic, string.quoted.single.scenic
+'             : meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, punctuation.definition.string.end.scenic, source.scenic, string.quoted.single.scenic
+)             : meta.function-call.scenic, meta.member.access.scenic, punctuation.definition.arguments.end.scenic, source.scenic

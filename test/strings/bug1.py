@@ -1,47 +1,47 @@
 # issue 150
-record = {
+myrecord = {
     "a": {k: str(v) for k, v in foo if ""}
 }
 
 
 
 
-#             : comment.line.number-sign.python, punctuation.definition.comment.python, source.python
- issue 150    : comment.line.number-sign.python, source.python
-record        : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-{             : punctuation.definition.dict.begin.python, source.python
-              : source.python
-"             : punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-a             : source.python, string.quoted.single.python
-"             : punctuation.definition.string.end.python, source.python, string.quoted.single.python
-:             : punctuation.separator.dict.python, source.python
-              : source.python
-{             : punctuation.definition.dict.begin.python, source.python
-k             : source.python
-:             : punctuation.separator.dict.python, source.python
-              : source.python
-str           : meta.function-call.python, source.python, support.type.python
-(             : meta.function-call.python, punctuation.definition.arguments.begin.python, source.python
-v             : meta.function-call.arguments.python, meta.function-call.python, source.python
-)             : meta.function-call.python, punctuation.definition.arguments.end.python, source.python
-              : source.python
-for           : keyword.control.flow.python, source.python
-              : source.python
-k             : source.python
-,             : punctuation.separator.element.python, source.python
-              : source.python
-v             : source.python
-              : source.python
-in            : keyword.control.flow.python, source.python
-              : source.python
-foo           : source.python
-              : source.python
-if            : keyword.control.flow.python, source.python
-              : source.python
-"             : punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-"             : punctuation.definition.string.end.python, source.python, string.quoted.single.python
-}             : punctuation.definition.dict.end.python, source.python
-}             : punctuation.definition.dict.end.python, source.python
+#             : comment.line.number-sign.scenic, punctuation.definition.comment.scenic, source.scenic
+ issue 150    : comment.line.number-sign.scenic, source.scenic
+myrecord        : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+{             : punctuation.definition.dict.begin.scenic, source.scenic
+              : source.scenic
+"             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+a             : source.scenic, string.quoted.single.scenic
+"             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.single.scenic
+:             : punctuation.separator.dict.scenic, source.scenic
+              : source.scenic
+{             : punctuation.definition.dict.begin.scenic, source.scenic
+k             : source.scenic
+:             : punctuation.separator.dict.scenic, source.scenic
+              : source.scenic
+str           : meta.function-call.scenic, source.scenic, support.type.scenic
+(             : meta.function-call.scenic, punctuation.definition.arguments.begin.scenic, source.scenic
+v             : meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic
+)             : meta.function-call.scenic, punctuation.definition.arguments.end.scenic, source.scenic
+              : source.scenic
+for           : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+k             : source.scenic
+,             : punctuation.separator.element.scenic, source.scenic
+              : source.scenic
+v             : source.scenic
+              : source.scenic
+in            : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+foo           : source.scenic
+              : source.scenic
+if            : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+"             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+"             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.single.scenic
+}             : punctuation.definition.dict.end.scenic, source.scenic
+}             : punctuation.definition.dict.end.scenic, source.scenic

@@ -7,20 +7,20 @@ rf"""{}
 
 
 
-rf            : source.python, storage.type.string.python, string.interpolated.python, string.regexp.quoted.single.python
-"             : punctuation.definition.string.begin.python, source.python, string.interpolated.python, string.regexp.quoted.single.python
-{             : constant.character.format.placeholder.other.python, source.python, string.interpolated.python, string.regexp.quoted.single.python
-}             : constant.character.format.placeholder.other.python, source.python, string.interpolated.python, string.regexp.quoted.single.python
-              : source.python, string.interpolated.python, string.regexp.quoted.single.python
-{             : constant.character.format.placeholder.other.python, source.python, string.interpolated.python, string.regexp.quoted.single.python
-              : invalid.illegal.brace.python, source.python, string.interpolated.python, string.regexp.quoted.single.python
-}             : constant.character.format.placeholder.other.python, source.python, string.interpolated.python, string.regexp.quoted.single.python
-"             : punctuation.definition.string.end.python, source.python, string.interpolated.python, string.regexp.quoted.single.python
-rf            : source.python, storage.type.string.python, string.interpolated.python, string.regexp.quoted.multi.python
-"""           : punctuation.definition.string.begin.python, source.python, string.interpolated.python, string.regexp.quoted.multi.python
-{             : constant.character.format.placeholder.other.python, source.python, string.interpolated.python, string.regexp.quoted.multi.python
-}             : constant.character.format.placeholder.other.python, source.python, string.interpolated.python, string.regexp.quoted.multi.python
-{             : constant.character.format.placeholder.other.python, source.python, string.interpolated.python, string.regexp.quoted.multi.python
-              : invalid.illegal.brace.python, source.python, string.interpolated.python, string.regexp.quoted.multi.python
-}             : constant.character.format.placeholder.other.python, source.python, string.interpolated.python, string.regexp.quoted.multi.python
-"""           : punctuation.definition.string.end.python, source.python, string.interpolated.python, string.regexp.quoted.multi.python
+rf            : source.scenic, storage.type.string.scenic, string.interpolated.scenic, string.regexp.quoted.single.scenic
+"             : punctuation.definition.string.begin.scenic, source.scenic, string.interpolated.scenic, string.regexp.quoted.single.scenic
+{             : constant.character.format.placeholder.other.scenic, source.scenic, string.interpolated.scenic, string.regexp.quoted.single.scenic
+}             : constant.character.format.placeholder.other.scenic, source.scenic, string.interpolated.scenic, string.regexp.quoted.single.scenic
+              : source.scenic, string.interpolated.scenic, string.regexp.quoted.single.scenic
+{             : constant.character.format.placeholder.other.scenic, source.scenic, string.interpolated.scenic, string.regexp.quoted.single.scenic
+              : invalid.illegal.brace.scenic, source.scenic, string.interpolated.scenic, string.regexp.quoted.single.scenic
+}             : constant.character.format.placeholder.other.scenic, source.scenic, string.interpolated.scenic, string.regexp.quoted.single.scenic
+"             : punctuation.definition.string.end.scenic, source.scenic, string.interpolated.scenic, string.regexp.quoted.single.scenic
+rf            : source.scenic, storage.type.string.scenic, string.interpolated.scenic, string.regexp.quoted.multi.scenic
+"""           : punctuation.definition.string.begin.scenic, source.scenic, string.interpolated.scenic, string.regexp.quoted.multi.scenic
+{             : constant.character.format.placeholder.other.scenic, source.scenic, string.interpolated.scenic, string.regexp.quoted.multi.scenic
+}             : constant.character.format.placeholder.other.scenic, source.scenic, string.interpolated.scenic, string.regexp.quoted.multi.scenic
+{             : constant.character.format.placeholder.other.scenic, source.scenic, string.interpolated.scenic, string.regexp.quoted.multi.scenic
+              : invalid.illegal.brace.scenic, source.scenic, string.interpolated.scenic, string.regexp.quoted.multi.scenic
+}             : constant.character.format.placeholder.other.scenic, source.scenic, string.interpolated.scenic, string.regexp.quoted.multi.scenic
+"""           : punctuation.definition.string.end.scenic, source.scenic, string.interpolated.scenic, string.regexp.quoted.multi.scenic

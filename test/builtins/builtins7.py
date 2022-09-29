@@ -3,6 +3,6 @@ breakpoint()
 
 
 
-breakpoint    : meta.function-call.python, source.python, support.function.builtin.python
-(             : meta.function-call.python, punctuation.definition.arguments.begin.python, source.python
-)             : meta.function-call.python, punctuation.definition.arguments.end.python, source.python
+breakpoint    : meta.function-call.scenic, source.scenic, support.function.builtin.scenic
+(             : meta.function-call.scenic, punctuation.definition.arguments.begin.scenic, source.scenic
+)             : meta.function-call.scenic, punctuation.definition.arguments.end.scenic, source.scenic

@@ -8,11 +8,11 @@
 
 
 
-0             : constant.numeric.dec.python, source.python
-123           : constant.numeric.dec.python, invalid.illegal.dec.python, source.python
-0123l         : invalid.illegal.name.python, source.python
-123f          : invalid.illegal.name.python, source.python
-123d          : invalid.illegal.name.python, source.python
-123A          : invalid.illegal.name.python, source.python
-123__456      : invalid.illegal.name.python, source.python
-123_          : invalid.illegal.name.python, source.python
+0             : constant.numeric.dec.scenic, source.scenic
+123           : constant.numeric.dec.scenic, invalid.illegal.dec.scenic, source.scenic
+0123l         : invalid.illegal.name.scenic, source.scenic
+123f          : invalid.illegal.name.scenic, source.scenic
+123d          : invalid.illegal.name.scenic, source.scenic
+123A          : invalid.illegal.name.scenic, source.scenic
+123__456      : invalid.illegal.name.scenic, source.scenic
+123_          : invalid.illegal.name.scenic, source.scenic

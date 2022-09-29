@@ -6,10 +6,10 @@ r'''Module docstring
 
 
 
-r             : source.python, storage.type.string.python, string.quoted.docstring.raw.multi.python
-'''           : punctuation.definition.string.begin.python, source.python, string.quoted.docstring.raw.multi.python
-Module docstring : source.python, string.quoted.docstring.raw.multi.python
-              : source.python, string.quoted.docstring.raw.multi.python
-    (?x)                # not a regexp : source.python, string.quoted.docstring.raw.multi.python
-        foo[20]{42}     # not a comment : source.python, string.quoted.docstring.raw.multi.python
-'''           : punctuation.definition.string.end.python, source.python, string.quoted.docstring.raw.multi.python
+r             : source.scenic, storage.type.string.scenic, string.quoted.docstring.raw.multi.scenic
+'''           : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.docstring.raw.multi.scenic
+Module docstring : source.scenic, string.quoted.docstring.raw.multi.scenic
+              : source.scenic, string.quoted.docstring.raw.multi.scenic
+    (?x)                # not a regexp : source.scenic, string.quoted.docstring.raw.multi.scenic
+        foo[20]{42}     # not a comment : source.scenic, string.quoted.docstring.raw.multi.scenic
+'''           : punctuation.definition.string.end.scenic, source.scenic, string.quoted.docstring.raw.multi.scenic

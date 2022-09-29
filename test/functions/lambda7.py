@@ -4,31 +4,31 @@ anon = lambda a, c={'key':
 
 
 
-anon          : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-lambda        : meta.lambda-function.python, source.python, storage.type.function.lambda.python
-              : meta.function.lambda.parameters.python, meta.lambda-function.python, source.python
-a             : meta.function.lambda.parameters.python, meta.lambda-function.python, source.python, variable.parameter.function.language.python
-,             : meta.function.lambda.parameters.python, meta.lambda-function.python, punctuation.separator.parameters.python, source.python
-              : meta.function.lambda.parameters.python, meta.lambda-function.python, source.python
-c             : meta.function.lambda.parameters.python, meta.lambda-function.python, source.python, variable.parameter.function.language.python
-=             : keyword.operator.python, meta.function.lambda.parameters.python, meta.lambda-function.python, source.python
-{             : meta.function.lambda.parameters.python, meta.lambda-function.python, punctuation.definition.dict.begin.python, source.python
-'             : meta.function.lambda.parameters.python, meta.lambda-function.python, punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-key           : meta.function.lambda.parameters.python, meta.lambda-function.python, source.python, string.quoted.single.python
-'             : meta.function.lambda.parameters.python, meta.lambda-function.python, punctuation.definition.string.end.python, source.python, string.quoted.single.python
-:             : meta.function.lambda.parameters.python, meta.lambda-function.python, punctuation.separator.dict.python, source.python
-              : meta.function.lambda.parameters.python, meta.lambda-function.python, source.python
-                                  : meta.function.lambda.parameters.python, meta.lambda-function.python, source.python
-555           : constant.numeric.dec.python, meta.function.lambda.parameters.python, meta.lambda-function.python, source.python
-}             : meta.function.lambda.parameters.python, meta.lambda-function.python, punctuation.definition.dict.end.python, source.python
-,             : meta.function.lambda.parameters.python, meta.lambda-function.python, punctuation.separator.parameters.python, source.python
-              : meta.function.lambda.parameters.python, meta.lambda-function.python, source.python
-e             : meta.function.lambda.parameters.python, meta.lambda-function.python, source.python, variable.parameter.function.language.python
-=             : keyword.operator.python, meta.function.lambda.parameters.python, meta.lambda-function.python, source.python
-fff           : meta.function.lambda.parameters.python, meta.lambda-function.python, source.python
-:             : meta.lambda-function.python, punctuation.section.function.lambda.begin.python, source.python
-              : source.python
-None          : constant.language.python, source.python
+anon          : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+lambda        : meta.lambda-function.scenic, source.scenic, storage.type.function.lambda.scenic
+              : meta.function.lambda.parameters.scenic, meta.lambda-function.scenic, source.scenic
+a             : meta.function.lambda.parameters.scenic, meta.lambda-function.scenic, source.scenic, variable.parameter.function.language.scenic
+,             : meta.function.lambda.parameters.scenic, meta.lambda-function.scenic, punctuation.separator.parameters.scenic, source.scenic
+              : meta.function.lambda.parameters.scenic, meta.lambda-function.scenic, source.scenic
+c             : meta.function.lambda.parameters.scenic, meta.lambda-function.scenic, source.scenic, variable.parameter.function.language.scenic
+=             : keyword.operator.scenic, meta.function.lambda.parameters.scenic, meta.lambda-function.scenic, source.scenic
+{             : meta.function.lambda.parameters.scenic, meta.lambda-function.scenic, punctuation.definition.dict.begin.scenic, source.scenic
+'             : meta.function.lambda.parameters.scenic, meta.lambda-function.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+key           : meta.function.lambda.parameters.scenic, meta.lambda-function.scenic, source.scenic, string.quoted.single.scenic
+'             : meta.function.lambda.parameters.scenic, meta.lambda-function.scenic, punctuation.definition.string.end.scenic, source.scenic, string.quoted.single.scenic
+:             : meta.function.lambda.parameters.scenic, meta.lambda-function.scenic, punctuation.separator.dict.scenic, source.scenic
+              : meta.function.lambda.parameters.scenic, meta.lambda-function.scenic, source.scenic
+                                  : meta.function.lambda.parameters.scenic, meta.lambda-function.scenic, source.scenic
+555           : constant.numeric.dec.scenic, meta.function.lambda.parameters.scenic, meta.lambda-function.scenic, source.scenic
+}             : meta.function.lambda.parameters.scenic, meta.lambda-function.scenic, punctuation.definition.dict.end.scenic, source.scenic
+,             : meta.function.lambda.parameters.scenic, meta.lambda-function.scenic, punctuation.separator.parameters.scenic, source.scenic
+              : meta.function.lambda.parameters.scenic, meta.lambda-function.scenic, source.scenic
+e             : meta.function.lambda.parameters.scenic, meta.lambda-function.scenic, source.scenic, variable.parameter.function.language.scenic
+=             : keyword.operator.scenic, meta.function.lambda.parameters.scenic, meta.lambda-function.scenic, source.scenic
+fff           : meta.function.lambda.parameters.scenic, meta.lambda-function.scenic, source.scenic
+:             : meta.lambda-function.scenic, punctuation.section.function.lambda.begin.scenic, source.scenic
+              : source.scenic
+None          : constant.language.scenic, source.scenic

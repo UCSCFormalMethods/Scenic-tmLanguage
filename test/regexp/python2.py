@@ -6,21 +6,21 @@ a = r'
 
 
 
-a             : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-r             : source.python, storage.type.string.python, string.regexp.quoted.single.python
-'             : punctuation.definition.string.begin.python, source.python, string.regexp.quoted.single.python
-              : invalid.illegal.newline.python, source.python, string.regexp.quoted.single.python
-              : source.python
-(             : punctuation.parenthesis.begin.python, source.python
-?             : invalid.illegal.operator.python, source.python
-x             : source.python
-)             : punctuation.parenthesis.end.python, source.python
-              : source.python
-foo           : source.python
-'             : punctuation.definition.string.begin.python, source.python, string.quoted.docstring.single.python
-              : invalid.illegal.newline.python, source.python, string.quoted.docstring.single.python
-#             : comment.line.number-sign.python, punctuation.definition.comment.python, source.python
- comment      : comment.line.number-sign.python, source.python
+a             : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+r             : source.scenic, storage.type.string.scenic, string.regexp.quoted.single.scenic
+'             : punctuation.definition.string.begin.scenic, source.scenic, string.regexp.quoted.single.scenic
+              : invalid.illegal.newline.scenic, source.scenic, string.regexp.quoted.single.scenic
+              : source.scenic
+(             : punctuation.parenthesis.begin.scenic, source.scenic
+?             : invalid.illegal.operator.scenic, source.scenic
+x             : source.scenic
+)             : punctuation.parenthesis.end.scenic, source.scenic
+              : source.scenic
+foo           : source.scenic
+'             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.docstring.single.scenic
+              : invalid.illegal.newline.scenic, source.scenic, string.quoted.docstring.single.scenic
+#             : comment.line.number-sign.scenic, punctuation.definition.comment.scenic, source.scenic
+ comment      : comment.line.number-sign.scenic, source.scenic

@@ -3,19 +3,19 @@ a = 1 # type: # 123
 
 
 
-a             : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-1             : constant.numeric.dec.python, source.python
-              : source.python
-#             : comment.line.number-sign.python, punctuation.definition.comment.python, source.python
- type:        : comment.line.number-sign.python, source.python
-a             : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-1             : constant.numeric.dec.python, source.python
-              : source.python
-#             : comment.line.number-sign.python, punctuation.definition.comment.python, source.python
- type: # 123  : comment.line.number-sign.python, source.python
+a             : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+1             : constant.numeric.dec.scenic, source.scenic
+              : source.scenic
+#             : comment.line.number-sign.scenic, punctuation.definition.comment.scenic, source.scenic
+ type:        : comment.line.number-sign.scenic, source.scenic
+a             : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+1             : constant.numeric.dec.scenic, source.scenic
+              : source.scenic
+#             : comment.line.number-sign.scenic, punctuation.definition.comment.scenic, source.scenic
+ type: # 123  : comment.line.number-sign.scenic, source.scenic

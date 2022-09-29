@@ -3,17 +3,17 @@ a=1#type:int#int
 
 
 
-a             : source.python
-=             : keyword.operator.assignment.python, source.python
-1             : constant.numeric.dec.python, source.python
-#             : comment.line.number-sign.python, meta.typehint.comment.python, source.python
-type:         : comment.line.number-sign.python, comment.typehint.directive.notation.python, meta.typehint.comment.python, source.python
-int           : comment.line.number-sign.python, comment.typehint.type.notation.python, meta.typehint.comment.python, source.python
-a             : source.python
-=             : keyword.operator.assignment.python, source.python
-1             : constant.numeric.dec.python, source.python
-#             : comment.line.number-sign.python, meta.typehint.comment.python, source.python
-type:         : comment.line.number-sign.python, comment.typehint.directive.notation.python, meta.typehint.comment.python, source.python
-int           : comment.line.number-sign.python, comment.typehint.type.notation.python, meta.typehint.comment.python, source.python
-#             : comment.line.number-sign.python, punctuation.definition.comment.python, source.python
-int           : comment.line.number-sign.python, source.python
+a             : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+1             : constant.numeric.dec.scenic, source.scenic
+#             : comment.line.number-sign.scenic, meta.typehint.comment.scenic, source.scenic
+type:         : comment.line.number-sign.scenic, comment.typehint.directive.notation.scenic, meta.typehint.comment.scenic, source.scenic
+int           : comment.line.number-sign.scenic, comment.typehint.type.notation.scenic, meta.typehint.comment.scenic, source.scenic
+a             : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+1             : constant.numeric.dec.scenic, source.scenic
+#             : comment.line.number-sign.scenic, meta.typehint.comment.scenic, source.scenic
+type:         : comment.line.number-sign.scenic, comment.typehint.directive.notation.scenic, meta.typehint.comment.scenic, source.scenic
+int           : comment.line.number-sign.scenic, comment.typehint.type.notation.scenic, meta.typehint.comment.scenic, source.scenic
+#             : comment.line.number-sign.scenic, punctuation.definition.comment.scenic, source.scenic
+int           : comment.line.number-sign.scenic, source.scenic

@@ -9,37 +9,37 @@ B"TEST"
 
 
 
-"             : punctuation.definition.string.begin.python, source.python, string.quoted.docstring.single.python
-TE            : source.python, string.quoted.docstring.single.python
-\"            : constant.character.escape.python, source.python, string.quoted.docstring.single.python
-ST            : source.python, string.quoted.docstring.single.python
-"             : punctuation.definition.string.end.python, source.python, string.quoted.docstring.single.python
-r             : source.python, storage.type.string.python, string.quoted.docstring.raw.single.python
-"             : punctuation.definition.string.begin.python, source.python, string.quoted.docstring.raw.single.python
-TE            : source.python, string.quoted.docstring.raw.single.python
-\"            : source.python, string.quoted.docstring.raw.single.python
-ST            : source.python, string.quoted.docstring.raw.single.python
-"             : punctuation.definition.string.end.python, source.python, string.quoted.docstring.raw.single.python
-R             : source.python, storage.type.string.python, string.quoted.docstring.raw.single.python
-"             : punctuation.definition.string.begin.python, source.python, string.quoted.docstring.raw.single.python
-TE            : source.python, string.quoted.docstring.raw.single.python
-\"            : source.python, string.quoted.docstring.raw.single.python
-ST            : source.python, string.quoted.docstring.raw.single.python
-"             : punctuation.definition.string.end.python, source.python, string.quoted.docstring.raw.single.python
-              : source.python
-u             : source.python, storage.type.string.python, string.quoted.single.python
-"             : punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-TEST          : source.python, string.quoted.single.python
-"             : punctuation.definition.string.end.python, source.python, string.quoted.single.python
-U             : source.python, storage.type.string.python, string.quoted.single.python
-"             : punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-TEST          : source.python, string.quoted.single.python
-"             : punctuation.definition.string.end.python, source.python, string.quoted.single.python
-b             : source.python, storage.type.string.python, string.quoted.binary.single.python
-"             : punctuation.definition.string.begin.python, source.python, string.quoted.binary.single.python
-TEST          : source.python, string.quoted.binary.single.python
-"             : punctuation.definition.string.end.python, source.python, string.quoted.binary.single.python
-B             : source.python, storage.type.string.python, string.quoted.binary.single.python
-"             : punctuation.definition.string.begin.python, source.python, string.quoted.binary.single.python
-TEST          : source.python, string.quoted.binary.single.python
-"             : punctuation.definition.string.end.python, source.python, string.quoted.binary.single.python
+"             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.docstring.single.scenic
+TE            : source.scenic, string.quoted.docstring.single.scenic
+\"            : constant.character.escape.scenic, source.scenic, string.quoted.docstring.single.scenic
+ST            : source.scenic, string.quoted.docstring.single.scenic
+"             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.docstring.single.scenic
+r             : source.scenic, storage.type.string.scenic, string.quoted.docstring.raw.single.scenic
+"             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.docstring.raw.single.scenic
+TE            : source.scenic, string.quoted.docstring.raw.single.scenic
+\"            : source.scenic, string.quoted.docstring.raw.single.scenic
+ST            : source.scenic, string.quoted.docstring.raw.single.scenic
+"             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.docstring.raw.single.scenic
+R             : source.scenic, storage.type.string.scenic, string.quoted.docstring.raw.single.scenic
+"             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.docstring.raw.single.scenic
+TE            : source.scenic, string.quoted.docstring.raw.single.scenic
+\"            : source.scenic, string.quoted.docstring.raw.single.scenic
+ST            : source.scenic, string.quoted.docstring.raw.single.scenic
+"             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.docstring.raw.single.scenic
+              : source.scenic
+u             : source.scenic, storage.type.string.scenic, string.quoted.single.scenic
+"             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+TEST          : source.scenic, string.quoted.single.scenic
+"             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.single.scenic
+U             : source.scenic, storage.type.string.scenic, string.quoted.single.scenic
+"             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+TEST          : source.scenic, string.quoted.single.scenic
+"             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.single.scenic
+b             : source.scenic, storage.type.string.scenic, string.quoted.binary.single.scenic
+"             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.binary.single.scenic
+TEST          : source.scenic, string.quoted.binary.single.scenic
+"             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.binary.single.scenic
+B             : source.scenic, storage.type.string.scenic, string.quoted.binary.single.scenic
+"             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.binary.single.scenic
+TEST          : source.scenic, string.quoted.binary.single.scenic
+"             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.binary.single.scenic

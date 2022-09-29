@@ -11,38 +11,38 @@ def bar():
 
 
 
-from          : keyword.control.import.python, source.python
-.             : punctuation.separator.period.python, source.python
-foo           : source.python
-              : source.python
-import        : keyword.control.import.python, source.python
-              : source.python
-d             : source.python
-from          : keyword.control.import.python, source.python
-.             : punctuation.separator.period.python, source.python
-import        : keyword.control.import.python, source.python
-              : source.python
-a             : source.python
-              : source.python
-foo           : source.python
-.             : meta.member.access.python, punctuation.separator.period.python, source.python
-import        : keyword.control.import.python, meta.member.access.python, source.python
-              : source.python
-raise         : keyword.control.flow.python, source.python
-              : source.python
-Exception     : source.python, support.type.exception.python
-              : source.python
-from          : keyword.control.flow.python, source.python
-              : source.python
-Foo           : source.python
-              : source.python
-def           : meta.function.python, source.python, storage.type.function.python
-              : meta.function.python, source.python
-bar           : entity.name.function.python, meta.function.python, source.python
-(             : meta.function.parameters.python, meta.function.python, punctuation.definition.parameters.begin.python, source.python
-)             : meta.function.parameters.python, meta.function.python, punctuation.definition.parameters.end.python, source.python
-:             : meta.function.python, punctuation.section.function.begin.python, source.python
-              : source.python
-yield from    : keyword.control.flow.python, source.python
-              : source.python
-baz           : source.python
+from          : keyword.control.import.scenic, source.scenic
+.             : punctuation.separator.period.scenic, source.scenic
+foo           : source.scenic
+              : source.scenic
+import        : keyword.control.import.scenic, source.scenic
+              : source.scenic
+d             : source.scenic
+from          : keyword.control.import.scenic, source.scenic
+.             : punctuation.separator.period.scenic, source.scenic
+import        : keyword.control.import.scenic, source.scenic
+              : source.scenic
+a             : source.scenic
+              : source.scenic
+foo           : source.scenic
+.             : meta.member.access.scenic, punctuation.separator.period.scenic, source.scenic
+import        : keyword.control.import.scenic, meta.member.access.scenic, source.scenic
+              : source.scenic
+raise         : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+Exception     : source.scenic, support.type.exception.scenic
+              : source.scenic
+from          : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+Foo           : source.scenic
+              : source.scenic
+def           : meta.function.scenic, source.scenic, storage.type.function.scenic
+              : meta.function.scenic, source.scenic
+bar           : entity.name.function.scenic, meta.function.scenic, source.scenic
+(             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.parameters.begin.scenic, source.scenic
+)             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.parameters.end.scenic, source.scenic
+:             : meta.function.scenic, punctuation.section.function.begin.scenic, source.scenic
+              : source.scenic
+yield from    : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+baz           : source.scenic

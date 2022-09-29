@@ -8,17 +8,17 @@ multiline "raw" string \
 
 
 
-a             : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-R             : source.python, storage.type.string.python, string.quoted.raw.multi.python
-"""           : punctuation.definition.string.begin.python, source.python, string.quoted.raw.multi.python
-multiline "raw" string  : source.python, string.quoted.raw.multi.python
-\             : source.python, string.quoted.raw.multi.python
-              : source.python, string.quoted.raw.multi.python
-    \xf1 \u1234aaaa \U1234aaaa : source.python, string.quoted.raw.multi.python
-              : source.python, string.quoted.raw.multi.python
-    \N        : source.python, string.quoted.raw.multi.python
-{BLACK SPADE SUIT} : source.python, string.quoted.raw.multi.python
-"""           : punctuation.definition.string.end.python, source.python, string.quoted.raw.multi.python
+a             : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+R             : source.scenic, storage.type.string.scenic, string.quoted.raw.multi.scenic
+"""           : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.raw.multi.scenic
+multiline "raw" string  : source.scenic, string.quoted.raw.multi.scenic
+\             : source.scenic, string.quoted.raw.multi.scenic
+              : source.scenic, string.quoted.raw.multi.scenic
+    \xf1 \u1234aaaa \U1234aaaa : source.scenic, string.quoted.raw.multi.scenic
+              : source.scenic, string.quoted.raw.multi.scenic
+    \N        : source.scenic, string.quoted.raw.multi.scenic
+{BLACK SPADE SUIT} : source.scenic, string.quoted.raw.multi.scenic
+"""           : punctuation.definition.string.end.scenic, source.scenic, string.quoted.raw.multi.scenic

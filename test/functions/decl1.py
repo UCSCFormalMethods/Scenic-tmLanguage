@@ -6,40 +6,40 @@ def myfunc(self,            # gotta have self
 
 
 
-def           : meta.function.python, source.python, storage.type.function.python
-              : meta.function.python, source.python
-myfunc        : entity.name.function.python, meta.function.python, source.python
-(             : meta.function.parameters.python, meta.function.python, punctuation.definition.parameters.begin.python, source.python
-self          : meta.function.parameters.python, meta.function.python, source.python, variable.parameter.function.language.python, variable.parameter.function.language.special.self.python
-,             : meta.function.parameters.python, meta.function.python, punctuation.separator.parameters.python, source.python
-              : meta.function.parameters.python, meta.function.python, source.python
-#             : comment.line.number-sign.python, meta.function.parameters.python, meta.function.python, punctuation.definition.comment.python, source.python
- gotta have self : comment.line.number-sign.python, meta.function.parameters.python, meta.function.python, source.python
-              : meta.function.parameters.python, meta.function.python, source.python
-param1        : meta.function.parameters.python, meta.function.python, source.python, variable.parameter.function.language.python
-=             : keyword.operator.python, meta.function.parameters.python, meta.function.python, source.python
-"             : meta.function.parameters.python, meta.function.python, punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-value         : meta.function.parameters.python, meta.function.python, source.python, string.quoted.single.python
-"             : meta.function.parameters.python, meta.function.python, punctuation.definition.string.end.python, source.python, string.quoted.single.python
-,             : meta.function.parameters.python, meta.function.python, punctuation.separator.parameters.python, source.python
-              : meta.function.parameters.python, meta.function.python, source.python
-#             : comment.line.number-sign.python, meta.function.parameters.python, meta.function.python, punctuation.definition.comment.python, source.python
- values are cool : comment.line.number-sign.python, meta.function.parameters.python, meta.function.python, source.python
-              : meta.function.parameters.python, meta.function.python, source.python
-param2        : meta.function.parameters.python, meta.function.python, source.python, variable.parameter.function.language.python
-=             : keyword.operator.python, meta.function.parameters.python, meta.function.python, source.python
-True          : constant.language.python, meta.function.parameters.python, meta.function.python, source.python
-,             : meta.function.parameters.python, meta.function.python, punctuation.separator.parameters.python, source.python
-              : meta.function.parameters.python, meta.function.python, source.python
-#             : comment.line.number-sign.python, meta.function.parameters.python, meta.function.python, punctuation.definition.comment.python, source.python
- or False, whatever : comment.line.number-sign.python, meta.function.parameters.python, meta.function.python, source.python
-              : meta.function.parameters.python, meta.function.python, source.python
-**            : keyword.operator.unpacking.parameter.python, meta.function.parameters.python, meta.function.python, source.python
-kwargs        : meta.function.parameters.python, meta.function.python, source.python, variable.parameter.function.language.python
-)             : meta.function.parameters.python, meta.function.python, punctuation.definition.parameters.end.python, source.python
-:             : meta.function.python, punctuation.section.function.begin.python, source.python
-              : source.python
-#             : comment.line.number-sign.python, punctuation.definition.comment.python, source.python
- you never know : comment.line.number-sign.python, source.python
-              : source.python
-pass          : keyword.control.flow.python, source.python
+def           : meta.function.scenic, source.scenic, storage.type.function.scenic
+              : meta.function.scenic, source.scenic
+myfunc        : entity.name.function.scenic, meta.function.scenic, source.scenic
+(             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.parameters.begin.scenic, source.scenic
+self          : meta.function.parameters.scenic, meta.function.scenic, source.scenic, variable.parameter.function.language.scenic, variable.parameter.function.language.special.self.scenic
+,             : meta.function.parameters.scenic, meta.function.scenic, punctuation.separator.parameters.scenic, source.scenic
+              : meta.function.parameters.scenic, meta.function.scenic, source.scenic
+#             : comment.line.number-sign.scenic, meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.comment.scenic, source.scenic
+ gotta have self : comment.line.number-sign.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+              : meta.function.parameters.scenic, meta.function.scenic, source.scenic
+param1        : meta.function.parameters.scenic, meta.function.scenic, source.scenic, variable.parameter.function.language.scenic
+=             : keyword.operator.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+"             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+value         : meta.function.parameters.scenic, meta.function.scenic, source.scenic, string.quoted.single.scenic
+"             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.string.end.scenic, source.scenic, string.quoted.single.scenic
+,             : meta.function.parameters.scenic, meta.function.scenic, punctuation.separator.parameters.scenic, source.scenic
+              : meta.function.parameters.scenic, meta.function.scenic, source.scenic
+#             : comment.line.number-sign.scenic, meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.comment.scenic, source.scenic
+ values are cool : comment.line.number-sign.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+              : meta.function.parameters.scenic, meta.function.scenic, source.scenic
+param2        : meta.function.parameters.scenic, meta.function.scenic, source.scenic, variable.parameter.function.language.scenic
+=             : keyword.operator.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+True          : constant.language.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+,             : meta.function.parameters.scenic, meta.function.scenic, punctuation.separator.parameters.scenic, source.scenic
+              : meta.function.parameters.scenic, meta.function.scenic, source.scenic
+#             : comment.line.number-sign.scenic, meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.comment.scenic, source.scenic
+ or False, whatever : comment.line.number-sign.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+              : meta.function.parameters.scenic, meta.function.scenic, source.scenic
+**            : keyword.operator.unpacking.parameter.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+kwargs        : meta.function.parameters.scenic, meta.function.scenic, source.scenic, variable.parameter.function.language.scenic
+)             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.parameters.end.scenic, source.scenic
+:             : meta.function.scenic, punctuation.section.function.begin.scenic, source.scenic
+              : source.scenic
+#             : comment.line.number-sign.scenic, punctuation.definition.comment.scenic, source.scenic
+ you never know : comment.line.number-sign.scenic, source.scenic
+              : source.scenic
+pass          : keyword.control.flow.scenic, source.scenic

@@ -2,12 +2,12 @@ nonlocal a, b, c
 
 
 
-nonlocal      : source.python, storage.modifier.declaration.python
-              : source.python
-a             : source.python
-,             : punctuation.separator.element.python, source.python
-              : source.python
-b             : source.python
-,             : punctuation.separator.element.python, source.python
-              : source.python
-c             : source.python
+nonlocal      : source.scenic, storage.modifier.declaration.scenic
+              : source.scenic
+a             : source.scenic
+,             : punctuation.separator.element.scenic, source.scenic
+              : source.scenic
+b             : source.scenic
+,             : punctuation.separator.element.scenic, source.scenic
+              : source.scenic
+c             : source.scenic

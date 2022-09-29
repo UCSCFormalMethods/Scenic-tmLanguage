@@ -5,21 +5,21 @@ multiline "unicode" string
 
 
 
-a             : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-f             : meta.fstring.python, source.python, storage.type.string.python, string.interpolated.python, string.quoted.multi.python
-"""           : meta.fstring.python, punctuation.definition.string.begin.python, source.python, string.interpolated.python, string.quoted.multi.python
-              : meta.fstring.python, source.python, string.interpolated.python, string.quoted.multi.python
-multiline "unicode" string : meta.fstring.python, source.python, string.interpolated.python, string.quoted.multi.python
-              : meta.fstring.python, source.python, string.interpolated.python, string.quoted.multi.python
-\N{BLACK SPADE SUIT} : constant.character.escape.python, meta.fstring.python, source.python
-              : meta.fstring.python, source.python, string.interpolated.python, string.quoted.multi.python
-{             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-foo           : meta.fstring.python, source.python
-+             : keyword.operator.arithmetic.python, meta.fstring.python, source.python
-2             : constant.numeric.dec.python, meta.fstring.python, source.python
-}             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-              : meta.fstring.python, source.python, string.interpolated.python, string.quoted.multi.python
-"""           : meta.fstring.python, punctuation.definition.string.end.python, source.python, string.interpolated.python, string.quoted.multi.python
+a             : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+f             : meta.fstring.scenic, source.scenic, storage.type.string.scenic, string.interpolated.scenic, string.quoted.multi.scenic
+"""           : meta.fstring.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.interpolated.scenic, string.quoted.multi.scenic
+              : meta.fstring.scenic, source.scenic, string.interpolated.scenic, string.quoted.multi.scenic
+multiline "unicode" string : meta.fstring.scenic, source.scenic, string.interpolated.scenic, string.quoted.multi.scenic
+              : meta.fstring.scenic, source.scenic, string.interpolated.scenic, string.quoted.multi.scenic
+\N{BLACK SPADE SUIT} : constant.character.escape.scenic, meta.fstring.scenic, source.scenic
+              : meta.fstring.scenic, source.scenic, string.interpolated.scenic, string.quoted.multi.scenic
+{             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+foo           : meta.fstring.scenic, source.scenic
++             : keyword.operator.arithmetic.scenic, meta.fstring.scenic, source.scenic
+2             : constant.numeric.dec.scenic, meta.fstring.scenic, source.scenic
+}             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+              : meta.fstring.scenic, source.scenic, string.interpolated.scenic, string.quoted.multi.scenic
+"""           : meta.fstring.scenic, punctuation.definition.string.end.scenic, source.scenic, string.interpolated.scenic, string.quoted.multi.scenic

@@ -4,38 +4,38 @@ c = {from: {import: a}}
 
 
 
-a             : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-(             : punctuation.parenthesis.begin.python, source.python
-from          : keyword.control.flow.python, source.python
-,             : punctuation.separator.element.python, source.python
-              : source.python
-a             : source.python
-)             : punctuation.parenthesis.end.python, source.python
-b             : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-[             : punctuation.definition.list.begin.python, source.python
-from          : keyword.control.flow.python, source.python
-,             : punctuation.separator.element.python, source.python
-              : source.python
-b             : source.python
-]             : punctuation.definition.list.end.python, source.python
-c             : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-{             : punctuation.definition.dict.begin.python, source.python
-from          : keyword.control.flow.python, source.python
-:             : punctuation.separator.dict.python, source.python
-              : source.python
-{             : punctuation.definition.dict.begin.python, source.python
-import        : keyword.control.import.python, source.python
-:             : punctuation.separator.dict.python, source.python
-              : source.python
-a             : source.python
-}             : punctuation.definition.dict.end.python, source.python
-}             : punctuation.definition.dict.end.python, source.python
+a             : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+(             : punctuation.parenthesis.begin.scenic, source.scenic
+from          : keyword.control.flow.scenic, source.scenic
+,             : punctuation.separator.element.scenic, source.scenic
+              : source.scenic
+a             : source.scenic
+)             : punctuation.parenthesis.end.scenic, source.scenic
+b             : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+[             : punctuation.definition.list.begin.scenic, source.scenic
+from          : keyword.control.flow.scenic, source.scenic
+,             : punctuation.separator.element.scenic, source.scenic
+              : source.scenic
+b             : source.scenic
+]             : punctuation.definition.list.end.scenic, source.scenic
+c             : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+{             : punctuation.definition.dict.begin.scenic, source.scenic
+from          : keyword.control.flow.scenic, source.scenic
+:             : punctuation.separator.dict.scenic, source.scenic
+              : source.scenic
+{             : punctuation.definition.dict.begin.scenic, source.scenic
+import        : keyword.control.import.scenic, source.scenic
+:             : punctuation.separator.dict.scenic, source.scenic
+              : source.scenic
+a             : source.scenic
+}             : punctuation.definition.dict.end.scenic, source.scenic
+}             : punctuation.definition.dict.end.scenic, source.scenic

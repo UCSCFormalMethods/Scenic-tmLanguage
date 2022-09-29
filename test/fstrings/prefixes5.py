@@ -11,68 +11,68 @@ BF'some {obj}'
 
 
 
-f             : meta.fstring.python, source.python, storage.type.string.python, string.interpolated.python, string.quoted.single.python
-b             : invalid.illegal.prefix.python, meta.fstring.python, source.python
-'             : meta.fstring.python, punctuation.definition.string.begin.python, source.python, string.interpolated.python, string.quoted.single.python
-some          : meta.fstring.python, source.python, string.interpolated.python, string.quoted.single.python
-{             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-obj           : meta.fstring.python, source.python
-}             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-'             : meta.fstring.python, punctuation.definition.string.end.python, source.python, string.interpolated.python, string.quoted.single.python
-F             : meta.fstring.python, source.python, storage.type.string.python, string.interpolated.python, string.quoted.single.python
-b             : invalid.illegal.prefix.python, meta.fstring.python, source.python
-'             : meta.fstring.python, punctuation.definition.string.begin.python, source.python, string.interpolated.python, string.quoted.single.python
-some          : meta.fstring.python, source.python, string.interpolated.python, string.quoted.single.python
-{             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-obj           : meta.fstring.python, source.python
-}             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-'             : meta.fstring.python, punctuation.definition.string.end.python, source.python, string.interpolated.python, string.quoted.single.python
-f             : meta.fstring.python, source.python, storage.type.string.python, string.interpolated.python, string.quoted.single.python
-B             : invalid.illegal.prefix.python, meta.fstring.python, source.python
-'             : meta.fstring.python, punctuation.definition.string.begin.python, source.python, string.interpolated.python, string.quoted.single.python
-some          : meta.fstring.python, source.python, string.interpolated.python, string.quoted.single.python
-{             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-obj           : meta.fstring.python, source.python
-}             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-'             : meta.fstring.python, punctuation.definition.string.end.python, source.python, string.interpolated.python, string.quoted.single.python
-F             : meta.fstring.python, source.python, storage.type.string.python, string.interpolated.python, string.quoted.single.python
-B             : invalid.illegal.prefix.python, meta.fstring.python, source.python
-'             : meta.fstring.python, punctuation.definition.string.begin.python, source.python, string.interpolated.python, string.quoted.single.python
-some          : meta.fstring.python, source.python, string.interpolated.python, string.quoted.single.python
-{             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-obj           : meta.fstring.python, source.python
-}             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-'             : meta.fstring.python, punctuation.definition.string.end.python, source.python, string.interpolated.python, string.quoted.single.python
-              : source.python
-b             : invalid.illegal.prefix.python, meta.fstring.python, source.python
-f             : meta.fstring.python, source.python, storage.type.string.python, string.interpolated.python, string.quoted.single.python
-'             : meta.fstring.python, punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-some          : meta.fstring.python, source.python, string.interpolated.python, string.quoted.single.python
-{             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-obj           : meta.fstring.python, source.python
-}             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-'             : meta.fstring.python, punctuation.definition.string.end.python, source.python, string.interpolated.python, string.quoted.single.python
-b             : invalid.illegal.prefix.python, meta.fstring.python, source.python
-F             : meta.fstring.python, source.python, storage.type.string.python, string.interpolated.python, string.quoted.single.python
-'             : meta.fstring.python, punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-some          : meta.fstring.python, source.python, string.interpolated.python, string.quoted.single.python
-{             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-obj           : meta.fstring.python, source.python
-}             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-'             : meta.fstring.python, punctuation.definition.string.end.python, source.python, string.interpolated.python, string.quoted.single.python
-B             : invalid.illegal.prefix.python, meta.fstring.python, source.python
-f             : meta.fstring.python, source.python, storage.type.string.python, string.interpolated.python, string.quoted.single.python
-'             : meta.fstring.python, punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-some          : meta.fstring.python, source.python, string.interpolated.python, string.quoted.single.python
-{             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-obj           : meta.fstring.python, source.python
-}             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-'             : meta.fstring.python, punctuation.definition.string.end.python, source.python, string.interpolated.python, string.quoted.single.python
-B             : invalid.illegal.prefix.python, meta.fstring.python, source.python
-F             : meta.fstring.python, source.python, storage.type.string.python, string.interpolated.python, string.quoted.single.python
-'             : meta.fstring.python, punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-some          : meta.fstring.python, source.python, string.interpolated.python, string.quoted.single.python
-{             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-obj           : meta.fstring.python, source.python
-}             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-'             : meta.fstring.python, punctuation.definition.string.end.python, source.python, string.interpolated.python, string.quoted.single.python
+f             : meta.fstring.scenic, source.scenic, storage.type.string.scenic, string.interpolated.scenic, string.quoted.single.scenic
+b             : invalid.illegal.prefix.scenic, meta.fstring.scenic, source.scenic
+'             : meta.fstring.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic
+some          : meta.fstring.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic
+{             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+obj           : meta.fstring.scenic, source.scenic
+}             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+'             : meta.fstring.scenic, punctuation.definition.string.end.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic
+F             : meta.fstring.scenic, source.scenic, storage.type.string.scenic, string.interpolated.scenic, string.quoted.single.scenic
+b             : invalid.illegal.prefix.scenic, meta.fstring.scenic, source.scenic
+'             : meta.fstring.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic
+some          : meta.fstring.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic
+{             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+obj           : meta.fstring.scenic, source.scenic
+}             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+'             : meta.fstring.scenic, punctuation.definition.string.end.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic
+f             : meta.fstring.scenic, source.scenic, storage.type.string.scenic, string.interpolated.scenic, string.quoted.single.scenic
+B             : invalid.illegal.prefix.scenic, meta.fstring.scenic, source.scenic
+'             : meta.fstring.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic
+some          : meta.fstring.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic
+{             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+obj           : meta.fstring.scenic, source.scenic
+}             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+'             : meta.fstring.scenic, punctuation.definition.string.end.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic
+F             : meta.fstring.scenic, source.scenic, storage.type.string.scenic, string.interpolated.scenic, string.quoted.single.scenic
+B             : invalid.illegal.prefix.scenic, meta.fstring.scenic, source.scenic
+'             : meta.fstring.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic
+some          : meta.fstring.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic
+{             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+obj           : meta.fstring.scenic, source.scenic
+}             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+'             : meta.fstring.scenic, punctuation.definition.string.end.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic
+              : source.scenic
+b             : invalid.illegal.prefix.scenic, meta.fstring.scenic, source.scenic
+f             : meta.fstring.scenic, source.scenic, storage.type.string.scenic, string.interpolated.scenic, string.quoted.single.scenic
+'             : meta.fstring.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+some          : meta.fstring.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic
+{             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+obj           : meta.fstring.scenic, source.scenic
+}             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+'             : meta.fstring.scenic, punctuation.definition.string.end.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic
+b             : invalid.illegal.prefix.scenic, meta.fstring.scenic, source.scenic
+F             : meta.fstring.scenic, source.scenic, storage.type.string.scenic, string.interpolated.scenic, string.quoted.single.scenic
+'             : meta.fstring.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+some          : meta.fstring.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic
+{             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+obj           : meta.fstring.scenic, source.scenic
+}             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+'             : meta.fstring.scenic, punctuation.definition.string.end.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic
+B             : invalid.illegal.prefix.scenic, meta.fstring.scenic, source.scenic
+f             : meta.fstring.scenic, source.scenic, storage.type.string.scenic, string.interpolated.scenic, string.quoted.single.scenic
+'             : meta.fstring.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+some          : meta.fstring.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic
+{             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+obj           : meta.fstring.scenic, source.scenic
+}             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+'             : meta.fstring.scenic, punctuation.definition.string.end.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic
+B             : invalid.illegal.prefix.scenic, meta.fstring.scenic, source.scenic
+F             : meta.fstring.scenic, source.scenic, storage.type.string.scenic, string.interpolated.scenic, string.quoted.single.scenic
+'             : meta.fstring.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+some          : meta.fstring.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic
+{             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+obj           : meta.fstring.scenic, source.scenic
+}             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+'             : meta.fstring.scenic, punctuation.definition.string.end.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic

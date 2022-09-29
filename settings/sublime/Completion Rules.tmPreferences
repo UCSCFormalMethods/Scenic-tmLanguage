@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>scope</key>
-    <string>source.python</string>
+    <string>source.scenic</string>
     <key>settings</key>
     <dict>
         <key>cancelCompletion</key>

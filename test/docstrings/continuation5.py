@@ -14,34 +14,34 @@ concatenation
 
 
 
-'             : punctuation.definition.string.begin.python, source.python, string.quoted.docstring.single.python
-implicit      : source.python, string.quoted.docstring.single.python
-'             : punctuation.definition.string.end.python, source.python, string.quoted.docstring.single.python
-              : source.python
-"             : punctuation.definition.string.begin.python, source.python, string.quoted.docstring.single.python
-concatenation : source.python, string.quoted.docstring.single.python
-"             : punctuation.definition.string.end.python, source.python, string.quoted.docstring.single.python
-              : source.python
-'''           : punctuation.definition.string.begin.python, source.python, string.quoted.docstring.multi.python
-implicit      : source.python, string.quoted.docstring.multi.python
-'''           : punctuation.definition.string.end.python, source.python, string.quoted.docstring.multi.python
-              : source.python
-'             : punctuation.definition.string.begin.python, source.python, string.quoted.docstring.single.python
-concatenation : source.python, string.quoted.docstring.single.python
-'             : punctuation.definition.string.end.python, source.python, string.quoted.docstring.single.python
-              : source.python
-'''           : punctuation.definition.string.begin.python, source.python, string.quoted.docstring.multi.python
-implicit      : source.python, string.quoted.docstring.multi.python
-'''           : punctuation.definition.string.end.python, source.python, string.quoted.docstring.multi.python
-              : source.python
-"""           : punctuation.definition.string.begin.python, source.python, string.quoted.docstring.multi.python
-concatenation : source.python, string.quoted.docstring.multi.python
-"""           : punctuation.definition.string.end.python, source.python, string.quoted.docstring.multi.python
-              : source.python
-'             : punctuation.definition.string.begin.python, source.python, string.quoted.docstring.single.python
-implicit      : source.python, string.quoted.docstring.single.python
-'             : punctuation.definition.string.end.python, source.python, string.quoted.docstring.single.python
-              : source.python
-'''           : punctuation.definition.string.begin.python, source.python, string.quoted.docstring.multi.python
-concatenation : source.python, string.quoted.docstring.multi.python
-'''           : punctuation.definition.string.end.python, source.python, string.quoted.docstring.multi.python
+'             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.docstring.single.scenic
+implicit      : source.scenic, string.quoted.docstring.single.scenic
+'             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.docstring.single.scenic
+              : source.scenic
+"             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.docstring.single.scenic
+concatenation : source.scenic, string.quoted.docstring.single.scenic
+"             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.docstring.single.scenic
+              : source.scenic
+'''           : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.docstring.multi.scenic
+implicit      : source.scenic, string.quoted.docstring.multi.scenic
+'''           : punctuation.definition.string.end.scenic, source.scenic, string.quoted.docstring.multi.scenic
+              : source.scenic
+'             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.docstring.single.scenic
+concatenation : source.scenic, string.quoted.docstring.single.scenic
+'             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.docstring.single.scenic
+              : source.scenic
+'''           : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.docstring.multi.scenic
+implicit      : source.scenic, string.quoted.docstring.multi.scenic
+'''           : punctuation.definition.string.end.scenic, source.scenic, string.quoted.docstring.multi.scenic
+              : source.scenic
+"""           : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.docstring.multi.scenic
+concatenation : source.scenic, string.quoted.docstring.multi.scenic
+"""           : punctuation.definition.string.end.scenic, source.scenic, string.quoted.docstring.multi.scenic
+              : source.scenic
+'             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.docstring.single.scenic
+implicit      : source.scenic, string.quoted.docstring.single.scenic
+'             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.docstring.single.scenic
+              : source.scenic
+'''           : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.docstring.multi.scenic
+concatenation : source.scenic, string.quoted.docstring.multi.scenic
+'''           : punctuation.definition.string.end.scenic, source.scenic, string.quoted.docstring.multi.scenic

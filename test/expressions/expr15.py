@@ -3,6 +3,6 @@ foofrom.something
 
 
 
-foofrom       : source.python
-.             : meta.member.access.python, punctuation.separator.period.python, source.python
-something     : meta.attribute.python, meta.member.access.python, source.python
+foofrom       : source.scenic
+.             : meta.member.access.scenic, punctuation.separator.period.scenic, source.scenic
+something     : meta.attribute.scenic, meta.member.access.scenic, source.scenic

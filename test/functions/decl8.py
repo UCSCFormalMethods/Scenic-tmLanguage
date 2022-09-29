@@ -2,38 +2,38 @@ def foo(a=1**1, *b:3*2=1*2, **a=1*2**3): pass
 
 
 
-def           : meta.function.python, source.python, storage.type.function.python
-              : meta.function.python, source.python
-foo           : entity.name.function.python, meta.function.python, source.python
-(             : meta.function.parameters.python, meta.function.python, punctuation.definition.parameters.begin.python, source.python
-a             : meta.function.parameters.python, meta.function.python, source.python, variable.parameter.function.language.python
-=             : keyword.operator.python, meta.function.parameters.python, meta.function.python, source.python
-1             : constant.numeric.dec.python, meta.function.parameters.python, meta.function.python, source.python
-**            : keyword.operator.arithmetic.python, meta.function.parameters.python, meta.function.python, source.python
-1             : constant.numeric.dec.python, meta.function.parameters.python, meta.function.python, source.python
-,             : meta.function.parameters.python, meta.function.python, punctuation.separator.parameters.python, source.python
-              : meta.function.parameters.python, meta.function.python, source.python
-*             : keyword.operator.unpacking.parameter.python, meta.function.parameters.python, meta.function.python, source.python
-b             : meta.function.parameters.python, meta.function.python, source.python, variable.parameter.function.language.python
-:             : meta.function.parameters.python, meta.function.python, punctuation.separator.annotation.python, source.python
-3             : constant.numeric.dec.python, meta.function.parameters.python, meta.function.python, source.python
-*             : keyword.operator.arithmetic.python, meta.function.parameters.python, meta.function.python, source.python
-2             : constant.numeric.dec.python, meta.function.parameters.python, meta.function.python, source.python
-=             : keyword.operator.assignment.python, meta.function.parameters.python, meta.function.python, source.python
-1             : constant.numeric.dec.python, meta.function.parameters.python, meta.function.python, source.python
-*             : keyword.operator.arithmetic.python, meta.function.parameters.python, meta.function.python, source.python
-2             : constant.numeric.dec.python, meta.function.parameters.python, meta.function.python, source.python
-,             : meta.function.parameters.python, meta.function.python, punctuation.separator.parameters.python, source.python
-              : meta.function.parameters.python, meta.function.python, source.python
-**            : keyword.operator.unpacking.parameter.python, meta.function.parameters.python, meta.function.python, source.python
-a             : meta.function.parameters.python, meta.function.python, source.python, variable.parameter.function.language.python
-=             : keyword.operator.python, meta.function.parameters.python, meta.function.python, source.python
-1             : constant.numeric.dec.python, meta.function.parameters.python, meta.function.python, source.python
-*             : keyword.operator.arithmetic.python, meta.function.parameters.python, meta.function.python, source.python
-2             : constant.numeric.dec.python, meta.function.parameters.python, meta.function.python, source.python
-**            : keyword.operator.arithmetic.python, meta.function.parameters.python, meta.function.python, source.python
-3             : constant.numeric.dec.python, meta.function.parameters.python, meta.function.python, source.python
-)             : meta.function.parameters.python, meta.function.python, punctuation.definition.parameters.end.python, source.python
-:             : meta.function.python, punctuation.section.function.begin.python, source.python
-              : source.python
-pass          : keyword.control.flow.python, source.python
+def           : meta.function.scenic, source.scenic, storage.type.function.scenic
+              : meta.function.scenic, source.scenic
+foo           : entity.name.function.scenic, meta.function.scenic, source.scenic
+(             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.parameters.begin.scenic, source.scenic
+a             : meta.function.parameters.scenic, meta.function.scenic, source.scenic, variable.parameter.function.language.scenic
+=             : keyword.operator.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+1             : constant.numeric.dec.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+**            : keyword.operator.arithmetic.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+1             : constant.numeric.dec.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+,             : meta.function.parameters.scenic, meta.function.scenic, punctuation.separator.parameters.scenic, source.scenic
+              : meta.function.parameters.scenic, meta.function.scenic, source.scenic
+*             : keyword.operator.unpacking.parameter.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+b             : meta.function.parameters.scenic, meta.function.scenic, source.scenic, variable.parameter.function.language.scenic
+:             : meta.function.parameters.scenic, meta.function.scenic, punctuation.separator.annotation.scenic, source.scenic
+3             : constant.numeric.dec.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+*             : keyword.operator.arithmetic.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+2             : constant.numeric.dec.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+=             : keyword.operator.assignment.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+1             : constant.numeric.dec.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+*             : keyword.operator.arithmetic.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+2             : constant.numeric.dec.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+,             : meta.function.parameters.scenic, meta.function.scenic, punctuation.separator.parameters.scenic, source.scenic
+              : meta.function.parameters.scenic, meta.function.scenic, source.scenic
+**            : keyword.operator.unpacking.parameter.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+a             : meta.function.parameters.scenic, meta.function.scenic, source.scenic, variable.parameter.function.language.scenic
+=             : keyword.operator.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+1             : constant.numeric.dec.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+*             : keyword.operator.arithmetic.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+2             : constant.numeric.dec.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+**            : keyword.operator.arithmetic.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+3             : constant.numeric.dec.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+)             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.parameters.end.scenic, source.scenic
+:             : meta.function.scenic, punctuation.section.function.begin.scenic, source.scenic
+              : source.scenic
+pass          : keyword.control.flow.scenic, source.scenic

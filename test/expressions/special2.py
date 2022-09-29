@@ -4,13 +4,13 @@ __mro_entries__
 
 
 
-__post_init__ : source.python, support.variable.magic.python
-def           : meta.function.python, source.python, storage.type.function.python
-              : meta.function.python, source.python
-__class_getitem__ : meta.function.python, source.python, support.variable.magic.python
-(             : meta.function.parameters.python, meta.function.python, punctuation.definition.parameters.begin.python, source.python
-)             : meta.function.parameters.python, meta.function.python, punctuation.definition.parameters.end.python, source.python
-:             : meta.function.python, punctuation.section.function.begin.python, source.python
-              : source.python
-pass          : keyword.control.flow.python, source.python
-__mro_entries__ : source.python, support.variable.magic.python
+__post_init__ : source.scenic, support.variable.magic.scenic
+def           : meta.function.scenic, source.scenic, storage.type.function.scenic
+              : meta.function.scenic, source.scenic
+__class_getitem__ : meta.function.scenic, source.scenic, support.variable.magic.scenic
+(             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.parameters.begin.scenic, source.scenic
+)             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.parameters.end.scenic, source.scenic
+:             : meta.function.scenic, punctuation.section.function.begin.scenic, source.scenic
+              : source.scenic
+pass          : keyword.control.flow.scenic, source.scenic
+__mro_entries__ : source.scenic, support.variable.magic.scenic

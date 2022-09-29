@@ -2,47 +2,47 @@ a = (a, b(a=1), {c: d(b=1), e: [a, b(z=1)]})
 
 
 
-a             : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-(             : punctuation.parenthesis.begin.python, source.python
-a             : source.python
-,             : punctuation.separator.element.python, source.python
-              : source.python
-b             : meta.function-call.generic.python, meta.function-call.python, source.python
-(             : meta.function-call.python, punctuation.definition.arguments.begin.python, source.python
-a             : meta.function-call.arguments.python, meta.function-call.python, source.python, variable.parameter.function-call.python
-=             : keyword.operator.assignment.python, meta.function-call.arguments.python, meta.function-call.python, source.python
-1             : constant.numeric.dec.python, meta.function-call.arguments.python, meta.function-call.python, source.python
-)             : meta.function-call.python, punctuation.definition.arguments.end.python, source.python
-,             : punctuation.separator.element.python, source.python
-              : source.python
-{             : punctuation.definition.dict.begin.python, source.python
-c             : source.python
-:             : punctuation.separator.dict.python, source.python
-              : source.python
-d             : meta.function-call.generic.python, meta.function-call.python, source.python
-(             : meta.function-call.python, punctuation.definition.arguments.begin.python, source.python
-b             : meta.function-call.arguments.python, meta.function-call.python, source.python, variable.parameter.function-call.python
-=             : keyword.operator.assignment.python, meta.function-call.arguments.python, meta.function-call.python, source.python
-1             : constant.numeric.dec.python, meta.function-call.arguments.python, meta.function-call.python, source.python
-)             : meta.function-call.python, punctuation.definition.arguments.end.python, source.python
-,             : punctuation.separator.element.python, source.python
-              : source.python
-e             : source.python
-:             : punctuation.separator.dict.python, source.python
-              : source.python
-[             : punctuation.definition.list.begin.python, source.python
-a             : source.python
-,             : punctuation.separator.element.python, source.python
-              : source.python
-b             : meta.function-call.generic.python, meta.function-call.python, source.python
-(             : meta.function-call.python, punctuation.definition.arguments.begin.python, source.python
-z             : meta.function-call.arguments.python, meta.function-call.python, source.python, variable.parameter.function-call.python
-=             : keyword.operator.assignment.python, meta.function-call.arguments.python, meta.function-call.python, source.python
-1             : constant.numeric.dec.python, meta.function-call.arguments.python, meta.function-call.python, source.python
-)             : meta.function-call.python, punctuation.definition.arguments.end.python, source.python
-]             : punctuation.definition.list.end.python, source.python
-}             : punctuation.definition.dict.end.python, source.python
-)             : punctuation.parenthesis.end.python, source.python
+a             : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+(             : punctuation.parenthesis.begin.scenic, source.scenic
+a             : source.scenic
+,             : punctuation.separator.element.scenic, source.scenic
+              : source.scenic
+b             : meta.function-call.generic.scenic, meta.function-call.scenic, source.scenic
+(             : meta.function-call.scenic, punctuation.definition.arguments.begin.scenic, source.scenic
+a             : meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic, variable.parameter.function-call.scenic
+=             : keyword.operator.assignment.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic
+1             : constant.numeric.dec.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic
+)             : meta.function-call.scenic, punctuation.definition.arguments.end.scenic, source.scenic
+,             : punctuation.separator.element.scenic, source.scenic
+              : source.scenic
+{             : punctuation.definition.dict.begin.scenic, source.scenic
+c             : source.scenic
+:             : punctuation.separator.dict.scenic, source.scenic
+              : source.scenic
+d             : meta.function-call.generic.scenic, meta.function-call.scenic, source.scenic
+(             : meta.function-call.scenic, punctuation.definition.arguments.begin.scenic, source.scenic
+b             : meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic, variable.parameter.function-call.scenic
+=             : keyword.operator.assignment.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic
+1             : constant.numeric.dec.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic
+)             : meta.function-call.scenic, punctuation.definition.arguments.end.scenic, source.scenic
+,             : punctuation.separator.element.scenic, source.scenic
+              : source.scenic
+e             : source.scenic
+:             : punctuation.separator.dict.scenic, source.scenic
+              : source.scenic
+[             : punctuation.definition.list.begin.scenic, source.scenic
+a             : source.scenic
+,             : punctuation.separator.element.scenic, source.scenic
+              : source.scenic
+b             : meta.function-call.generic.scenic, meta.function-call.scenic, source.scenic
+(             : meta.function-call.scenic, punctuation.definition.arguments.begin.scenic, source.scenic
+z             : meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic, variable.parameter.function-call.scenic
+=             : keyword.operator.assignment.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic
+1             : constant.numeric.dec.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic
+)             : meta.function-call.scenic, punctuation.definition.arguments.end.scenic, source.scenic
+]             : punctuation.definition.list.end.scenic, source.scenic
+}             : punctuation.definition.dict.end.scenic, source.scenic
+)             : punctuation.parenthesis.end.scenic, source.scenic

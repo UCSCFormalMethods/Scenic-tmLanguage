@@ -32,7 +32,7 @@ ${prefix}regexp-character-set:
       endCaptures:
         '1': {name: constant.other.set.regexp
                     punctuation.character.set.end.regexp}
-        '2': {name: invalid.illegal.newline.python}
+        '2': {name: invalid.illegal.newline.scenic}
       patterns:
         - include: '#regexp-charecter-set-escapes'
         - name: constant.character.set.regexp
@@ -51,7 +51,7 @@ ${prefix}${basename}-named-group:
   endCaptures:
     '1': {name: punctuation.parenthesis.named.end.regexp
                 support.other.parenthesis.regexp}
-    '2': {name: invalid.illegal.newline.python}
+    '2': {name: invalid.illegal.newline.scenic}
   patterns:
     - include: '#${prefix}${basename}-expression'
     ${nested}
@@ -64,7 +64,7 @@ ${prefix}regexp-comments:
     '0': {name: punctuation.comment.begin.regexp}
   endCaptures:
     '1': {name: punctuation.comment.end.regexp}
-    '2': {name: invalid.illegal.newline.python}
+    '2': {name: invalid.illegal.newline.scenic}
   patterns:
     - include: '#codetags'
 
@@ -77,7 +77,7 @@ ${prefix}${basename}-lookahead:
   endCaptures:
     '1': {name: punctuation.parenthesis.lookahead.end.regexp
                 keyword.operator.lookahead.regexp}
-    '2': {name: invalid.illegal.newline.python}
+    '2': {name: invalid.illegal.newline.scenic}
   patterns:
     - include: '#${prefix}${basename}-expression'
     ${nested}
@@ -91,7 +91,7 @@ ${prefix}${basename}-lookahead-negative:
   endCaptures:
     '1': {name: punctuation.parenthesis.lookahead.end.regexp
                 keyword.operator.lookahead.negative.regexp}
-    '2': {name: invalid.illegal.newline.python}
+    '2': {name: invalid.illegal.newline.scenic}
   patterns:
     - include: '#${prefix}${basename}-expression'
     ${nested}
@@ -105,7 +105,7 @@ ${prefix}${basename}-lookbehind:
   endCaptures:
     '1': {name: punctuation.parenthesis.lookbehind.end.regexp
                 keyword.operator.lookbehind.regexp}
-    '2': {name: invalid.illegal.newline.python}
+    '2': {name: invalid.illegal.newline.scenic}
   patterns:
     - include: '#${prefix}${basename}-expression'
     ${nested}
@@ -119,7 +119,7 @@ ${prefix}${basename}-lookbehind-negative:
   endCaptures:
     '1': {name: punctuation.parenthesis.lookbehind.end.regexp
                 keyword.operator.lookbehind.negative.regexp}
-    '2': {name: invalid.illegal.newline.python}
+    '2': {name: invalid.illegal.newline.scenic}
   patterns:
     - include: '#${prefix}${basename}-expression'
     ${nested}
@@ -133,7 +133,7 @@ ${prefix}${basename}-conditional:
   endCaptures:
     '1': {name: punctuation.parenthesis.conditional.end.regexp
                 keyword.operator.conditional.negative.regexp}
-    '2': {name: invalid.illegal.newline.python}
+    '2': {name: invalid.illegal.newline.scenic}
   patterns:
     - include: '#${prefix}${basename}-expression'
     ${nested}
@@ -147,7 +147,7 @@ ${prefix}${basename}-parentheses-non-capturing:
   endCaptures:
     '1': {name: punctuation.parenthesis.non-capturing.end.regexp
                 support.other.parenthesis.regexp}
-    '2': {name: invalid.illegal.newline.python}
+    '2': {name: invalid.illegal.newline.scenic}
   patterns:
     - include: '#${prefix}${basename}-expression'
     ${nested}
@@ -161,7 +161,7 @@ ${prefix}${basename}-parentheses:
   endCaptures:
     '1': {name: punctuation.parenthesis.end.regexp
                 support.other.parenthesis.regexp}
-    '2': {name: invalid.illegal.newline.python}
+    '2': {name: invalid.illegal.newline.scenic}
   patterns:
     - include: '#${prefix}${basename}-expression'
     ${nested}

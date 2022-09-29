@@ -6,65 +6,65 @@ def __init__(self, a:('abc' 'def')=123, boo: 'abc'
 
 
 
-#             : comment.line.number-sign.python, punctuation.definition.comment.python, source.python
- testing annotations split over multiple lines : comment.line.number-sign.python, source.python
-def           : meta.function.python, source.python, storage.type.function.python
-              : meta.function.python, source.python
-__init__      : meta.function.python, source.python, support.function.magic.python
-(             : meta.function.parameters.python, meta.function.python, punctuation.definition.parameters.begin.python, source.python
-self          : meta.function.parameters.python, meta.function.python, source.python, variable.parameter.function.language.python, variable.parameter.function.language.special.self.python
-,             : meta.function.parameters.python, meta.function.python, punctuation.separator.parameters.python, source.python
-              : meta.function.parameters.python, meta.function.python, source.python
-a             : meta.function.parameters.python, meta.function.python, source.python, variable.parameter.function.language.python
-:             : meta.function.parameters.python, meta.function.python, punctuation.separator.annotation.python, source.python
-(             : meta.function.parameters.python, meta.function.python, punctuation.parenthesis.begin.python, source.python
-'             : meta.function.parameters.python, meta.function.python, punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-abc           : meta.function.parameters.python, meta.function.python, source.python, string.quoted.single.python
-'             : meta.function.parameters.python, meta.function.python, punctuation.definition.string.end.python, source.python, string.quoted.single.python
-              : meta.function.parameters.python, meta.function.python, source.python
-'             : meta.function.parameters.python, meta.function.python, punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-def           : meta.function.parameters.python, meta.function.python, source.python, string.quoted.single.python
-'             : meta.function.parameters.python, meta.function.python, punctuation.definition.string.end.python, source.python, string.quoted.single.python
-)             : meta.function.parameters.python, meta.function.python, punctuation.parenthesis.end.python, source.python
-=             : keyword.operator.assignment.python, meta.function.parameters.python, meta.function.python, source.python
-123           : constant.numeric.dec.python, meta.function.parameters.python, meta.function.python, source.python
-,             : meta.function.parameters.python, meta.function.python, punctuation.separator.parameters.python, source.python
-              : meta.function.parameters.python, meta.function.python, source.python
-boo           : meta.function.parameters.python, meta.function.python, source.python, variable.parameter.function.language.python
-:             : meta.function.parameters.python, meta.function.python, punctuation.separator.annotation.python, source.python
-              : meta.function.parameters.python, meta.function.python, source.python
-'             : meta.function.parameters.python, meta.function.python, punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-abc           : meta.function.parameters.python, meta.function.python, source.python, string.quoted.single.python
-'             : meta.function.parameters.python, meta.function.python, punctuation.definition.string.end.python, source.python, string.quoted.single.python
-              : meta.function.parameters.python, meta.function.python, source.python
-                          : meta.function.parameters.python, meta.function.python, source.python
-'             : meta.function.parameters.python, meta.function.python, punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-def           : meta.function.parameters.python, meta.function.python, source.python, string.quoted.single.python
-'             : meta.function.parameters.python, meta.function.python, punctuation.definition.string.end.python, source.python, string.quoted.single.python
-              : meta.function.parameters.python, meta.function.python, source.python
-=             : keyword.operator.assignment.python, meta.function.parameters.python, meta.function.python, source.python
-              : meta.function.parameters.python, meta.function.python, source.python
-foo           : meta.function-call.generic.python, meta.function-call.python, meta.function.parameters.python, meta.function.python, source.python
-(             : meta.function-call.python, meta.function.parameters.python, meta.function.python, punctuation.definition.arguments.begin.python, source.python
-n             : meta.function-call.arguments.python, meta.function-call.generic.python, meta.function-call.python, meta.function.parameters.python, meta.function.python, source.python
-(             : meta.function-call.arguments.python, meta.function-call.python, meta.function.parameters.python, meta.function.python, punctuation.definition.arguments.begin.python, source.python
-m             : meta.function-call.arguments.python, meta.function-call.python, meta.function.parameters.python, meta.function.python, source.python, variable.parameter.function-call.python
-=             : keyword.operator.assignment.python, meta.function-call.arguments.python, meta.function-call.python, meta.function.parameters.python, meta.function.python, source.python
-0             : constant.numeric.dec.python, meta.function-call.arguments.python, meta.function-call.python, meta.function.parameters.python, meta.function.python, source.python
-)             : meta.function-call.arguments.python, meta.function-call.python, meta.function.parameters.python, meta.function.python, punctuation.definition.arguments.end.python, source.python
-,             : meta.function-call.arguments.python, meta.function-call.python, meta.function.parameters.python, meta.function.python, punctuation.separator.arguments.python, source.python
-              : meta.function-call.arguments.python, meta.function-call.python, meta.function.parameters.python, meta.function.python, source.python
-baz           : meta.function-call.arguments.python, meta.function-call.python, meta.function.parameters.python, meta.function.python, source.python, variable.parameter.function-call.python
-=             : keyword.operator.assignment.python, meta.function-call.arguments.python, meta.function-call.python, meta.function.parameters.python, meta.function.python, source.python
-                             : meta.function-call.arguments.python, meta.function-call.python, meta.function.parameters.python, meta.function.python, source.python
-13            : constant.numeric.dec.python, meta.function-call.arguments.python, meta.function-call.python, meta.function.parameters.python, meta.function.python, source.python
-)             : meta.function-call.python, meta.function.parameters.python, meta.function.python, punctuation.definition.arguments.end.python, source.python
-)             : meta.function.parameters.python, meta.function.python, punctuation.definition.parameters.end.python, source.python
-              : meta.function.python, source.python
-->            : meta.function.python, punctuation.separator.annotation.result.python, source.python
-              : meta.function.python, source.python
-123           : constant.numeric.dec.python, meta.function.python, source.python
-              : meta.function.python, source.python
-:             : meta.function.python, punctuation.section.function.begin.python, source.python
-              : source.python
-123           : constant.numeric.dec.python, source.python
+#             : comment.line.number-sign.scenic, punctuation.definition.comment.scenic, source.scenic
+ testing annotations split over multiple lines : comment.line.number-sign.scenic, source.scenic
+def           : meta.function.scenic, source.scenic, storage.type.function.scenic
+              : meta.function.scenic, source.scenic
+__init__      : meta.function.scenic, source.scenic, support.function.magic.scenic
+(             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.parameters.begin.scenic, source.scenic
+self          : meta.function.parameters.scenic, meta.function.scenic, source.scenic, variable.parameter.function.language.scenic, variable.parameter.function.language.special.self.scenic
+,             : meta.function.parameters.scenic, meta.function.scenic, punctuation.separator.parameters.scenic, source.scenic
+              : meta.function.parameters.scenic, meta.function.scenic, source.scenic
+a             : meta.function.parameters.scenic, meta.function.scenic, source.scenic, variable.parameter.function.language.scenic
+:             : meta.function.parameters.scenic, meta.function.scenic, punctuation.separator.annotation.scenic, source.scenic
+(             : meta.function.parameters.scenic, meta.function.scenic, punctuation.parenthesis.begin.scenic, source.scenic
+'             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+abc           : meta.function.parameters.scenic, meta.function.scenic, source.scenic, string.quoted.single.scenic
+'             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.string.end.scenic, source.scenic, string.quoted.single.scenic
+              : meta.function.parameters.scenic, meta.function.scenic, source.scenic
+'             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+def           : meta.function.parameters.scenic, meta.function.scenic, source.scenic, string.quoted.single.scenic
+'             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.string.end.scenic, source.scenic, string.quoted.single.scenic
+)             : meta.function.parameters.scenic, meta.function.scenic, punctuation.parenthesis.end.scenic, source.scenic
+=             : keyword.operator.assignment.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+123           : constant.numeric.dec.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+,             : meta.function.parameters.scenic, meta.function.scenic, punctuation.separator.parameters.scenic, source.scenic
+              : meta.function.parameters.scenic, meta.function.scenic, source.scenic
+boo           : meta.function.parameters.scenic, meta.function.scenic, source.scenic, variable.parameter.function.language.scenic
+:             : meta.function.parameters.scenic, meta.function.scenic, punctuation.separator.annotation.scenic, source.scenic
+              : meta.function.parameters.scenic, meta.function.scenic, source.scenic
+'             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+abc           : meta.function.parameters.scenic, meta.function.scenic, source.scenic, string.quoted.single.scenic
+'             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.string.end.scenic, source.scenic, string.quoted.single.scenic
+              : meta.function.parameters.scenic, meta.function.scenic, source.scenic
+                          : meta.function.parameters.scenic, meta.function.scenic, source.scenic
+'             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+def           : meta.function.parameters.scenic, meta.function.scenic, source.scenic, string.quoted.single.scenic
+'             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.string.end.scenic, source.scenic, string.quoted.single.scenic
+              : meta.function.parameters.scenic, meta.function.scenic, source.scenic
+=             : keyword.operator.assignment.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+              : meta.function.parameters.scenic, meta.function.scenic, source.scenic
+foo           : meta.function-call.generic.scenic, meta.function-call.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+(             : meta.function-call.scenic, meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.arguments.begin.scenic, source.scenic
+n             : meta.function-call.arguments.scenic, meta.function-call.generic.scenic, meta.function-call.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+(             : meta.function-call.arguments.scenic, meta.function-call.scenic, meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.arguments.begin.scenic, source.scenic
+m             : meta.function-call.arguments.scenic, meta.function-call.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic, variable.parameter.function-call.scenic
+=             : keyword.operator.assignment.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+0             : constant.numeric.dec.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+)             : meta.function-call.arguments.scenic, meta.function-call.scenic, meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.arguments.end.scenic, source.scenic
+,             : meta.function-call.arguments.scenic, meta.function-call.scenic, meta.function.parameters.scenic, meta.function.scenic, punctuation.separator.arguments.scenic, source.scenic
+              : meta.function-call.arguments.scenic, meta.function-call.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+baz           : meta.function-call.arguments.scenic, meta.function-call.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic, variable.parameter.function-call.scenic
+=             : keyword.operator.assignment.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+                             : meta.function-call.arguments.scenic, meta.function-call.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+13            : constant.numeric.dec.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+)             : meta.function-call.scenic, meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.arguments.end.scenic, source.scenic
+)             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.parameters.end.scenic, source.scenic
+              : meta.function.scenic, source.scenic
+->            : meta.function.scenic, punctuation.separator.annotation.result.scenic, source.scenic
+              : meta.function.scenic, source.scenic
+123           : constant.numeric.dec.scenic, meta.function.scenic, source.scenic
+              : meta.function.scenic, source.scenic
+:             : meta.function.scenic, punctuation.section.function.begin.scenic, source.scenic
+              : source.scenic
+123           : constant.numeric.dec.scenic, source.scenic

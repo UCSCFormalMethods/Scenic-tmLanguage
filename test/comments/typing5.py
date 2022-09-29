@@ -3,20 +3,20 @@ if isinstance(t1, TypeVar): # type: ignore
 
 
 
-if            : keyword.control.flow.python, source.python
-              : source.python
-isinstance    : meta.function-call.python, source.python, support.function.builtin.python
-(             : meta.function-call.python, punctuation.definition.arguments.begin.python, source.python
-t1            : meta.function-call.arguments.python, meta.function-call.python, source.python
-,             : meta.function-call.arguments.python, meta.function-call.python, punctuation.separator.arguments.python, source.python
-              : meta.function-call.arguments.python, meta.function-call.python, source.python
-TypeVar       : meta.function-call.arguments.python, meta.function-call.python, source.python
-)             : meta.function-call.python, punctuation.definition.arguments.end.python, source.python
-:             : punctuation.separator.colon.python, source.python
-              : source.python
-#             : comment.line.number-sign.python, meta.typehint.comment.python, source.python
-type:         : comment.line.number-sign.python, comment.typehint.directive.notation.python, meta.typehint.comment.python, source.python
-              : comment.line.number-sign.python, meta.typehint.comment.python, source.python
-ignore        : comment.line.number-sign.python, comment.typehint.ignore.notation.python, meta.typehint.comment.python, source.python
-              : source.python
-continue      : keyword.control.flow.python, source.python
+if            : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+isinstance    : meta.function-call.scenic, source.scenic, support.function.builtin.scenic
+(             : meta.function-call.scenic, punctuation.definition.arguments.begin.scenic, source.scenic
+t1            : meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic
+,             : meta.function-call.arguments.scenic, meta.function-call.scenic, punctuation.separator.arguments.scenic, source.scenic
+              : meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic
+TypeVar       : meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic
+)             : meta.function-call.scenic, punctuation.definition.arguments.end.scenic, source.scenic
+:             : punctuation.separator.colon.scenic, source.scenic
+              : source.scenic
+#             : comment.line.number-sign.scenic, meta.typehint.comment.scenic, source.scenic
+type:         : comment.line.number-sign.scenic, comment.typehint.directive.notation.scenic, meta.typehint.comment.scenic, source.scenic
+              : comment.line.number-sign.scenic, meta.typehint.comment.scenic, source.scenic
+ignore        : comment.line.number-sign.scenic, comment.typehint.ignore.notation.scenic, meta.typehint.comment.scenic, source.scenic
+              : source.scenic
+continue      : keyword.control.flow.scenic, source.scenic

@@ -3,9 +3,9 @@ while 1:
 
 
 
-while         : keyword.control.flow.python, source.python
-              : source.python
-1             : constant.numeric.dec.python, source.python
-:             : punctuation.separator.colon.python, source.python
-              : source.python
-pass          : keyword.control.flow.python, source.python
+while         : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+1             : constant.numeric.dec.scenic, source.scenic
+:             : punctuation.separator.colon.scenic, source.scenic
+              : source.scenic
+pass          : keyword.control.flow.scenic, source.scenic

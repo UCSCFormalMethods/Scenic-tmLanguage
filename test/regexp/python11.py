@@ -7,29 +7,29 @@ a = r"""
 
 
 
-a             : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-r             : source.python, storage.type.string.python, string.regexp.quoted.multi.python
-"""           : punctuation.definition.string.begin.python, source.python, string.regexp.quoted.multi.python
-              : source.python, string.regexp.quoted.multi.python
-(?x)          : source.python, storage.modifier.flag.regexp, string.regexp.quoted.multi.python
-              : source.python, string.regexp.quoted.multi.python
-#             : comment.line.number-sign.python, punctuation.definition.comment.python, source.python, string.regexp.quoted.multi.python
- multi-XXXline  : comment.line.number-sign.python, source.python, string.regexp.quoted.multi.python
-XXX           : comment.line.number-sign.python, keyword.codetag.notation.python, source.python, string.regexp.quoted.multi.python
- regexp       : comment.line.number-sign.python, source.python, string.regexp.quoted.multi.python
-        foo      : source.python, string.regexp.quoted.multi.python
-(?#           : comment.regexp, punctuation.comment.begin.regexp, source.python, string.regexp.quoted.multi.python
- comm TODOent  : comment.regexp, source.python, string.regexp.quoted.multi.python
-TODO          : comment.regexp, keyword.codetag.notation.python, source.python, string.regexp.quoted.multi.python
-)             : comment.regexp, punctuation.comment.end.regexp, source.python, string.regexp.quoted.multi.python
-        foo      : source.python, string.regexp.quoted.multi.python
-#             : comment.line.number-sign.python, punctuation.definition.comment.python, source.python, string.regexp.quoted.multi.python
- type: int    : comment.line.number-sign.python, source.python, string.regexp.quoted.multi.python
-        foo      : source.python, string.regexp.quoted.multi.python
-(?#           : comment.regexp, punctuation.comment.begin.regexp, source.python, string.regexp.quoted.multi.python
- type: int    : comment.regexp, source.python, string.regexp.quoted.multi.python
-)             : comment.regexp, punctuation.comment.end.regexp, source.python, string.regexp.quoted.multi.python
-"""           : punctuation.definition.string.end.python, source.python, string.regexp.quoted.multi.python
+a             : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+r             : source.scenic, storage.type.string.scenic, string.regexp.quoted.multi.scenic
+"""           : punctuation.definition.string.begin.scenic, source.scenic, string.regexp.quoted.multi.scenic
+              : source.scenic, string.regexp.quoted.multi.scenic
+(?x)          : source.scenic, storage.modifier.flag.regexp, string.regexp.quoted.multi.scenic
+              : source.scenic, string.regexp.quoted.multi.scenic
+#             : comment.line.number-sign.scenic, punctuation.definition.comment.scenic, source.scenic, string.regexp.quoted.multi.scenic
+ multi-XXXline  : comment.line.number-sign.scenic, source.scenic, string.regexp.quoted.multi.scenic
+XXX           : comment.line.number-sign.scenic, keyword.codetag.notation.scenic, source.scenic, string.regexp.quoted.multi.scenic
+ regexp       : comment.line.number-sign.scenic, source.scenic, string.regexp.quoted.multi.scenic
+        foo      : source.scenic, string.regexp.quoted.multi.scenic
+(?#           : comment.regexp, punctuation.comment.begin.regexp, source.scenic, string.regexp.quoted.multi.scenic
+ comm TODOent  : comment.regexp, source.scenic, string.regexp.quoted.multi.scenic
+TODO          : comment.regexp, keyword.codetag.notation.scenic, source.scenic, string.regexp.quoted.multi.scenic
+)             : comment.regexp, punctuation.comment.end.regexp, source.scenic, string.regexp.quoted.multi.scenic
+        foo      : source.scenic, string.regexp.quoted.multi.scenic
+#             : comment.line.number-sign.scenic, punctuation.definition.comment.scenic, source.scenic, string.regexp.quoted.multi.scenic
+ type: int    : comment.line.number-sign.scenic, source.scenic, string.regexp.quoted.multi.scenic
+        foo      : source.scenic, string.regexp.quoted.multi.scenic
+(?#           : comment.regexp, punctuation.comment.begin.regexp, source.scenic, string.regexp.quoted.multi.scenic
+ type: int    : comment.regexp, source.scenic, string.regexp.quoted.multi.scenic
+)             : comment.regexp, punctuation.comment.end.regexp, source.scenic, string.regexp.quoted.multi.scenic
+"""           : punctuation.definition.string.end.scenic, source.scenic, string.regexp.quoted.multi.scenic

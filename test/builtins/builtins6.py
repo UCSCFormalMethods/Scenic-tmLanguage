@@ -4,10 +4,10 @@ exec(code_obj)
 
 
 
-exec          : meta.function-call.python, source.python, support.function.builtin.python
-(             : meta.function-call.python, punctuation.definition.arguments.begin.python, source.python
-)             : meta.function-call.python, punctuation.definition.arguments.end.python, source.python
-exec          : meta.function-call.python, source.python, support.function.builtin.python
-(             : meta.function-call.python, punctuation.definition.arguments.begin.python, source.python
-code_obj      : meta.function-call.arguments.python, meta.function-call.python, source.python
-)             : meta.function-call.python, punctuation.definition.arguments.end.python, source.python
+exec          : meta.function-call.scenic, source.scenic, support.function.builtin.scenic
+(             : meta.function-call.scenic, punctuation.definition.arguments.begin.scenic, source.scenic
+)             : meta.function-call.scenic, punctuation.definition.arguments.end.scenic, source.scenic
+exec          : meta.function-call.scenic, source.scenic, support.function.builtin.scenic
+(             : meta.function-call.scenic, punctuation.definition.arguments.begin.scenic, source.scenic
+code_obj      : meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic
+)             : meta.function-call.scenic, punctuation.definition.arguments.end.scenic, source.scenic

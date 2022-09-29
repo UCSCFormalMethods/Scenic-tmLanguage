@@ -5,29 +5,29 @@ yield from foo
 
 
 
-from          : keyword.control.import.python, source.python
-              : source.python
-...           : punctuation.separator.period.python, source.python
-              : source.python
-import        : keyword.control.import.python, source.python
-              : source.python
-foo           : source.python
-              : source.python
-as            : keyword.control.import.python, source.python
-              : source.python
-bar           : source.python
-raise         : keyword.control.flow.python, source.python
-              : source.python
-Exception     : meta.function-call.python, source.python, support.type.exception.python
-(             : meta.function-call.python, punctuation.definition.arguments.begin.python, source.python
-'             : meta.function-call.arguments.python, meta.function-call.python, punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-done          : meta.function-call.arguments.python, meta.function-call.python, source.python, string.quoted.single.python
-'             : meta.function-call.arguments.python, meta.function-call.python, punctuation.definition.string.end.python, source.python, string.quoted.single.python
-)             : meta.function-call.python, punctuation.definition.arguments.end.python, source.python
-              : source.python
-from          : keyword.control.flow.python, source.python
-              : source.python
-exc           : source.python
-yield from    : keyword.control.flow.python, source.python
-              : source.python
-foo           : source.python
+from          : keyword.control.import.scenic, source.scenic
+              : source.scenic
+...           : punctuation.separator.period.scenic, source.scenic
+              : source.scenic
+import        : keyword.control.import.scenic, source.scenic
+              : source.scenic
+foo           : source.scenic
+              : source.scenic
+as            : keyword.control.import.scenic, source.scenic
+              : source.scenic
+bar           : source.scenic
+raise         : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+Exception     : meta.function-call.scenic, source.scenic, support.type.exception.scenic
+(             : meta.function-call.scenic, punctuation.definition.arguments.begin.scenic, source.scenic
+'             : meta.function-call.arguments.scenic, meta.function-call.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+done          : meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic, string.quoted.single.scenic
+'             : meta.function-call.arguments.scenic, meta.function-call.scenic, punctuation.definition.string.end.scenic, source.scenic, string.quoted.single.scenic
+)             : meta.function-call.scenic, punctuation.definition.arguments.end.scenic, source.scenic
+              : source.scenic
+from          : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+exc           : source.scenic
+yield from    : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+foo           : source.scenic

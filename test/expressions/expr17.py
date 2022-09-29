@@ -8,22 +8,22 @@ a(--a)
 
 
 
-a             : source.python
-++            : invalid.illegal.operator.python, source.python
-b             : source.python
---            : invalid.illegal.operator.python, source.python
-++            : invalid.illegal.operator.python, source.python
-a             : source.python
---            : invalid.illegal.operator.python, source.python
-b             : source.python
-a             : source.python
-++            : invalid.illegal.operator.python, source.python
-c             : source.python
-c             : source.python
---            : invalid.illegal.operator.python, source.python
-b             : source.python
-a             : meta.function-call.generic.python, meta.function-call.python, source.python
-(             : meta.function-call.python, punctuation.definition.arguments.begin.python, source.python
---            : invalid.illegal.operator.python, meta.function-call.arguments.python, meta.function-call.python, source.python
-a             : meta.function-call.arguments.python, meta.function-call.python, source.python
-)             : meta.function-call.python, punctuation.definition.arguments.end.python, source.python
+a             : source.scenic
+++            : invalid.illegal.operator.scenic, source.scenic
+b             : source.scenic
+--            : invalid.illegal.operator.scenic, source.scenic
+++            : invalid.illegal.operator.scenic, source.scenic
+a             : source.scenic
+--            : invalid.illegal.operator.scenic, source.scenic
+b             : source.scenic
+a             : source.scenic
+++            : invalid.illegal.operator.scenic, source.scenic
+c             : source.scenic
+c             : source.scenic
+--            : invalid.illegal.operator.scenic, source.scenic
+b             : source.scenic
+a             : meta.function-call.generic.scenic, meta.function-call.scenic, source.scenic
+(             : meta.function-call.scenic, punctuation.definition.arguments.begin.scenic, source.scenic
+--            : invalid.illegal.operator.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic
+a             : meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic
+)             : meta.function-call.scenic, punctuation.definition.arguments.end.scenic, source.scenic

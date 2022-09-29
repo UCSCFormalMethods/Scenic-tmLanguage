@@ -17,94 +17,94 @@ class Foo:
 
 
 
-'''           : punctuation.definition.string.begin.python, source.python, string.quoted.docstring.multi.python
-TEST          : source.python, string.quoted.docstring.multi.python
-'''           : punctuation.definition.string.end.python, source.python, string.quoted.docstring.multi.python
-              : source.python
-class         : meta.class.python, source.python, storage.type.class.python
-              : meta.class.python, source.python
-Foo           : entity.name.type.class.python, meta.class.python, source.python
-:             : meta.class.python, punctuation.section.class.begin.python, source.python
-              : source.python
-#             : comment.line.number-sign.python, punctuation.definition.comment.python, source.python
- comment      : comment.line.number-sign.python, source.python
-              : source.python
-R             : source.python, storage.type.string.python, string.quoted.docstring.raw.multi.python
-'''           : punctuation.definition.string.begin.python, source.python, string.quoted.docstring.raw.multi.python
-TEST          : source.python, string.quoted.docstring.raw.multi.python
-'''           : punctuation.definition.string.end.python, source.python, string.quoted.docstring.raw.multi.python
-              : source.python
-              : meta.function.python, source.python
-def           : meta.function.python, source.python, storage.type.function.python
-              : meta.function.python, source.python
-foo           : entity.name.function.python, meta.function.python, source.python
-(             : meta.function.parameters.python, meta.function.python, punctuation.definition.parameters.begin.python, source.python
-self          : meta.function.parameters.python, meta.function.python, source.python, variable.parameter.function.language.python, variable.parameter.function.language.special.self.python
-,             : meta.function.parameters.python, meta.function.python, punctuation.separator.parameters.python, source.python
-              : meta.function.parameters.python, meta.function.python, source.python
-a             : meta.function.parameters.python, meta.function.python, source.python, variable.parameter.function.language.python
-:             : meta.function.parameters.python, meta.function.python, punctuation.separator.annotation.python, source.python
-'''           : meta.function.parameters.python, meta.function.python, punctuation.definition.string.begin.python, source.python, string.quoted.multi.python
-TEST          : meta.function.parameters.python, meta.function.python, source.python, string.quoted.multi.python
-'''           : meta.function.parameters.python, meta.function.python, punctuation.definition.string.end.python, source.python, string.quoted.multi.python
-)             : meta.function.parameters.python, meta.function.python, punctuation.definition.parameters.end.python, source.python
-              : meta.function.python, source.python
-->            : meta.function.python, punctuation.separator.annotation.result.python, source.python
-              : meta.function.python, source.python
-'''           : meta.function.python, punctuation.definition.string.begin.python, source.python, string.quoted.multi.python
-TEST          : meta.function.python, source.python, string.quoted.multi.python
-'''           : meta.function.python, punctuation.definition.string.end.python, source.python, string.quoted.multi.python
-:             : meta.function.python, punctuation.section.function.begin.python, source.python
-              : source.python
-#             : comment.line.number-sign.python, punctuation.definition.comment.python, source.python
-ok            : comment.line.number-sign.python, source.python
-              : source.python
-r             : source.python, storage.type.string.python, string.quoted.docstring.raw.multi.python
-'''           : punctuation.definition.string.begin.python, source.python, string.quoted.docstring.raw.multi.python
-TEST          : source.python, string.quoted.docstring.raw.multi.python
-'''           : punctuation.definition.string.end.python, source.python, string.quoted.docstring.raw.multi.python
-              : source.python
-with          : keyword.control.flow.python, source.python
-              : source.python
-bar           : source.python
-:             : punctuation.separator.colon.python, source.python
-              : source.python
-pass          : keyword.control.flow.python, source.python
-              : source.python
-              : meta.function.python, source.python
-def           : meta.function.python, source.python, storage.type.function.python
-              : meta.function.python, source.python
-bar           : entity.name.function.python, meta.function.python, source.python
-(             : meta.function.parameters.python, meta.function.python, punctuation.definition.parameters.begin.python, source.python
-self          : meta.function.parameters.python, meta.function.python, source.python, variable.parameter.function.language.python, variable.parameter.function.language.special.self.python
-,             : meta.function.parameters.python, meta.function.python, punctuation.separator.parameters.python, source.python
-              : meta.function.parameters.python, meta.function.python, source.python
-a             : meta.function.parameters.python, meta.function.python, source.python, variable.parameter.function.language.python
-:             : meta.function.parameters.python, meta.function.python, punctuation.separator.annotation.python, source.python
-'''           : meta.function.parameters.python, meta.function.python, punctuation.definition.string.begin.python, source.python, string.quoted.multi.python
-TEST          : meta.function.parameters.python, meta.function.python, source.python, string.quoted.multi.python
-'''           : meta.function.parameters.python, meta.function.python, punctuation.definition.string.end.python, source.python, string.quoted.multi.python
-)             : meta.function.parameters.python, meta.function.python, punctuation.definition.parameters.end.python, source.python
-              : meta.function.python, source.python
-->            : meta.function.python, punctuation.separator.annotation.result.python, source.python
-              : meta.function.python, source.python
-'''           : meta.function.python, punctuation.definition.string.begin.python, source.python, string.quoted.multi.python
-TEST          : meta.function.python, source.python, string.quoted.multi.python
-'''           : meta.function.python, punctuation.definition.string.end.python, source.python, string.quoted.multi.python
-:             : meta.function.python, punctuation.section.function.begin.python, source.python
-              : source.python
-pass          : keyword.control.flow.python, source.python
-              : source.python
-'''           : punctuation.definition.string.begin.python, source.python, string.quoted.docstring.multi.python
-TEST          : source.python, string.quoted.docstring.multi.python
-'''           : punctuation.definition.string.end.python, source.python, string.quoted.docstring.multi.python
-              : source.python
-#             : comment.line.number-sign.python, punctuation.definition.comment.python, source.python
- additional docstring : comment.line.number-sign.python, source.python
-              : source.python
-with          : keyword.control.flow.python, source.python
-              : source.python
-bar           : source.python
-:             : punctuation.separator.colon.python, source.python
-              : source.python
-pass          : keyword.control.flow.python, source.python
+'''           : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.docstring.multi.scenic
+TEST          : source.scenic, string.quoted.docstring.multi.scenic
+'''           : punctuation.definition.string.end.scenic, source.scenic, string.quoted.docstring.multi.scenic
+              : source.scenic
+class         : meta.class.scenic, source.scenic, storage.type.class.scenic
+              : meta.class.scenic, source.scenic
+Foo           : entity.name.type.class.scenic, meta.class.scenic, source.scenic
+:             : meta.class.scenic, punctuation.section.class.begin.scenic, source.scenic
+              : source.scenic
+#             : comment.line.number-sign.scenic, punctuation.definition.comment.scenic, source.scenic
+ comment      : comment.line.number-sign.scenic, source.scenic
+              : source.scenic
+R             : source.scenic, storage.type.string.scenic, string.quoted.docstring.raw.multi.scenic
+'''           : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.docstring.raw.multi.scenic
+TEST          : source.scenic, string.quoted.docstring.raw.multi.scenic
+'''           : punctuation.definition.string.end.scenic, source.scenic, string.quoted.docstring.raw.multi.scenic
+              : source.scenic
+              : meta.function.scenic, source.scenic
+def           : meta.function.scenic, source.scenic, storage.type.function.scenic
+              : meta.function.scenic, source.scenic
+foo           : entity.name.function.scenic, meta.function.scenic, source.scenic
+(             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.parameters.begin.scenic, source.scenic
+self          : meta.function.parameters.scenic, meta.function.scenic, source.scenic, variable.parameter.function.language.scenic, variable.parameter.function.language.special.self.scenic
+,             : meta.function.parameters.scenic, meta.function.scenic, punctuation.separator.parameters.scenic, source.scenic
+              : meta.function.parameters.scenic, meta.function.scenic, source.scenic
+a             : meta.function.parameters.scenic, meta.function.scenic, source.scenic, variable.parameter.function.language.scenic
+:             : meta.function.parameters.scenic, meta.function.scenic, punctuation.separator.annotation.scenic, source.scenic
+'''           : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.quoted.multi.scenic
+TEST          : meta.function.parameters.scenic, meta.function.scenic, source.scenic, string.quoted.multi.scenic
+'''           : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.string.end.scenic, source.scenic, string.quoted.multi.scenic
+)             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.parameters.end.scenic, source.scenic
+              : meta.function.scenic, source.scenic
+->            : meta.function.scenic, punctuation.separator.annotation.result.scenic, source.scenic
+              : meta.function.scenic, source.scenic
+'''           : meta.function.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.quoted.multi.scenic
+TEST          : meta.function.scenic, source.scenic, string.quoted.multi.scenic
+'''           : meta.function.scenic, punctuation.definition.string.end.scenic, source.scenic, string.quoted.multi.scenic
+:             : meta.function.scenic, punctuation.section.function.begin.scenic, source.scenic
+              : source.scenic
+#             : comment.line.number-sign.scenic, punctuation.definition.comment.scenic, source.scenic
+ok            : comment.line.number-sign.scenic, source.scenic
+              : source.scenic
+r             : source.scenic, storage.type.string.scenic, string.quoted.docstring.raw.multi.scenic
+'''           : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.docstring.raw.multi.scenic
+TEST          : source.scenic, string.quoted.docstring.raw.multi.scenic
+'''           : punctuation.definition.string.end.scenic, source.scenic, string.quoted.docstring.raw.multi.scenic
+              : source.scenic
+with          : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+bar           : source.scenic
+:             : punctuation.separator.colon.scenic, source.scenic
+              : source.scenic
+pass          : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+              : meta.function.scenic, source.scenic
+def           : meta.function.scenic, source.scenic, storage.type.function.scenic
+              : meta.function.scenic, source.scenic
+bar           : entity.name.function.scenic, meta.function.scenic, source.scenic
+(             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.parameters.begin.scenic, source.scenic
+self          : meta.function.parameters.scenic, meta.function.scenic, source.scenic, variable.parameter.function.language.scenic, variable.parameter.function.language.special.self.scenic
+,             : meta.function.parameters.scenic, meta.function.scenic, punctuation.separator.parameters.scenic, source.scenic
+              : meta.function.parameters.scenic, meta.function.scenic, source.scenic
+a             : meta.function.parameters.scenic, meta.function.scenic, source.scenic, variable.parameter.function.language.scenic
+:             : meta.function.parameters.scenic, meta.function.scenic, punctuation.separator.annotation.scenic, source.scenic
+'''           : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.quoted.multi.scenic
+TEST          : meta.function.parameters.scenic, meta.function.scenic, source.scenic, string.quoted.multi.scenic
+'''           : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.string.end.scenic, source.scenic, string.quoted.multi.scenic
+)             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.parameters.end.scenic, source.scenic
+              : meta.function.scenic, source.scenic
+->            : meta.function.scenic, punctuation.separator.annotation.result.scenic, source.scenic
+              : meta.function.scenic, source.scenic
+'''           : meta.function.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.quoted.multi.scenic
+TEST          : meta.function.scenic, source.scenic, string.quoted.multi.scenic
+'''           : meta.function.scenic, punctuation.definition.string.end.scenic, source.scenic, string.quoted.multi.scenic
+:             : meta.function.scenic, punctuation.section.function.begin.scenic, source.scenic
+              : source.scenic
+pass          : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+'''           : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.docstring.multi.scenic
+TEST          : source.scenic, string.quoted.docstring.multi.scenic
+'''           : punctuation.definition.string.end.scenic, source.scenic, string.quoted.docstring.multi.scenic
+              : source.scenic
+#             : comment.line.number-sign.scenic, punctuation.definition.comment.scenic, source.scenic
+ additional docstring : comment.line.number-sign.scenic, source.scenic
+              : source.scenic
+with          : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+bar           : source.scenic
+:             : punctuation.separator.colon.scenic, source.scenic
+              : source.scenic
+pass          : keyword.control.flow.scenic, source.scenic

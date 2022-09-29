@@ -4,18 +4,18 @@ a ^= d
 
 
 
-a             : source.python
-              : source.python
-@=            : keyword.operator.assignment.python, source.python
-              : source.python
-b             : source.python
-a             : source.python
-              : source.python
--=            : keyword.operator.assignment.python, source.python
-              : source.python
-c             : source.python
-a             : source.python
-              : source.python
-^=            : keyword.operator.assignment.python, source.python
-              : source.python
-d             : source.python
+a             : source.scenic
+              : source.scenic
+@=            : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+b             : source.scenic
+a             : source.scenic
+              : source.scenic
+-=            : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+c             : source.scenic
+a             : source.scenic
+              : source.scenic
+^=            : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+d             : source.scenic

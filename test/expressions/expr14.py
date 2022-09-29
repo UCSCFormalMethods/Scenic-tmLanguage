@@ -2,9 +2,9 @@ a <> b
 
 
 
-a             : source.python
-              : source.python
-<             : keyword.operator.comparison.python, source.python
->             : keyword.operator.comparison.python, source.python
-              : source.python
-b             : source.python
+a             : source.scenic
+              : source.scenic
+<             : keyword.operator.comparison.scenic, source.scenic
+>             : keyword.operator.comparison.scenic, source.scenic
+              : source.scenic
+b             : source.scenic

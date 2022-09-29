@@ -8,20 +8,20 @@ some.
 
 
 
-some          : source.python
-.             : meta.member.access.python, punctuation.separator.period.python, source.python
-              : meta.member.access.python, source.python
-True          : keyword.illegal.name.python, meta.member.access.python, source.python
-some          : source.python
-.             : meta.member.access.python, punctuation.separator.period.python, source.python
-              : meta.member.access.python, source.python
-\             : meta.member.access.python, punctuation.separator.continuation.line.python, source.python
-              : meta.member.access.python, source.python
-              : meta.member.access.python, source.python
-True          : keyword.illegal.name.python, meta.member.access.python, source.python
-True          : constant.language.python, source.python
-some          : source.python
-.             : meta.member.access.python, punctuation.separator.period.python, source.python
-              : meta.member.access.python, source.python
-              : meta.member.access.python, source.python
-True          : keyword.illegal.name.python, meta.member.access.python, source.python
+some          : source.scenic
+.             : meta.member.access.scenic, punctuation.separator.period.scenic, source.scenic
+              : meta.member.access.scenic, source.scenic
+True          : keyword.illegal.name.scenic, meta.member.access.scenic, source.scenic
+some          : source.scenic
+.             : meta.member.access.scenic, punctuation.separator.period.scenic, source.scenic
+              : meta.member.access.scenic, source.scenic
+\             : meta.member.access.scenic, punctuation.separator.continuation.line.scenic, source.scenic
+              : meta.member.access.scenic, source.scenic
+              : meta.member.access.scenic, source.scenic
+True          : keyword.illegal.name.scenic, meta.member.access.scenic, source.scenic
+True          : constant.language.scenic, source.scenic
+some          : source.scenic
+.             : meta.member.access.scenic, punctuation.separator.period.scenic, source.scenic
+              : meta.member.access.scenic, source.scenic
+              : meta.member.access.scenic, source.scenic
+True          : keyword.illegal.name.scenic, meta.member.access.scenic, source.scenic

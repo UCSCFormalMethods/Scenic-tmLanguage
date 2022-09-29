@@ -10,67 +10,67 @@ class Üa(Êa):
 
 
 
-class         : meta.class.python, source.python, storage.type.class.python
-              : meta.class.python, source.python
-Üa            : entity.name.type.class.python, meta.class.python, source.python
-(             : meta.class.inheritance.python, meta.class.python, punctuation.definition.inheritance.begin.python, source.python
-Êa            : entity.other.inherited-class.python, meta.class.inheritance.python, meta.class.python, source.python
-)             : meta.class.inheritance.python, meta.class.python, punctuation.definition.inheritance.end.python, source.python
-:             : meta.class.python, punctuation.section.class.begin.python, source.python
-              : source.python
-'             : punctuation.definition.string.begin.python, source.python, string.quoted.docstring.single.python
-Œ             : source.python, string.quoted.docstring.single.python
-\n            : constant.character.escape.python, source.python, string.quoted.docstring.single.python
-Ń             : source.python, string.quoted.docstring.single.python
-'             : punctuation.definition.string.end.python, source.python, string.quoted.docstring.single.python
-              : meta.function.decorator.python, source.python
-@             : entity.name.function.decorator.python, meta.function.decorator.python, punctuation.definition.decorator.python, source.python
-æaœ           : entity.name.function.decorator.python, meta.function.decorator.python, source.python
-              : meta.function.python, source.python
-def           : meta.function.python, source.python, storage.type.function.python
-              : meta.function.python, source.python
-ŌÏŒĘ          : entity.name.function.python, meta.function.python, source.python
-(             : meta.function.parameters.python, meta.function.python, punctuation.definition.parameters.begin.python, source.python
-self          : meta.function.parameters.python, meta.function.python, source.python, variable.parameter.function.language.python, variable.parameter.function.language.special.self.python
-,             : meta.function.parameters.python, meta.function.python, punctuation.separator.parameters.python, source.python
-              : meta.function.parameters.python, meta.function.python, source.python
-Ú             : meta.function.parameters.python, meta.function.python, source.python, variable.parameter.function.language.python
-=             : keyword.operator.python, meta.function.parameters.python, meta.function.python, source.python
-1             : constant.numeric.dec.python, meta.function.parameters.python, meta.function.python, source.python
-)             : meta.function.parameters.python, meta.function.python, punctuation.definition.parameters.end.python, source.python
-:             : meta.function.python, punctuation.section.function.begin.python, source.python
-              : source.python
-print         : meta.function-call.python, source.python, support.function.builtin.python
-(             : meta.function-call.python, punctuation.definition.arguments.begin.python, source.python
-'             : meta.function-call.arguments.python, meta.function-call.python, punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-превед 你好     : meta.function-call.arguments.python, meta.function-call.python, source.python, string.quoted.single.python
-'             : meta.function-call.arguments.python, meta.function-call.python, punctuation.definition.string.end.python, source.python, string.quoted.single.python
-)             : meta.function-call.python, punctuation.definition.arguments.end.python, source.python
-              : source.python
-return        : keyword.control.flow.python, source.python
-              : source.python
-Ù             : source.python
-              : source.python
-ÜBER          : constant.other.caps.python, source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-1             : constant.numeric.dec.python, source.python
-              : source.python
-你好            : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-lambda        : meta.lambda-function.python, source.python, storage.type.function.lambda.python
-:             : meta.lambda-function.python, punctuation.section.function.lambda.begin.python, source.python
-              : source.python
-你好            : source.python
-              : meta.function.python, source.python
-def           : meta.function.python, source.python, storage.type.function.python
-              : meta.function.python, source.python
-你好            : entity.name.function.python, meta.function.python, source.python
-(             : meta.function.parameters.python, meta.function.python, punctuation.definition.parameters.begin.python, source.python
-)             : meta.function.parameters.python, meta.function.python, punctuation.definition.parameters.end.python, source.python
-:             : meta.function.python, punctuation.section.function.begin.python, source.python
-              : source.python
-pass          : keyword.control.flow.python, source.python
+class         : meta.class.scenic, source.scenic, storage.type.class.scenic
+              : meta.class.scenic, source.scenic
+Üa            : entity.name.type.class.scenic, meta.class.scenic, source.scenic
+(             : meta.class.inheritance.scenic, meta.class.scenic, punctuation.definition.inheritance.begin.scenic, source.scenic
+Êa            : entity.other.inherited-class.scenic, meta.class.inheritance.scenic, meta.class.scenic, source.scenic
+)             : meta.class.inheritance.scenic, meta.class.scenic, punctuation.definition.inheritance.end.scenic, source.scenic
+:             : meta.class.scenic, punctuation.section.class.begin.scenic, source.scenic
+              : source.scenic
+'             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.docstring.single.scenic
+Œ             : source.scenic, string.quoted.docstring.single.scenic
+\n            : constant.character.escape.scenic, source.scenic, string.quoted.docstring.single.scenic
+Ń             : source.scenic, string.quoted.docstring.single.scenic
+'             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.docstring.single.scenic
+              : meta.function.decorator.scenic, source.scenic
+@             : entity.name.function.decorator.scenic, meta.function.decorator.scenic, punctuation.definition.decorator.scenic, source.scenic
+æaœ           : entity.name.function.decorator.scenic, meta.function.decorator.scenic, source.scenic
+              : meta.function.scenic, source.scenic
+def           : meta.function.scenic, source.scenic, storage.type.function.scenic
+              : meta.function.scenic, source.scenic
+ŌÏŒĘ          : entity.name.function.scenic, meta.function.scenic, source.scenic
+(             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.parameters.begin.scenic, source.scenic
+self          : meta.function.parameters.scenic, meta.function.scenic, source.scenic, variable.parameter.function.language.scenic, variable.parameter.function.language.special.self.scenic
+,             : meta.function.parameters.scenic, meta.function.scenic, punctuation.separator.parameters.scenic, source.scenic
+              : meta.function.parameters.scenic, meta.function.scenic, source.scenic
+Ú             : meta.function.parameters.scenic, meta.function.scenic, source.scenic, variable.parameter.function.language.scenic
+=             : keyword.operator.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+1             : constant.numeric.dec.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+)             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.parameters.end.scenic, source.scenic
+:             : meta.function.scenic, punctuation.section.function.begin.scenic, source.scenic
+              : source.scenic
+print         : meta.function-call.scenic, source.scenic, support.function.builtin.scenic
+(             : meta.function-call.scenic, punctuation.definition.arguments.begin.scenic, source.scenic
+'             : meta.function-call.arguments.scenic, meta.function-call.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+превед 你好     : meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic, string.quoted.single.scenic
+'             : meta.function-call.arguments.scenic, meta.function-call.scenic, punctuation.definition.string.end.scenic, source.scenic, string.quoted.single.scenic
+)             : meta.function-call.scenic, punctuation.definition.arguments.end.scenic, source.scenic
+              : source.scenic
+return        : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+Ù             : source.scenic
+              : source.scenic
+ÜBER          : constant.other.caps.scenic, source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+1             : constant.numeric.dec.scenic, source.scenic
+              : source.scenic
+你好            : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+lambda        : meta.lambda-function.scenic, source.scenic, storage.type.function.lambda.scenic
+:             : meta.lambda-function.scenic, punctuation.section.function.lambda.begin.scenic, source.scenic
+              : source.scenic
+你好            : source.scenic
+              : meta.function.scenic, source.scenic
+def           : meta.function.scenic, source.scenic, storage.type.function.scenic
+              : meta.function.scenic, source.scenic
+你好            : entity.name.function.scenic, meta.function.scenic, source.scenic
+(             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.parameters.begin.scenic, source.scenic
+)             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.parameters.end.scenic, source.scenic
+:             : meta.function.scenic, punctuation.section.function.begin.scenic, source.scenic
+              : source.scenic
+pass          : keyword.control.flow.scenic, source.scenic

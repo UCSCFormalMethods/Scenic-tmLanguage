@@ -3,8 +3,8 @@ f'abc \ efg'
 
 
 
-f             : meta.fstring.python, source.python, storage.type.string.python, string.interpolated.python, string.quoted.single.python
-'             : meta.fstring.python, punctuation.definition.string.begin.python, source.python, string.interpolated.python, string.quoted.single.python
-abc           : meta.fstring.python, source.python, string.interpolated.python, string.quoted.single.python
-\ efg         : meta.fstring.python, source.python, string.interpolated.python, string.quoted.single.python
-'             : meta.fstring.python, punctuation.definition.string.end.python, source.python, string.interpolated.python, string.quoted.single.python
+f             : meta.fstring.scenic, source.scenic, storage.type.string.scenic, string.interpolated.scenic, string.quoted.single.scenic
+'             : meta.fstring.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic
+abc           : meta.fstring.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic
+\ efg         : meta.fstring.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic
+'             : meta.fstring.scenic, punctuation.definition.string.end.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic

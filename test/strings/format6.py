@@ -5,32 +5,32 @@ a = 'qqq{0:{widt' + 'h}{base}}www'
 
 
 
-a             : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-'             : punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-qqqwww        : source.python, string.quoted.single.python
-'             : punctuation.definition.string.end.python, source.python, string.quoted.single.python
-a             : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-'             : punctuation.definition.string.begin.python, source.python, string.quoted.single.python
- {            : source.python, string.quoted.single.python
-'             : punctuation.definition.string.end.python, source.python, string.quoted.single.python
-a             : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-'             : punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-qqq{0:{widt   : source.python, string.quoted.single.python
-'             : punctuation.definition.string.end.python, source.python, string.quoted.single.python
-              : source.python
-+             : keyword.operator.arithmetic.python, source.python
-              : source.python
-'             : punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-h}            : source.python, string.quoted.single.python
-{base}        : constant.character.format.placeholder.other.python, meta.format.brace.python, source.python, string.quoted.single.python
-}www          : source.python, string.quoted.single.python
-'             : punctuation.definition.string.end.python, source.python, string.quoted.single.python
+a             : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+'             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+qqqwww        : source.scenic, string.quoted.single.scenic
+'             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.single.scenic
+a             : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+'             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+ {            : source.scenic, string.quoted.single.scenic
+'             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.single.scenic
+a             : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+'             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+qqq{0:{widt   : source.scenic, string.quoted.single.scenic
+'             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.single.scenic
+              : source.scenic
++             : keyword.operator.arithmetic.scenic, source.scenic
+              : source.scenic
+'             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+h}            : source.scenic, string.quoted.single.scenic
+{base}        : constant.character.format.placeholder.other.scenic, meta.format.brace.scenic, source.scenic, string.quoted.single.scenic
+}www          : source.scenic, string.quoted.single.scenic
+'             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.single.scenic

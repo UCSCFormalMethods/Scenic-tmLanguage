@@ -3,18 +3,18 @@ a.True = b.False = d.None
 
 
 
-a             : source.python
-.             : meta.member.access.python, punctuation.separator.period.python, source.python
-True          : keyword.illegal.name.python, meta.member.access.python, source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-b             : source.python
-.             : meta.member.access.python, punctuation.separator.period.python, source.python
-False         : keyword.illegal.name.python, meta.member.access.python, source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-d             : source.python
-.             : meta.member.access.python, punctuation.separator.period.python, source.python
-None          : keyword.illegal.name.python, meta.member.access.python, source.python
+a             : source.scenic
+.             : meta.member.access.scenic, punctuation.separator.period.scenic, source.scenic
+True          : keyword.illegal.name.scenic, meta.member.access.scenic, source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+b             : source.scenic
+.             : meta.member.access.scenic, punctuation.separator.period.scenic, source.scenic
+False         : keyword.illegal.name.scenic, meta.member.access.scenic, source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+d             : source.scenic
+.             : meta.member.access.scenic, punctuation.separator.period.scenic, source.scenic
+None          : keyword.illegal.name.scenic, meta.member.access.scenic, source.scenic

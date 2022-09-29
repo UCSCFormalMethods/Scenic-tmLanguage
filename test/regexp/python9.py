@@ -2,21 +2,21 @@ a = r'foo[^]'
 a = r'foo[]'
 
 
-a             : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-r             : source.python, storage.type.string.python, string.regexp.quoted.single.python
-'             : punctuation.definition.string.begin.python, source.python, string.regexp.quoted.single.python
-foo           : source.python, string.regexp.quoted.single.python
-[^]           : source.python, string.regexp.quoted.single.python
-'             : punctuation.definition.string.end.python, source.python, string.regexp.quoted.single.python
-a             : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-r             : source.python, storage.type.string.python, string.regexp.quoted.single.python
-'             : punctuation.definition.string.begin.python, source.python, string.regexp.quoted.single.python
-foo           : source.python, string.regexp.quoted.single.python
-[]            : source.python, string.regexp.quoted.single.python
-'             : punctuation.definition.string.end.python, source.python, string.regexp.quoted.single.python
+a             : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+r             : source.scenic, storage.type.string.scenic, string.regexp.quoted.single.scenic
+'             : punctuation.definition.string.begin.scenic, source.scenic, string.regexp.quoted.single.scenic
+foo           : source.scenic, string.regexp.quoted.single.scenic
+[^]           : source.scenic, string.regexp.quoted.single.scenic
+'             : punctuation.definition.string.end.scenic, source.scenic, string.regexp.quoted.single.scenic
+a             : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+r             : source.scenic, storage.type.string.scenic, string.regexp.quoted.single.scenic
+'             : punctuation.definition.string.begin.scenic, source.scenic, string.regexp.quoted.single.scenic
+foo           : source.scenic, string.regexp.quoted.single.scenic
+[]            : source.scenic, string.regexp.quoted.single.scenic
+'             : punctuation.definition.string.end.scenic, source.scenic, string.regexp.quoted.single.scenic

@@ -6,8 +6,8 @@
 
 
 
-"""           : punctuation.definition.string.begin.python, source.python, string.quoted.docstring.multi.python
-    def foo(): : source.python, string.quoted.docstring.multi.python
-        ...   : source.python, string.quoted.docstring.multi.python
-        >>>   : source.python, string.quoted.docstring.multi.python
-"""           : punctuation.definition.string.end.python, source.python, string.quoted.docstring.multi.python
+"""           : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.docstring.multi.scenic
+    def foo(): : source.scenic, string.quoted.docstring.multi.scenic
+        ...   : source.scenic, string.quoted.docstring.multi.scenic
+        >>>   : source.scenic, string.quoted.docstring.multi.scenic
+"""           : punctuation.definition.string.end.scenic, source.scenic, string.quoted.docstring.multi.scenic

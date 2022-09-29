@@ -12,45 +12,45 @@ def baz(): pass
 
 
 
-#             : comment.line.number-sign.python, punctuation.definition.comment.python, source.python
- this is testing trailing whitespace after the decorator : comment.line.number-sign.python, source.python
-#             : comment.line.number-sign.python, punctuation.definition.comment.python, source.python
- DO NOT DELETE TRAILING WHITESTAPCE IN THIS FILE : comment.line.number-sign.python, source.python
-@             : entity.name.function.decorator.python, meta.function.decorator.python, punctuation.definition.decorator.python, source.python
-foo           : entity.name.function.decorator.python, meta.function.decorator.python, source.python
-              : meta.function.decorator.python, source.python
-@             : entity.name.function.decorator.python, meta.function.decorator.python, punctuation.definition.decorator.python, source.python
-foo           : entity.name.function.decorator.python, meta.function.decorator.python, source.python
-(             : meta.function.decorator.python, punctuation.definition.arguments.begin.python, source.python
-)             : meta.function.decorator.python, punctuation.definition.arguments.end.python, source.python
-              : source.python
-@             : entity.name.function.decorator.python, meta.function.decorator.python, punctuation.definition.decorator.python, source.python
-bar           : entity.name.function.decorator.python, meta.function.decorator.python, source.python
-	             : meta.function.decorator.python, source.python
-@             : entity.name.function.decorator.python, meta.function.decorator.python, punctuation.definition.decorator.python, source.python
-bar           : entity.name.function.decorator.python, meta.function.decorator.python, source.python
-(             : meta.function.decorator.python, punctuation.definition.arguments.begin.python, source.python
-)             : meta.function.decorator.python, punctuation.definition.arguments.end.python, source.python
-	             : source.python
-@             : entity.name.function.decorator.python, meta.function.decorator.python, punctuation.definition.decorator.python, source.python
-bar           : entity.name.function.decorator.python, meta.function.decorator.python, source.python
-(             : meta.function.decorator.python, punctuation.definition.arguments.begin.python, source.python
-)             : meta.function.decorator.python, punctuation.definition.arguments.end.python, source.python
- illegal      : invalid.illegal.decorator.python, meta.function.decorator.python, source.python
-              : source.python
-#             : comment.line.number-sign.python, punctuation.definition.comment.python, source.python
- legal        : comment.line.number-sign.python, source.python
-@             : entity.name.function.decorator.python, meta.function.decorator.python, punctuation.definition.decorator.python, source.python
-bar           : entity.name.function.decorator.python, meta.function.decorator.python, source.python
-(             : meta.function.decorator.python, punctuation.definition.arguments.begin.python, source.python
-)             : meta.function.decorator.python, punctuation.definition.arguments.end.python, source.python
-:             : invalid.illegal.decorator.python, meta.function.decorator.python, source.python
-              : source.python
-def           : meta.function.python, source.python, storage.type.function.python
-              : meta.function.python, source.python
-baz           : entity.name.function.python, meta.function.python, source.python
-(             : meta.function.parameters.python, meta.function.python, punctuation.definition.parameters.begin.python, source.python
-)             : meta.function.parameters.python, meta.function.python, punctuation.definition.parameters.end.python, source.python
-:             : meta.function.python, punctuation.section.function.begin.python, source.python
-              : source.python
-pass          : keyword.control.flow.python, source.python
+#             : comment.line.number-sign.scenic, punctuation.definition.comment.scenic, source.scenic
+ this is testing trailing whitespace after the decorator : comment.line.number-sign.scenic, source.scenic
+#             : comment.line.number-sign.scenic, punctuation.definition.comment.scenic, source.scenic
+ DO NOT DELETE TRAILING WHITESTAPCE IN THIS FILE : comment.line.number-sign.scenic, source.scenic
+@             : entity.name.function.decorator.scenic, meta.function.decorator.scenic, punctuation.definition.decorator.scenic, source.scenic
+foo           : entity.name.function.decorator.scenic, meta.function.decorator.scenic, source.scenic
+              : meta.function.decorator.scenic, source.scenic
+@             : entity.name.function.decorator.scenic, meta.function.decorator.scenic, punctuation.definition.decorator.scenic, source.scenic
+foo           : entity.name.function.decorator.scenic, meta.function.decorator.scenic, source.scenic
+(             : meta.function.decorator.scenic, punctuation.definition.arguments.begin.scenic, source.scenic
+)             : meta.function.decorator.scenic, punctuation.definition.arguments.end.scenic, source.scenic
+              : source.scenic
+@             : entity.name.function.decorator.scenic, meta.function.decorator.scenic, punctuation.definition.decorator.scenic, source.scenic
+bar           : entity.name.function.decorator.scenic, meta.function.decorator.scenic, source.scenic
+	             : meta.function.decorator.scenic, source.scenic
+@             : entity.name.function.decorator.scenic, meta.function.decorator.scenic, punctuation.definition.decorator.scenic, source.scenic
+bar           : entity.name.function.decorator.scenic, meta.function.decorator.scenic, source.scenic
+(             : meta.function.decorator.scenic, punctuation.definition.arguments.begin.scenic, source.scenic
+)             : meta.function.decorator.scenic, punctuation.definition.arguments.end.scenic, source.scenic
+	             : source.scenic
+@             : entity.name.function.decorator.scenic, meta.function.decorator.scenic, punctuation.definition.decorator.scenic, source.scenic
+bar           : entity.name.function.decorator.scenic, meta.function.decorator.scenic, source.scenic
+(             : meta.function.decorator.scenic, punctuation.definition.arguments.begin.scenic, source.scenic
+)             : meta.function.decorator.scenic, punctuation.definition.arguments.end.scenic, source.scenic
+ illegal      : invalid.illegal.decorator.scenic, meta.function.decorator.scenic, source.scenic
+              : source.scenic
+#             : comment.line.number-sign.scenic, punctuation.definition.comment.scenic, source.scenic
+ legal        : comment.line.number-sign.scenic, source.scenic
+@             : entity.name.function.decorator.scenic, meta.function.decorator.scenic, punctuation.definition.decorator.scenic, source.scenic
+bar           : entity.name.function.decorator.scenic, meta.function.decorator.scenic, source.scenic
+(             : meta.function.decorator.scenic, punctuation.definition.arguments.begin.scenic, source.scenic
+)             : meta.function.decorator.scenic, punctuation.definition.arguments.end.scenic, source.scenic
+:             : invalid.illegal.decorator.scenic, meta.function.decorator.scenic, source.scenic
+              : source.scenic
+def           : meta.function.scenic, source.scenic, storage.type.function.scenic
+              : meta.function.scenic, source.scenic
+baz           : entity.name.function.scenic, meta.function.scenic, source.scenic
+(             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.parameters.begin.scenic, source.scenic
+)             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.parameters.end.scenic, source.scenic
+:             : meta.function.scenic, punctuation.section.function.begin.scenic, source.scenic
+              : source.scenic
+pass          : keyword.control.flow.scenic, source.scenic

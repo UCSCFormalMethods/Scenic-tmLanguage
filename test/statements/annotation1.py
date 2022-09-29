@@ -4,25 +4,25 @@ some_list: List[int] = []  # variable with initial value
 
 
 
-some_number   : source.python
-:             : punctuation.separator.colon.python, source.python
-              : source.python
-int           : source.python, support.type.python
-              : source.python
-#             : comment.line.number-sign.python, punctuation.definition.comment.python, source.python
- variable without initial value : comment.line.number-sign.python, source.python
-some_list     : source.python
-:             : punctuation.separator.colon.python, source.python
-              : source.python
-List          : meta.indexed-name.python, meta.item-access.python, source.python
-[             : meta.item-access.python, punctuation.definition.arguments.begin.python, source.python
-int           : meta.item-access.arguments.python, meta.item-access.python, source.python, support.type.python
-]             : meta.item-access.python, punctuation.definition.arguments.end.python, source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-[             : punctuation.definition.list.begin.python, source.python
-]             : punctuation.definition.list.end.python, source.python
-              : source.python
-#             : comment.line.number-sign.python, punctuation.definition.comment.python, source.python
- variable with initial value : comment.line.number-sign.python, source.python
+some_number   : source.scenic
+:             : punctuation.separator.colon.scenic, source.scenic
+              : source.scenic
+int           : source.scenic, support.type.scenic
+              : source.scenic
+#             : comment.line.number-sign.scenic, punctuation.definition.comment.scenic, source.scenic
+ variable without initial value : comment.line.number-sign.scenic, source.scenic
+some_list     : source.scenic
+:             : punctuation.separator.colon.scenic, source.scenic
+              : source.scenic
+List          : meta.indexed-name.scenic, meta.item-access.scenic, source.scenic
+[             : meta.item-access.scenic, punctuation.definition.arguments.begin.scenic, source.scenic
+int           : meta.item-access.arguments.scenic, meta.item-access.scenic, source.scenic, support.type.scenic
+]             : meta.item-access.scenic, punctuation.definition.arguments.end.scenic, source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+[             : punctuation.definition.list.begin.scenic, source.scenic
+]             : punctuation.definition.list.end.scenic, source.scenic
+              : source.scenic
+#             : comment.line.number-sign.scenic, punctuation.definition.comment.scenic, source.scenic
+ variable with initial value : comment.line.number-sign.scenic, source.scenic

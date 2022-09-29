@@ -3,28 +3,28 @@ import time as ham, datetime
 
 
 
-from          : keyword.control.import.python, source.python
-              : source.python
-...           : punctuation.separator.period.python, source.python
-foo           : source.python
-              : source.python
-import        : keyword.control.import.python, source.python
-              : source.python
-bar           : source.python
-              : source.python
-as            : keyword.control.import.python, source.python
-              : source.python
-spam          : source.python
-,             : punctuation.separator.element.python, source.python
-              : source.python
-baz           : source.python
-import        : keyword.control.import.python, source.python
-              : source.python
-time          : source.python
-              : source.python
-as            : keyword.control.import.python, source.python
-              : source.python
-ham           : source.python
-,             : punctuation.separator.element.python, source.python
-              : source.python
-datetime      : source.python
+from          : keyword.control.import.scenic, source.scenic
+              : source.scenic
+...           : punctuation.separator.period.scenic, source.scenic
+foo           : source.scenic
+              : source.scenic
+import        : keyword.control.import.scenic, source.scenic
+              : source.scenic
+bar           : source.scenic
+              : source.scenic
+as            : keyword.control.import.scenic, source.scenic
+              : source.scenic
+spam          : source.scenic
+,             : punctuation.separator.element.scenic, source.scenic
+              : source.scenic
+baz           : source.scenic
+import        : keyword.control.import.scenic, source.scenic
+              : source.scenic
+time          : source.scenic
+              : source.scenic
+as            : keyword.control.import.scenic, source.scenic
+              : source.scenic
+ham           : source.scenic
+,             : punctuation.separator.element.scenic, source.scenic
+              : source.scenic
+datetime      : source.scenic

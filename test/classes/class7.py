@@ -3,11 +3,11 @@ class class:
 # doesn't break
 
 
-class         : meta.class.python, source.python, storage.type.class.python
-              : meta.class.python, source.python
-class         : keyword.control.flow.python, meta.class.python, source.python
-:             : meta.class.python, punctuation.section.class.begin.python, source.python
-              : source.python
-pass          : keyword.control.flow.python, source.python
-#             : comment.line.number-sign.python, punctuation.definition.comment.python, source.python
- doesn't break : comment.line.number-sign.python, source.python
+class         : meta.class.scenic, source.scenic, storage.type.class.scenic
+              : meta.class.scenic, source.scenic
+class         : keyword.control.flow.scenic, meta.class.scenic, source.scenic
+:             : meta.class.scenic, punctuation.section.class.begin.scenic, source.scenic
+              : source.scenic
+pass          : keyword.control.flow.scenic, source.scenic
+#             : comment.line.number-sign.scenic, punctuation.definition.comment.scenic, source.scenic
+ doesn't break : comment.line.number-sign.scenic, source.scenic

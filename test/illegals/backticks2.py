@@ -4,15 +4,15 @@ print a
 
 
 
-a             : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-`             : invalid.deprecated.backtick.python, source.python
-\             : invalid.deprecated.backtick.python, punctuation.separator.continuation.line.python, source.python
-              : invalid.deprecated.backtick.python, source.python
-123           : constant.numeric.dec.python, invalid.deprecated.backtick.python, source.python
-`             : invalid.deprecated.backtick.python, source.python
-print         : source.python, support.function.builtin.python
-              : source.python
-a             : source.python
+a             : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+`             : invalid.deprecated.backtick.scenic, source.scenic
+\             : invalid.deprecated.backtick.scenic, punctuation.separator.continuation.line.scenic, source.scenic
+              : invalid.deprecated.backtick.scenic, source.scenic
+123           : constant.numeric.dec.scenic, invalid.deprecated.backtick.scenic, source.scenic
+`             : invalid.deprecated.backtick.scenic, source.scenic
+print         : source.scenic, support.function.builtin.scenic
+              : source.scenic
+a             : source.scenic

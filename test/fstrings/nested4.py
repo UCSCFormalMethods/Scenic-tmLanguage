@@ -5,36 +5,36 @@ def foo(): pass
 
 
 
-f             : meta.fstring.python, source.python, storage.type.string.python, string.interpolated.python, string.quoted.multi.python
-"""           : meta.fstring.python, punctuation.definition.string.begin.python, source.python, string.interpolated.python, string.quoted.multi.python
-result:       : meta.fstring.python, source.python, string.interpolated.python, string.quoted.multi.python
-{             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-value         : meta.fstring.python, source.python
-:             : meta.fstring.python, source.python, storage.type.format.python
-{             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-60            : constant.numeric.dec.python, meta.fstring.python, source.python
-}             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-.             : meta.fstring.python, source.python
-{             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-16            : constant.numeric.dec.python, meta.fstring.python, source.python
-!s            : meta.fstring.python, source.python, storage.type.format.python
-:2            : meta.fstring.python, source.python, storage.type.format.python
-}             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-{             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-'             : meta.fstring.python, punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-qwerty        : meta.fstring.python, source.python, string.quoted.single.python
-'             : meta.fstring.python, punctuation.definition.string.end.python, source.python, string.quoted.single.python
-[             : meta.fstring.python, punctuation.definition.list.begin.python, source.python
-2             : constant.numeric.dec.python, meta.fstring.python, source.python
-]             : meta.fstring.python, punctuation.definition.list.end.python, source.python
-}             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-}             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-"""           : meta.fstring.python, punctuation.definition.string.end.python, source.python, string.interpolated.python, string.quoted.multi.python
-def           : meta.function.python, source.python, storage.type.function.python
-              : meta.function.python, source.python
-foo           : entity.name.function.python, meta.function.python, source.python
-(             : meta.function.parameters.python, meta.function.python, punctuation.definition.parameters.begin.python, source.python
-)             : meta.function.parameters.python, meta.function.python, punctuation.definition.parameters.end.python, source.python
-:             : meta.function.python, punctuation.section.function.begin.python, source.python
-              : source.python
-pass          : keyword.control.flow.python, source.python
+f             : meta.fstring.scenic, source.scenic, storage.type.string.scenic, string.interpolated.scenic, string.quoted.multi.scenic
+"""           : meta.fstring.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.interpolated.scenic, string.quoted.multi.scenic
+result:       : meta.fstring.scenic, source.scenic, string.interpolated.scenic, string.quoted.multi.scenic
+{             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+value         : meta.fstring.scenic, source.scenic
+:             : meta.fstring.scenic, source.scenic, storage.type.format.scenic
+{             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+60            : constant.numeric.dec.scenic, meta.fstring.scenic, source.scenic
+}             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+.             : meta.fstring.scenic, source.scenic
+{             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+16            : constant.numeric.dec.scenic, meta.fstring.scenic, source.scenic
+!s            : meta.fstring.scenic, source.scenic, storage.type.format.scenic
+:2            : meta.fstring.scenic, source.scenic, storage.type.format.scenic
+}             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+{             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+'             : meta.fstring.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+qwerty        : meta.fstring.scenic, source.scenic, string.quoted.single.scenic
+'             : meta.fstring.scenic, punctuation.definition.string.end.scenic, source.scenic, string.quoted.single.scenic
+[             : meta.fstring.scenic, punctuation.definition.list.begin.scenic, source.scenic
+2             : constant.numeric.dec.scenic, meta.fstring.scenic, source.scenic
+]             : meta.fstring.scenic, punctuation.definition.list.end.scenic, source.scenic
+}             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+}             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+"""           : meta.fstring.scenic, punctuation.definition.string.end.scenic, source.scenic, string.interpolated.scenic, string.quoted.multi.scenic
+def           : meta.function.scenic, source.scenic, storage.type.function.scenic
+              : meta.function.scenic, source.scenic
+foo           : entity.name.function.scenic, meta.function.scenic, source.scenic
+(             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.parameters.begin.scenic, source.scenic
+)             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.parameters.end.scenic, source.scenic
+:             : meta.function.scenic, punctuation.section.function.begin.scenic, source.scenic
+              : source.scenic
+pass          : keyword.control.flow.scenic, source.scenic

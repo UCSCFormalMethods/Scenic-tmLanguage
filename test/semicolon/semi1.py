@@ -4,11 +4,11 @@ a=1; b
 
 
 
-a             : source.python
-;             : invalid.deprecated.semicolon.python, source.python
-;             : invalid.deprecated.semicolon.python, source.python
-a             : source.python
-=             : keyword.operator.assignment.python, source.python
-1             : constant.numeric.dec.python, source.python
-;             : source.python
-b             : source.python
+a             : source.scenic
+;             : invalid.deprecated.semicolon.scenic, source.scenic
+;             : invalid.deprecated.semicolon.scenic, source.scenic
+a             : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+1             : constant.numeric.dec.scenic, source.scenic
+;             : source.scenic
+b             : source.scenic

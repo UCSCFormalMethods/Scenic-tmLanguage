@@ -2,18 +2,18 @@ a = b'%b' % b'foo'
 
 
 
-a             : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-b             : source.python, storage.type.string.python, string.quoted.binary.single.python
-'             : punctuation.definition.string.begin.python, source.python, string.quoted.binary.single.python
-%b            : constant.character.format.placeholder.other.python, meta.format.percent.python, source.python, string.quoted.binary.single.python
-'             : punctuation.definition.string.end.python, source.python, string.quoted.binary.single.python
-              : source.python
-%             : keyword.operator.arithmetic.python, source.python
-              : source.python
-b             : source.python, storage.type.string.python, string.quoted.binary.single.python
-'             : punctuation.definition.string.begin.python, source.python, string.quoted.binary.single.python
-foo           : source.python, string.quoted.binary.single.python
-'             : punctuation.definition.string.end.python, source.python, string.quoted.binary.single.python
+a             : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+b             : source.scenic, storage.type.string.scenic, string.quoted.binary.single.scenic
+'             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.binary.single.scenic
+%b            : constant.character.format.placeholder.other.scenic, meta.format.percent.scenic, source.scenic, string.quoted.binary.single.scenic
+'             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.binary.single.scenic
+              : source.scenic
+%             : keyword.operator.arithmetic.scenic, source.scenic
+              : source.scenic
+b             : source.scenic, storage.type.string.scenic, string.quoted.binary.single.scenic
+'             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.binary.single.scenic
+foo           : source.scenic, string.quoted.binary.single.scenic
+'             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.binary.single.scenic

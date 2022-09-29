@@ -1,26 +1,26 @@
 ---
 fstring-fnorm-quoted-${line}-line:
-  name: meta.fstring.python
+  name: meta.fstring.scenic
   begin: (\b[fF])([bBuU])?(${marker})
   end: (\3)${guard}
   beginCaptures:
-    # "storage.type.string.python" class should be the first one,
+    # "storage.type.string.scenic" class should be the first one,
     # because Atom, VSCode and GitHub don't understand scopes
     # separated by whitespace, and simply use the first one
     # of them.  Highlighting 'f' as 'storage.type' is more
     # important for us than having other scopes.
-    '1': {name: storage.type.string.python
-                string.quoted.${line}.python
-                string.interpolated.python}
-    '2': {name: invalid.illegal.prefix.python}
-    '3': {name: string.quoted.${line}.python
-                string.interpolated.python
-                punctuation.definition.string.begin.python}
+    '1': {name: storage.type.string.scenic
+                string.quoted.${line}.scenic
+                string.interpolated.scenic}
+    '2': {name: invalid.illegal.prefix.scenic}
+    '3': {name: string.quoted.${line}.scenic
+                string.interpolated.scenic
+                punctuation.definition.string.begin.scenic}
   endCaptures:
-    '1': {name: string.quoted.${line}.python
-                string.interpolated.python
-                punctuation.definition.string.end.python}
-    '2': {name: invalid.illegal.newline.python}
+    '1': {name: string.quoted.${line}.scenic
+                string.interpolated.scenic
+                punctuation.definition.string.end.scenic}
+    '2': {name: invalid.illegal.newline.scenic}
   patterns:
     - include: '#fstring-guts'
     - include: '#fstring-illegal-${line}-brace'
@@ -28,21 +28,21 @@ fstring-fnorm-quoted-${line}-line:
     - include: '#fstring-${line}-core'
 
 fstring-normf-quoted-${line}-line:
-  name: meta.fstring.python
+  name: meta.fstring.scenic
   begin: (\b[bBuU])([fF])(${marker})
   end: (\3)${guard}
   beginCaptures:
-    '1': {name: invalid.illegal.prefix.python}
-    '2': {name: storage.type.string.python
-                string.quoted.${line}.python
-                string.interpolated.python}
-    '3': {name: string.quoted.${line}.python
-                punctuation.definition.string.begin.python}
+    '1': {name: invalid.illegal.prefix.scenic}
+    '2': {name: storage.type.string.scenic
+                string.quoted.${line}.scenic
+                string.interpolated.scenic}
+    '3': {name: string.quoted.${line}.scenic
+                punctuation.definition.string.begin.scenic}
   endCaptures:
-    '1': {name: string.quoted.${line}.python
-                string.interpolated.python
-                punctuation.definition.string.end.python}
-    '2': {name: invalid.illegal.newline.python}
+    '1': {name: string.quoted.${line}.scenic
+                string.interpolated.scenic
+                punctuation.definition.string.end.scenic}
+    '2': {name: invalid.illegal.newline.scenic}
   patterns:
     - include: '#fstring-guts'
     - include: '#fstring-illegal-${line}-brace'
@@ -50,20 +50,20 @@ fstring-normf-quoted-${line}-line:
     - include: '#fstring-${line}-core'
 
 fstring-raw-quoted-${line}-line:
-  name: meta.fstring.python
+  name: meta.fstring.scenic
   begin: (\b(?:[R][fF]|[fF][R]))(${marker})
   end: (\2)${guard}
   beginCaptures:
-    '1': {name: storage.type.string.python
-                string.quoted.raw.${line}.python
-                string.interpolated.python}
-    '2': {name: string.quoted.raw.${line}.python
-                punctuation.definition.string.begin.python}
+    '1': {name: storage.type.string.scenic
+                string.quoted.raw.${line}.scenic
+                string.interpolated.scenic}
+    '2': {name: string.quoted.raw.${line}.scenic
+                punctuation.definition.string.begin.scenic}
   endCaptures:
-    '1': {name: string.quoted.raw.${line}.python
-                string.interpolated.python
-                punctuation.definition.string.end.python}
-    '2': {name: invalid.illegal.newline.python}
+    '1': {name: string.quoted.raw.${line}.scenic
+                string.interpolated.scenic
+                punctuation.definition.string.end.scenic}
+    '2': {name: invalid.illegal.newline.scenic}
   patterns:
     - include: '#fstring-raw-guts'
     - include: '#fstring-illegal-${line}-brace'
@@ -71,7 +71,7 @@ fstring-raw-quoted-${line}-line:
     - include: '#fstring-raw-${line}-core'
 
 fstring-${line}-core:
-  name: string.quoted.${line}.python string.interpolated.python
+  name: string.quoted.${line}.scenic string.interpolated.scenic
   match: |
     (?x)
       (.+?)
@@ -91,7 +91,7 @@ fstring-${line}-core:
       | \n
 
 fstring-raw-${line}-core:
-  name: string.quoted.raw.${line}.python string.interpolated.python
+  name: string.quoted.raw.${line}.scenic string.interpolated.scenic
   match: |
     (?x)
       (.+?)
@@ -117,16 +117,16 @@ fstring-${line}-brace:
     (?x)
       (\})${fguard}
   beginCaptures:
-    '1': {name: constant.character.format.placeholder.other.python}
+    '1': {name: constant.character.format.placeholder.other.scenic}
   endCaptures:
-    '1': {name: constant.character.format.placeholder.other.python}
+    '1': {name: constant.character.format.placeholder.other.scenic}
   patterns:
     - include: '#fstring-terminator-${line}'
     - include: '#f-expression'
 
 fstring-terminator-${line}:
   patterns:
-    - name: storage.type.format.python
+    - name: storage.type.format.scenic
       match: (![rsa])(?=})
     - match: |
         (?x)
@@ -135,15 +135,15 @@ fstring-terminator-${line}:
               \d* ,? (\.\d+)? [bcdeEfFgGnosxX%]? )(?=})
       captures:
         # We use this awkward scope name instead of perhaps more
-        # elegant "support.other.format.python" because it appears
+        # elegant "support.other.format.scenic" because it appears
         # that by default it gives a better visual result in various
         # systems (e.g. GitHub). This is due to the fact that
         # "storage.type..." is more likely to have special
         # highlighting in any given color scheme than
         # "support.other..."
         #
-        '1': {name: storage.type.format.python}
-        '2': {name: storage.type.format.python}
+        '1': {name: storage.type.format.scenic}
+        '2': {name: storage.type.format.scenic}
 
     - include: '#fstring-terminator-${line}-tail'
 
@@ -151,26 +151,26 @@ fstring-terminator-${line}-tail:
   begin: (![rsa])?(:)(?=.*?{)
   end: (?=})${fguard}
   beginCaptures:
-    '1': {name: storage.type.format.python}
-    '2': {name: storage.type.format.python}
+    '1': {name: storage.type.format.scenic}
+    '2': {name: storage.type.format.scenic}
 
   patterns:
     - include: '#fstring-illegal-${line}-brace'
     - include: '#fstring-${line}-brace'
-    - name: storage.type.format.python
+    - name: storage.type.format.scenic
       match: ([bcdeEfFgGnosxX%])(?=})
-    - name: storage.type.format.python
+    - name: storage.type.format.scenic
       match: (\.\d+)
-    - name: storage.type.format.python
+    - name: storage.type.format.scenic
       match: (,)
-    - name: storage.type.format.python
+    - name: storage.type.format.scenic
       match: (\d+)
-    - name: storage.type.format.python
+    - name: storage.type.format.scenic
       match: (\#)
-    - name: storage.type.format.python
+    - name: storage.type.format.scenic
       match: ([-+ ])
-    - name: storage.type.format.python
+    - name: storage.type.format.scenic
       match: ([<>=^])
-    - name: storage.type.format.python
+    - name: storage.type.format.scenic
       match: (\w)
 ...

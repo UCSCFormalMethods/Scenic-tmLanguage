@@ -3,9 +3,9 @@ __author__
 
 
 
-__version__   : source.python, support.variable.magic.python
-              : source.python
-__doc__       : source.python, support.variable.magic.python
-              : source.python
-__file__      : source.python, support.variable.magic.python
-__author__    : source.python
+__version__   : source.scenic, support.variable.magic.scenic
+              : source.scenic
+__doc__       : source.scenic, support.variable.magic.scenic
+              : source.scenic
+__file__      : source.scenic, support.variable.magic.scenic
+__author__    : source.scenic

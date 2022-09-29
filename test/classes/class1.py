@@ -2,13 +2,13 @@ class Foo -> None: pass
 
 
 
-class         : source.python, storage.type.class.python
-              : source.python
-Foo           : source.python
-              : source.python
-->            : invalid.illegal.annotation.python, source.python
-              : source.python
-None          : constant.language.python, source.python
-:             : punctuation.separator.colon.python, source.python
-              : source.python
-pass          : keyword.control.flow.python, source.python
+class         : source.scenic, storage.type.class.scenic
+              : source.scenic
+Foo           : source.scenic
+              : source.scenic
+->            : invalid.illegal.annotation.scenic, source.scenic
+              : source.scenic
+None          : constant.language.scenic, source.scenic
+:             : punctuation.separator.colon.scenic, source.scenic
+              : source.scenic
+pass          : keyword.control.flow.scenic, source.scenic

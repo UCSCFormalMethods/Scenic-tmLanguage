@@ -1,7 +1,7 @@
 <!-- See http://www.sublimetext.com/docs/snippets for more information -->
 <snippet>
     <tabTrigger>while</tabTrigger>
-    <scope>source.python</scope>
+    <scope>source.scenic</scope>
     <description>While Loop</description>
 	<content><![CDATA[
 while ${1:$SELECTION}:

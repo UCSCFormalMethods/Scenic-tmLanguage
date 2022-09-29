@@ -11,57 +11,57 @@ raise Exception('!') from None
 
 
 
-from          : keyword.control.import.python, source.python
-              : source.python
-.             : punctuation.separator.period.python, source.python
-              : source.python
-.             : punctuation.separator.period.python, source.python
-              : source.python
-.             : punctuation.separator.period.python, source.python
-              : source.python
-foo           : source.python
-              : source.python
-import        : keyword.control.import.python, source.python
-              : source.python
-\             : punctuation.separator.continuation.line.python, source.python
-              : source.python
-              : source.python
-(             : punctuation.parenthesis.begin.python, source.python
-              : source.python
-#             : comment.line.number-sign.python, punctuation.definition.comment.python, source.python
-              : comment.line.number-sign.python, source.python
-XXX           : comment.line.number-sign.python, keyword.codetag.notation.python, source.python
-: legal comment inside import : comment.line.number-sign.python, source.python
-              : source.python
-time          : source.python
-              : source.python
-as            : keyword.control.import.python, source.python
-              : source.python
-bar           : source.python
-,             : punctuation.separator.element.python, source.python
-              : source.python
-#             : comment.line.number-sign.python, punctuation.definition.comment.python, source.python
- another comment : comment.line.number-sign.python, source.python
-              : source.python
-baz           : source.python
-,             : punctuation.separator.element.python, source.python
-              : source.python
-datetime      : source.python
-              : source.python
-as            : keyword.control.import.python, source.python
-              : source.python
-ham           : source.python
-              : source.python
-)             : punctuation.parenthesis.end.python, source.python
-raise         : keyword.control.flow.python, source.python
-              : source.python
-Exception     : meta.function-call.python, source.python, support.type.exception.python
-(             : meta.function-call.python, punctuation.definition.arguments.begin.python, source.python
-'             : meta.function-call.arguments.python, meta.function-call.python, punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-!             : meta.function-call.arguments.python, meta.function-call.python, source.python, string.quoted.single.python
-'             : meta.function-call.arguments.python, meta.function-call.python, punctuation.definition.string.end.python, source.python, string.quoted.single.python
-)             : meta.function-call.python, punctuation.definition.arguments.end.python, source.python
-              : source.python
-from          : keyword.control.flow.python, source.python
-              : source.python
-None          : constant.language.python, source.python
+from          : keyword.control.import.scenic, source.scenic
+              : source.scenic
+.             : punctuation.separator.period.scenic, source.scenic
+              : source.scenic
+.             : punctuation.separator.period.scenic, source.scenic
+              : source.scenic
+.             : punctuation.separator.period.scenic, source.scenic
+              : source.scenic
+foo           : source.scenic
+              : source.scenic
+import        : keyword.control.import.scenic, source.scenic
+              : source.scenic
+\             : punctuation.separator.continuation.line.scenic, source.scenic
+              : source.scenic
+              : source.scenic
+(             : punctuation.parenthesis.begin.scenic, source.scenic
+              : source.scenic
+#             : comment.line.number-sign.scenic, punctuation.definition.comment.scenic, source.scenic
+              : comment.line.number-sign.scenic, source.scenic
+XXX           : comment.line.number-sign.scenic, keyword.codetag.notation.scenic, source.scenic
+: legal comment inside import : comment.line.number-sign.scenic, source.scenic
+              : source.scenic
+time          : source.scenic
+              : source.scenic
+as            : keyword.control.import.scenic, source.scenic
+              : source.scenic
+bar           : source.scenic
+,             : punctuation.separator.element.scenic, source.scenic
+              : source.scenic
+#             : comment.line.number-sign.scenic, punctuation.definition.comment.scenic, source.scenic
+ another comment : comment.line.number-sign.scenic, source.scenic
+              : source.scenic
+baz           : source.scenic
+,             : punctuation.separator.element.scenic, source.scenic
+              : source.scenic
+datetime      : source.scenic
+              : source.scenic
+as            : keyword.control.import.scenic, source.scenic
+              : source.scenic
+ham           : source.scenic
+              : source.scenic
+)             : punctuation.parenthesis.end.scenic, source.scenic
+raise         : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+Exception     : meta.function-call.scenic, source.scenic, support.type.exception.scenic
+(             : meta.function-call.scenic, punctuation.definition.arguments.begin.scenic, source.scenic
+'             : meta.function-call.arguments.scenic, meta.function-call.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+!             : meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic, string.quoted.single.scenic
+'             : meta.function-call.arguments.scenic, meta.function-call.scenic, punctuation.definition.string.end.scenic, source.scenic, string.quoted.single.scenic
+)             : meta.function-call.scenic, punctuation.definition.arguments.end.scenic, source.scenic
+              : source.scenic
+from          : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+None          : constant.language.scenic, source.scenic

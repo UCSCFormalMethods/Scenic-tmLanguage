@@ -2,29 +2,29 @@ arr2 = [i for i in range(7) if i != 3]
 
 
 
-arr2          : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-[             : punctuation.definition.list.begin.python, source.python
-i             : source.python
-              : source.python
-for           : keyword.control.flow.python, source.python
-              : source.python
-i             : source.python
-              : source.python
-in            : keyword.control.flow.python, source.python
-              : source.python
-range         : meta.function-call.python, source.python, support.function.builtin.python
-(             : meta.function-call.python, punctuation.definition.arguments.begin.python, source.python
-7             : constant.numeric.dec.python, meta.function-call.arguments.python, meta.function-call.python, source.python
-)             : meta.function-call.python, punctuation.definition.arguments.end.python, source.python
-              : source.python
-if            : keyword.control.flow.python, source.python
-              : source.python
-i             : source.python
-              : source.python
-!=            : keyword.operator.comparison.python, source.python
-              : source.python
-3             : constant.numeric.dec.python, source.python
-]             : punctuation.definition.list.end.python, source.python
+arr2          : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+[             : punctuation.definition.list.begin.scenic, source.scenic
+i             : source.scenic
+              : source.scenic
+for           : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+i             : source.scenic
+              : source.scenic
+in            : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+range         : meta.function-call.scenic, source.scenic, support.function.builtin.scenic
+(             : meta.function-call.scenic, punctuation.definition.arguments.begin.scenic, source.scenic
+7             : constant.numeric.dec.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic
+)             : meta.function-call.scenic, punctuation.definition.arguments.end.scenic, source.scenic
+              : source.scenic
+if            : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+i             : source.scenic
+              : source.scenic
+!=            : keyword.operator.comparison.scenic, source.scenic
+              : source.scenic
+3             : constant.numeric.dec.scenic, source.scenic
+]             : punctuation.definition.list.end.scenic, source.scenic

@@ -6,43 +6,43 @@ a = RB'S T R'
 
 
 
-a             : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-U             : source.python, storage.type.string.python, string.quoted.single.python
-'             : punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-S T R         : source.python, string.quoted.single.python
-'             : punctuation.definition.string.end.python, source.python, string.quoted.single.python
-a             : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-B             : source.python, storage.type.string.python, string.quoted.binary.single.python
-'             : punctuation.definition.string.begin.python, source.python, string.quoted.binary.single.python
-S T R         : source.python, string.quoted.binary.single.python
-'             : punctuation.definition.string.end.python, source.python, string.quoted.binary.single.python
-a             : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-R             : source.python, storage.type.string.python, string.quoted.raw.single.python
-'             : punctuation.definition.string.begin.python, source.python, string.quoted.raw.single.python
-S T R         : source.python, string.quoted.raw.single.python
-'             : punctuation.definition.string.end.python, source.python, string.quoted.raw.single.python
-a             : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-BR            : source.python, storage.type.string.python, string.quoted.raw.binary.single.python
-'             : punctuation.definition.string.begin.python, source.python, string.quoted.raw.binary.single.python
-S T R         : source.python, string.quoted.raw.binary.single.python
-'             : punctuation.definition.string.end.python, source.python, string.quoted.raw.binary.single.python
-a             : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-RB            : source.python, storage.type.string.python, string.quoted.raw.binary.single.python
-'             : punctuation.definition.string.begin.python, source.python, string.quoted.raw.binary.single.python
-S T R         : source.python, string.quoted.raw.binary.single.python
-'             : punctuation.definition.string.end.python, source.python, string.quoted.raw.binary.single.python
+a             : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+U             : source.scenic, storage.type.string.scenic, string.quoted.single.scenic
+'             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+S T R         : source.scenic, string.quoted.single.scenic
+'             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.single.scenic
+a             : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+B             : source.scenic, storage.type.string.scenic, string.quoted.binary.single.scenic
+'             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.binary.single.scenic
+S T R         : source.scenic, string.quoted.binary.single.scenic
+'             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.binary.single.scenic
+a             : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+R             : source.scenic, storage.type.string.scenic, string.quoted.raw.single.scenic
+'             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.raw.single.scenic
+S T R         : source.scenic, string.quoted.raw.single.scenic
+'             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.raw.single.scenic
+a             : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+BR            : source.scenic, storage.type.string.scenic, string.quoted.raw.binary.single.scenic
+'             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.raw.binary.single.scenic
+S T R         : source.scenic, string.quoted.raw.binary.single.scenic
+'             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.raw.binary.single.scenic
+a             : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+RB            : source.scenic, storage.type.string.scenic, string.quoted.raw.binary.single.scenic
+'             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.raw.binary.single.scenic
+S T R         : source.scenic, string.quoted.raw.binary.single.scenic
+'             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.raw.binary.single.scenic

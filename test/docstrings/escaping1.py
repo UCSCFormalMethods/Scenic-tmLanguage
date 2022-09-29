@@ -10,50 +10,50 @@
 
 
 
-'''           : punctuation.definition.string.begin.python, source.python, string.quoted.docstring.multi.python
-Module docstring : source.python, string.quoted.docstring.multi.python
-              : source.python, string.quoted.docstring.multi.python
-    {{ %d simple  : source.python, string.quoted.docstring.multi.python
-\\            : constant.character.escape.python, source.python, string.quoted.docstring.multi.python
- string       : source.python, string.quoted.docstring.multi.python
-\             : constant.language.python, source.python, string.quoted.docstring.multi.python
-    foo       : source.python, string.quoted.docstring.multi.python
-\'            : constant.character.escape.python, source.python, string.quoted.docstring.multi.python
-              : source.python, string.quoted.docstring.multi.python
-\"            : constant.character.escape.python, source.python, string.quoted.docstring.multi.python
-              : source.python, string.quoted.docstring.multi.python
-\a            : constant.character.escape.python, source.python, string.quoted.docstring.multi.python
-              : source.python, string.quoted.docstring.multi.python
-\b            : constant.character.escape.python, source.python, string.quoted.docstring.multi.python
- \c           : source.python, string.quoted.docstring.multi.python
-\f            : constant.character.escape.python, source.python, string.quoted.docstring.multi.python
-              : source.python, string.quoted.docstring.multi.python
-\n            : constant.character.escape.python, source.python, string.quoted.docstring.multi.python
-              : source.python, string.quoted.docstring.multi.python
-\r            : constant.character.escape.python, source.python, string.quoted.docstring.multi.python
-              : source.python, string.quoted.docstring.multi.python
-\t            : constant.character.escape.python, source.python, string.quoted.docstring.multi.python
-              : source.python, string.quoted.docstring.multi.python
-\v            : constant.character.escape.python, source.python, string.quoted.docstring.multi.python
-              : source.python, string.quoted.docstring.multi.python
-\5            : constant.character.escape.python, source.python, string.quoted.docstring.multi.python
-              : source.python, string.quoted.docstring.multi.python
-\55           : constant.character.escape.python, source.python, string.quoted.docstring.multi.python
-              : source.python, string.quoted.docstring.multi.python
-\555          : constant.character.escape.python, source.python, string.quoted.docstring.multi.python
-              : source.python, string.quoted.docstring.multi.python
-\05           : constant.character.escape.python, source.python, string.quoted.docstring.multi.python
-              : source.python, string.quoted.docstring.multi.python
-\005          : constant.character.escape.python, source.python, string.quoted.docstring.multi.python
-              : source.python, string.quoted.docstring.multi.python
-    multiline "unicode" string  : source.python, string.quoted.docstring.multi.python
-\             : constant.language.python, source.python, string.quoted.docstring.multi.python
-              : source.python, string.quoted.docstring.multi.python
-\xf1          : constant.character.escape.python, source.python, string.quoted.docstring.multi.python
-              : source.python, string.quoted.docstring.multi.python
-\u1234        : constant.character.escape.python, source.python, string.quoted.docstring.multi.python
-aaaa          : source.python, string.quoted.docstring.multi.python
-\U1234aaaa    : constant.character.escape.python, source.python, string.quoted.docstring.multi.python
-              : source.python, string.quoted.docstring.multi.python
-\N{BLACK SPADE SUIT} : constant.character.escape.python, source.python, string.quoted.docstring.multi.python
-'''           : punctuation.definition.string.end.python, source.python, string.quoted.docstring.multi.python
+'''           : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.docstring.multi.scenic
+Module docstring : source.scenic, string.quoted.docstring.multi.scenic
+              : source.scenic, string.quoted.docstring.multi.scenic
+    {{ %d simple  : source.scenic, string.quoted.docstring.multi.scenic
+\\            : constant.character.escape.scenic, source.scenic, string.quoted.docstring.multi.scenic
+ string       : source.scenic, string.quoted.docstring.multi.scenic
+\             : constant.language.scenic, source.scenic, string.quoted.docstring.multi.scenic
+    foo       : source.scenic, string.quoted.docstring.multi.scenic
+\'            : constant.character.escape.scenic, source.scenic, string.quoted.docstring.multi.scenic
+              : source.scenic, string.quoted.docstring.multi.scenic
+\"            : constant.character.escape.scenic, source.scenic, string.quoted.docstring.multi.scenic
+              : source.scenic, string.quoted.docstring.multi.scenic
+\a            : constant.character.escape.scenic, source.scenic, string.quoted.docstring.multi.scenic
+              : source.scenic, string.quoted.docstring.multi.scenic
+\b            : constant.character.escape.scenic, source.scenic, string.quoted.docstring.multi.scenic
+ \c           : source.scenic, string.quoted.docstring.multi.scenic
+\f            : constant.character.escape.scenic, source.scenic, string.quoted.docstring.multi.scenic
+              : source.scenic, string.quoted.docstring.multi.scenic
+\n            : constant.character.escape.scenic, source.scenic, string.quoted.docstring.multi.scenic
+              : source.scenic, string.quoted.docstring.multi.scenic
+\r            : constant.character.escape.scenic, source.scenic, string.quoted.docstring.multi.scenic
+              : source.scenic, string.quoted.docstring.multi.scenic
+\t            : constant.character.escape.scenic, source.scenic, string.quoted.docstring.multi.scenic
+              : source.scenic, string.quoted.docstring.multi.scenic
+\v            : constant.character.escape.scenic, source.scenic, string.quoted.docstring.multi.scenic
+              : source.scenic, string.quoted.docstring.multi.scenic
+\5            : constant.character.escape.scenic, source.scenic, string.quoted.docstring.multi.scenic
+              : source.scenic, string.quoted.docstring.multi.scenic
+\55           : constant.character.escape.scenic, source.scenic, string.quoted.docstring.multi.scenic
+              : source.scenic, string.quoted.docstring.multi.scenic
+\555          : constant.character.escape.scenic, source.scenic, string.quoted.docstring.multi.scenic
+              : source.scenic, string.quoted.docstring.multi.scenic
+\05           : constant.character.escape.scenic, source.scenic, string.quoted.docstring.multi.scenic
+              : source.scenic, string.quoted.docstring.multi.scenic
+\005          : constant.character.escape.scenic, source.scenic, string.quoted.docstring.multi.scenic
+              : source.scenic, string.quoted.docstring.multi.scenic
+    multiline "unicode" string  : source.scenic, string.quoted.docstring.multi.scenic
+\             : constant.language.scenic, source.scenic, string.quoted.docstring.multi.scenic
+              : source.scenic, string.quoted.docstring.multi.scenic
+\xf1          : constant.character.escape.scenic, source.scenic, string.quoted.docstring.multi.scenic
+              : source.scenic, string.quoted.docstring.multi.scenic
+\u1234        : constant.character.escape.scenic, source.scenic, string.quoted.docstring.multi.scenic
+aaaa          : source.scenic, string.quoted.docstring.multi.scenic
+\U1234aaaa    : constant.character.escape.scenic, source.scenic, string.quoted.docstring.multi.scenic
+              : source.scenic, string.quoted.docstring.multi.scenic
+\N{BLACK SPADE SUIT} : constant.character.escape.scenic, source.scenic, string.quoted.docstring.multi.scenic
+'''           : punctuation.definition.string.end.scenic, source.scenic, string.quoted.docstring.multi.scenic

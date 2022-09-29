@@ -7,26 +7,26 @@ x = foo(True,
 
 
 
-x             : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-foo           : meta.function-call.generic.python, meta.function-call.python, source.python
-(             : meta.function-call.python, punctuation.definition.arguments.begin.python, source.python
-True          : constant.language.python, meta.function-call.arguments.python, meta.function-call.python, source.python
-,             : meta.function-call.arguments.python, meta.function-call.python, punctuation.separator.arguments.python, source.python
-              : meta.function-call.arguments.python, meta.function-call.python, source.python
-3             : constant.numeric.dec.python, meta.function-call.arguments.python, meta.function-call.python, source.python
-              : meta.function-call.arguments.python, meta.function-call.python, source.python
-*             : keyword.operator.arithmetic.python, meta.function-call.arguments.python, meta.function-call.python, source.python
-              : meta.function-call.arguments.python, meta.function-call.python, source.python
-4             : constant.numeric.dec.python, meta.function-call.arguments.python, meta.function-call.python, source.python
-,             : meta.function-call.arguments.python, meta.function-call.python, punctuation.separator.arguments.python, source.python
-              : meta.function-call.arguments.python, meta.function-call.python, source.python
-*             : keyword.operator.unpacking.arguments.python, meta.function-call.arguments.python, meta.function-call.python, source.python
-a             : meta.function-call.arguments.python, meta.function-call.python, source.python
-,             : meta.function-call.arguments.python, meta.function-call.python, punctuation.separator.arguments.python, source.python
-              : meta.function-call.arguments.python, meta.function-call.python, source.python
-**            : keyword.operator.unpacking.arguments.python, meta.function-call.arguments.python, meta.function-call.python, source.python
-bar           : meta.function-call.arguments.python, meta.function-call.python, source.python
-)             : meta.function-call.python, punctuation.definition.arguments.end.python, source.python
+x             : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+foo           : meta.function-call.generic.scenic, meta.function-call.scenic, source.scenic
+(             : meta.function-call.scenic, punctuation.definition.arguments.begin.scenic, source.scenic
+True          : constant.language.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic
+,             : meta.function-call.arguments.scenic, meta.function-call.scenic, punctuation.separator.arguments.scenic, source.scenic
+              : meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic
+3             : constant.numeric.dec.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic
+              : meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic
+*             : keyword.operator.arithmetic.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic
+              : meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic
+4             : constant.numeric.dec.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic
+,             : meta.function-call.arguments.scenic, meta.function-call.scenic, punctuation.separator.arguments.scenic, source.scenic
+              : meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic
+*             : keyword.operator.unpacking.arguments.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic
+a             : meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic
+,             : meta.function-call.arguments.scenic, meta.function-call.scenic, punctuation.separator.arguments.scenic, source.scenic
+              : meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic
+**            : keyword.operator.unpacking.arguments.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic
+bar           : meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic
+)             : meta.function-call.scenic, punctuation.definition.arguments.end.scenic, source.scenic

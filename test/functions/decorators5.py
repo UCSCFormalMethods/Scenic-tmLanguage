@@ -7,44 +7,44 @@ def foo(): pass
 
 
 
-@             : entity.name.function.decorator.python, meta.function.decorator.python, punctuation.definition.decorator.python, source.python
-a             : entity.name.function.decorator.python, meta.function.decorator.python, source.python
-.             : entity.name.function.decorator.python, meta.function.decorator.python, punctuation.separator.period.python, source.python
-              : meta.function.decorator.python, source.python
-\             : meta.function.decorator.python, punctuation.separator.continuation.line.python, source.python
-              : meta.function.decorator.python, source.python
-              : meta.function.decorator.python, source.python
-b             : entity.name.function.decorator.python, meta.function.decorator.python, source.python
-              : meta.function.decorator.python, source.python
-.             : entity.name.function.decorator.python, meta.function.decorator.python, punctuation.separator.period.python, source.python
-              : meta.function.decorator.python, source.python
-\             : meta.function.decorator.python, punctuation.separator.continuation.line.python, source.python
-              : meta.function.decorator.python, source.python
-              : meta.function.decorator.python, source.python
-c             : entity.name.function.decorator.python, meta.function.decorator.python, source.python
-.             : entity.name.function.decorator.python, meta.function.decorator.python, punctuation.separator.period.python, source.python
-None          : keyword.illegal.name.python, meta.function.decorator.python, source.python
-.             : entity.name.function.decorator.python, meta.function.decorator.python, punctuation.separator.period.python, source.python
-z             : entity.name.function.decorator.python, meta.function.decorator.python, source.python
-              : meta.function.decorator.python, source.python
-\             : meta.function.decorator.python, punctuation.separator.continuation.line.python, source.python
-              : meta.function.decorator.python, source.python
-              : meta.function.decorator.python, source.python
-baz           : entity.name.function.decorator.python, meta.function.decorator.python, source.python
-(             : meta.function.decorator.python, punctuation.definition.arguments.begin.python, source.python
-q             : meta.function-call.arguments.python, meta.function.decorator.python, source.python, variable.parameter.function-call.python
-=             : keyword.operator.assignment.python, meta.function-call.arguments.python, meta.function.decorator.python, source.python
-1             : constant.numeric.dec.python, meta.function-call.arguments.python, meta.function.decorator.python, source.python
-)             : meta.function.decorator.python, punctuation.definition.arguments.end.python, source.python
-@             : entity.name.function.decorator.python, meta.function.decorator.python, punctuation.definition.decorator.python, source.python
-foo           : entity.name.function.decorator.python, meta.function.decorator.python, source.python
-.             : entity.name.function.decorator.python, meta.function.decorator.python, punctuation.separator.period.python, source.python
-ok            : entity.name.function.decorator.python, meta.function.decorator.python, source.python
-def           : meta.function.python, source.python, storage.type.function.python
-              : meta.function.python, source.python
-foo           : entity.name.function.python, meta.function.python, source.python
-(             : meta.function.parameters.python, meta.function.python, punctuation.definition.parameters.begin.python, source.python
-)             : meta.function.parameters.python, meta.function.python, punctuation.definition.parameters.end.python, source.python
-:             : meta.function.python, punctuation.section.function.begin.python, source.python
-              : source.python
-pass          : keyword.control.flow.python, source.python
+@             : entity.name.function.decorator.scenic, meta.function.decorator.scenic, punctuation.definition.decorator.scenic, source.scenic
+a             : entity.name.function.decorator.scenic, meta.function.decorator.scenic, source.scenic
+.             : entity.name.function.decorator.scenic, meta.function.decorator.scenic, punctuation.separator.period.scenic, source.scenic
+              : meta.function.decorator.scenic, source.scenic
+\             : meta.function.decorator.scenic, punctuation.separator.continuation.line.scenic, source.scenic
+              : meta.function.decorator.scenic, source.scenic
+              : meta.function.decorator.scenic, source.scenic
+b             : entity.name.function.decorator.scenic, meta.function.decorator.scenic, source.scenic
+              : meta.function.decorator.scenic, source.scenic
+.             : entity.name.function.decorator.scenic, meta.function.decorator.scenic, punctuation.separator.period.scenic, source.scenic
+              : meta.function.decorator.scenic, source.scenic
+\             : meta.function.decorator.scenic, punctuation.separator.continuation.line.scenic, source.scenic
+              : meta.function.decorator.scenic, source.scenic
+              : meta.function.decorator.scenic, source.scenic
+c             : entity.name.function.decorator.scenic, meta.function.decorator.scenic, source.scenic
+.             : entity.name.function.decorator.scenic, meta.function.decorator.scenic, punctuation.separator.period.scenic, source.scenic
+None          : keyword.illegal.name.scenic, meta.function.decorator.scenic, source.scenic
+.             : entity.name.function.decorator.scenic, meta.function.decorator.scenic, punctuation.separator.period.scenic, source.scenic
+z             : entity.name.function.decorator.scenic, meta.function.decorator.scenic, source.scenic
+              : meta.function.decorator.scenic, source.scenic
+\             : meta.function.decorator.scenic, punctuation.separator.continuation.line.scenic, source.scenic
+              : meta.function.decorator.scenic, source.scenic
+              : meta.function.decorator.scenic, source.scenic
+baz           : entity.name.function.decorator.scenic, meta.function.decorator.scenic, source.scenic
+(             : meta.function.decorator.scenic, punctuation.definition.arguments.begin.scenic, source.scenic
+q             : meta.function-call.arguments.scenic, meta.function.decorator.scenic, source.scenic, variable.parameter.function-call.scenic
+=             : keyword.operator.assignment.scenic, meta.function-call.arguments.scenic, meta.function.decorator.scenic, source.scenic
+1             : constant.numeric.dec.scenic, meta.function-call.arguments.scenic, meta.function.decorator.scenic, source.scenic
+)             : meta.function.decorator.scenic, punctuation.definition.arguments.end.scenic, source.scenic
+@             : entity.name.function.decorator.scenic, meta.function.decorator.scenic, punctuation.definition.decorator.scenic, source.scenic
+foo           : entity.name.function.decorator.scenic, meta.function.decorator.scenic, source.scenic
+.             : entity.name.function.decorator.scenic, meta.function.decorator.scenic, punctuation.separator.period.scenic, source.scenic
+ok            : entity.name.function.decorator.scenic, meta.function.decorator.scenic, source.scenic
+def           : meta.function.scenic, source.scenic, storage.type.function.scenic
+              : meta.function.scenic, source.scenic
+foo           : entity.name.function.scenic, meta.function.scenic, source.scenic
+(             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.parameters.begin.scenic, source.scenic
+)             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.parameters.end.scenic, source.scenic
+:             : meta.function.scenic, punctuation.section.function.begin.scenic, source.scenic
+              : source.scenic
+pass          : keyword.control.flow.scenic, source.scenic

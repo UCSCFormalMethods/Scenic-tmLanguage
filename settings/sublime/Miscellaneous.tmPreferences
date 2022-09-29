@@ -5,13 +5,13 @@
 	<key>name</key>
 	<string>Miscellaneous</string>
 	<key>scope</key>
-	<string>source.python</string>
+	<string>source.scenic</string>
 	<key>settings</key>
 	<dict>
 		<key>decreaseIndentPattern</key>
-		<string>^\s*(elif|else|except|finally)\b.*:</string>
+		<string>^\s*(elif|else|except|finally|interrupt\ when)\b.*:</string>
 		<key>increaseIndentPattern</key>
-		<string>^\s*(class|((async\s+)?(def|with|for))|elif|else|except|finally|if|try|while)\b.*:\s*$</string>
+		<string>^\s*(class|((async\s+)?(def|with|for))|elif|else|except|finally|if|try|while|interrupt\ when|setup|compose|scenario|behavior|monitor)\b.*:\s*$</string>
 		<key>disableIndentNextLinePattern</key>
 		<string></string>
 		<key>shellVariables</key>
@@ -31,6 +31,6 @@
 		</array>
 	</dict>
 	<key>uuid</key>
-	<string>1eca4598-6e20-11e5-a41f-7c6d62900c7c</string>
+	<string>952225af-3f52-4efd-b7f6-4b4a65afc1c3</string>
 </dict>
 </plist>

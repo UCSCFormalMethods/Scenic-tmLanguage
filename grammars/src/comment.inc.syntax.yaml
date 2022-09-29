@@ -1,9 +1,9 @@
 ---
 comments${suffix}:
-  name: comment.line.number-sign.python
+  name: comment.line.number-sign.scenic
   begin: (\#)
   beginCaptures:
-    '1': {name: punctuation.definition.comment.python}
+    '1': {name: punctuation.definition.comment.scenic}
   end: ($${marker})
   patterns:
     - include: '#codetags'

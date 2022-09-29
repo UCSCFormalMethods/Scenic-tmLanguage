@@ -10,40 +10,40 @@ b = !some_ruby?
 
 
 
-->            : invalid.illegal.annotation.python, source.python
-def           : meta.function.python, source.python, storage.type.function.python
-              : meta.function.python, source.python
-f             : entity.name.function.python, meta.function.python, source.python
-(             : meta.function.parameters.python, meta.function.python, punctuation.definition.parameters.begin.python, source.python
-)             : meta.function.parameters.python, meta.function.python, punctuation.definition.parameters.end.python, source.python
-:             : meta.function.python, punctuation.section.function.begin.python, source.python
-              : source.python
-pass          : keyword.control.flow.python, source.python
-$             : invalid.illegal.operator.python, source.python
-?             : invalid.illegal.operator.python, source.python
-a             : source.python
-=             : keyword.operator.assignment.python, source.python
-$             : invalid.illegal.operator.python, source.python
-(             : punctuation.parenthesis.begin.python, source.python
-'             : punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-.class        : source.python, string.quoted.single.python
-'             : punctuation.definition.string.end.python, source.python, string.quoted.single.python
-)             : punctuation.parenthesis.end.python, source.python
-.             : meta.member.access.python, punctuation.separator.period.python, source.python
-fuuuu         : meta.function-call.generic.python, meta.function-call.python, meta.member.access.python, source.python
-(             : meta.function-call.python, meta.member.access.python, punctuation.definition.arguments.begin.python, source.python
-baz           : meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, source.python, variable.parameter.function-call.python
-=             : keyword.operator.assignment.python, meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, source.python
-1             : constant.numeric.dec.python, meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, source.python
-)             : meta.function-call.python, meta.member.access.python, punctuation.definition.arguments.end.python, source.python
-#             : comment.line.number-sign.python, punctuation.definition.comment.python, source.python
- we recover just fine : comment.line.number-sign.python, source.python
-b             : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-!             : invalid.illegal.operator.python, source.python
-some_ruby     : source.python
-?             : invalid.illegal.operator.python, source.python
-#             : comment.line.number-sign.python, punctuation.definition.comment.python, source.python
- hey ;)       : comment.line.number-sign.python, source.python
+->            : invalid.illegal.annotation.scenic, source.scenic
+def           : meta.function.scenic, source.scenic, storage.type.function.scenic
+              : meta.function.scenic, source.scenic
+f             : entity.name.function.scenic, meta.function.scenic, source.scenic
+(             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.parameters.begin.scenic, source.scenic
+)             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.parameters.end.scenic, source.scenic
+:             : meta.function.scenic, punctuation.section.function.begin.scenic, source.scenic
+              : source.scenic
+pass          : keyword.control.flow.scenic, source.scenic
+$             : invalid.illegal.operator.scenic, source.scenic
+?             : invalid.illegal.operator.scenic, source.scenic
+a             : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+$             : invalid.illegal.operator.scenic, source.scenic
+(             : punctuation.parenthesis.begin.scenic, source.scenic
+'             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+.class        : source.scenic, string.quoted.single.scenic
+'             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.single.scenic
+)             : punctuation.parenthesis.end.scenic, source.scenic
+.             : meta.member.access.scenic, punctuation.separator.period.scenic, source.scenic
+fuuuu         : meta.function-call.generic.scenic, meta.function-call.scenic, meta.member.access.scenic, source.scenic
+(             : meta.function-call.scenic, meta.member.access.scenic, punctuation.definition.arguments.begin.scenic, source.scenic
+baz           : meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, source.scenic, variable.parameter.function-call.scenic
+=             : keyword.operator.assignment.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, source.scenic
+1             : constant.numeric.dec.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, source.scenic
+)             : meta.function-call.scenic, meta.member.access.scenic, punctuation.definition.arguments.end.scenic, source.scenic
+#             : comment.line.number-sign.scenic, punctuation.definition.comment.scenic, source.scenic
+ we recover just fine : comment.line.number-sign.scenic, source.scenic
+b             : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+!             : invalid.illegal.operator.scenic, source.scenic
+some_ruby     : source.scenic
+?             : invalid.illegal.operator.scenic, source.scenic
+#             : comment.line.number-sign.scenic, punctuation.definition.comment.scenic, source.scenic
+ hey ;)       : comment.line.number-sign.scenic, source.scenic

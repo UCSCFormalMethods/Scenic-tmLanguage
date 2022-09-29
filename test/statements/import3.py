@@ -5,23 +5,23 @@ from.import d
 
 
 
-from          : keyword.control.import.python, source.python
-....          : punctuation.separator.period.python, source.python
-import        : keyword.control.import.python, source.python
-              : source.python
-a             : source.python
-from          : keyword.control.import.python, source.python
-...           : punctuation.separator.period.python, source.python
-import        : keyword.control.import.python, source.python
-              : source.python
-b             : source.python
-from          : keyword.control.import.python, source.python
-..            : punctuation.separator.period.python, source.python
-import        : keyword.control.import.python, source.python
-              : source.python
-c             : source.python
-from          : keyword.control.import.python, source.python
-.             : punctuation.separator.period.python, source.python
-import        : keyword.control.import.python, source.python
-              : source.python
-d             : source.python
+from          : keyword.control.import.scenic, source.scenic
+....          : punctuation.separator.period.scenic, source.scenic
+import        : keyword.control.import.scenic, source.scenic
+              : source.scenic
+a             : source.scenic
+from          : keyword.control.import.scenic, source.scenic
+...           : punctuation.separator.period.scenic, source.scenic
+import        : keyword.control.import.scenic, source.scenic
+              : source.scenic
+b             : source.scenic
+from          : keyword.control.import.scenic, source.scenic
+..            : punctuation.separator.period.scenic, source.scenic
+import        : keyword.control.import.scenic, source.scenic
+              : source.scenic
+c             : source.scenic
+from          : keyword.control.import.scenic, source.scenic
+.             : punctuation.separator.period.scenic, source.scenic
+import        : keyword.control.import.scenic, source.scenic
+              : source.scenic
+d             : source.scenic

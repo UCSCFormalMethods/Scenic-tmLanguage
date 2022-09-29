@@ -3,28 +3,28 @@ f"result: {value:{60}.{16!s:2}{'qwerty'[2]}}"
 
 
 
-f             : meta.fstring.python, source.python, storage.type.string.python, string.interpolated.python, string.quoted.single.python
-"             : meta.fstring.python, punctuation.definition.string.begin.python, source.python, string.interpolated.python, string.quoted.single.python
-result:       : meta.fstring.python, source.python, string.interpolated.python, string.quoted.single.python
-{             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-value         : meta.fstring.python, source.python
-:             : meta.fstring.python, source.python, storage.type.format.python
-{             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-60            : constant.numeric.dec.python, meta.fstring.python, source.python
-}             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-.             : meta.fstring.python, source.python
-{             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-16            : constant.numeric.dec.python, meta.fstring.python, source.python
-!s            : meta.fstring.python, source.python, storage.type.format.python
-:2            : meta.fstring.python, source.python, storage.type.format.python
-}             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-{             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-'             : meta.fstring.python, punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-qwerty        : meta.fstring.python, source.python, string.quoted.single.python
-'             : meta.fstring.python, punctuation.definition.string.end.python, source.python, string.quoted.single.python
-[             : meta.fstring.python, punctuation.definition.list.begin.python, source.python
-2             : constant.numeric.dec.python, meta.fstring.python, source.python
-]             : meta.fstring.python, punctuation.definition.list.end.python, source.python
-}             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-}             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-"             : meta.fstring.python, punctuation.definition.string.end.python, source.python, string.interpolated.python, string.quoted.single.python
+f             : meta.fstring.scenic, source.scenic, storage.type.string.scenic, string.interpolated.scenic, string.quoted.single.scenic
+"             : meta.fstring.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic
+result:       : meta.fstring.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic
+{             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+value         : meta.fstring.scenic, source.scenic
+:             : meta.fstring.scenic, source.scenic, storage.type.format.scenic
+{             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+60            : constant.numeric.dec.scenic, meta.fstring.scenic, source.scenic
+}             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+.             : meta.fstring.scenic, source.scenic
+{             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+16            : constant.numeric.dec.scenic, meta.fstring.scenic, source.scenic
+!s            : meta.fstring.scenic, source.scenic, storage.type.format.scenic
+:2            : meta.fstring.scenic, source.scenic, storage.type.format.scenic
+}             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+{             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+'             : meta.fstring.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+qwerty        : meta.fstring.scenic, source.scenic, string.quoted.single.scenic
+'             : meta.fstring.scenic, punctuation.definition.string.end.scenic, source.scenic, string.quoted.single.scenic
+[             : meta.fstring.scenic, punctuation.definition.list.begin.scenic, source.scenic
+2             : constant.numeric.dec.scenic, meta.fstring.scenic, source.scenic
+]             : meta.fstring.scenic, punctuation.definition.list.end.scenic, source.scenic
+}             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+}             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+"             : meta.fstring.scenic, punctuation.definition.string.end.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic

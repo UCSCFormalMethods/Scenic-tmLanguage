@@ -9,40 +9,40 @@ except Exception as exc:
 
 
 
-try           : keyword.control.flow.python, source.python
-:             : punctuation.separator.colon.python, source.python
-              : source.python
-import        : keyword.control.import.python, source.python
-              : source.python
-\             : punctuation.separator.continuation.line.python, source.python
-              : source.python
-                     : source.python
-time          : source.python
-              : source.python
-as            : keyword.control.import.python, source.python
-              : source.python
-ham           : source.python
-,             : punctuation.separator.element.python, source.python
-              : source.python
-\             : punctuation.separator.continuation.line.python, source.python
-              : source.python
-                     : source.python
-datetime      : source.python
-              : source.python
-\             : punctuation.separator.continuation.line.python, source.python
-              : source.python
-              : source.python
-#             : comment.line.number-sign.python, punctuation.definition.comment.python, source.python
-              : comment.line.number-sign.python, source.python
-XXX           : comment.line.number-sign.python, keyword.codetag.notation.python, source.python
-: comment at the end of import : comment.line.number-sign.python, source.python
-except        : keyword.control.flow.python, source.python
-              : source.python
-Exception     : source.python, support.type.exception.python
-              : source.python
-as            : keyword.control.flow.python, source.python
-              : source.python
-exc           : source.python
-:             : punctuation.separator.colon.python, source.python
-              : source.python
-pass          : keyword.control.flow.python, source.python
+try           : keyword.control.flow.scenic, source.scenic
+:             : punctuation.separator.colon.scenic, source.scenic
+              : source.scenic
+import        : keyword.control.import.scenic, source.scenic
+              : source.scenic
+\             : punctuation.separator.continuation.line.scenic, source.scenic
+              : source.scenic
+                     : source.scenic
+time          : source.scenic
+              : source.scenic
+as            : keyword.control.import.scenic, source.scenic
+              : source.scenic
+ham           : source.scenic
+,             : punctuation.separator.element.scenic, source.scenic
+              : source.scenic
+\             : punctuation.separator.continuation.line.scenic, source.scenic
+              : source.scenic
+                     : source.scenic
+datetime      : source.scenic
+              : source.scenic
+\             : punctuation.separator.continuation.line.scenic, source.scenic
+              : source.scenic
+              : source.scenic
+#             : comment.line.number-sign.scenic, punctuation.definition.comment.scenic, source.scenic
+              : comment.line.number-sign.scenic, source.scenic
+XXX           : comment.line.number-sign.scenic, keyword.codetag.notation.scenic, source.scenic
+: comment at the end of import : comment.line.number-sign.scenic, source.scenic
+except        : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+Exception     : source.scenic, support.type.exception.scenic
+              : source.scenic
+as            : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+exc           : source.scenic
+:             : punctuation.separator.colon.scenic, source.scenic
+              : source.scenic
+pass          : keyword.control.flow.scenic, source.scenic

@@ -30,12 +30,12 @@
 # express or implied warranty, and with no claim as to its
 # suitability for any purpose.
 
-'.source.python':
+'.source.scenic':
   'editor':
     'autoIndentOnPaste': false
     'softTabs': true
     'tabLength': 4
     'foldEndPattern': '^\\s*\\}|^\\s*\\]|^\\s*\\)'
     'commentStart': '# '
-    'increaseIndentPattern': '^\\s*(class|((async\\s+)?(def|with|for))|elif|else|except|finally|if|try|while)\\b.*:\\s*$'
-    'decreaseIndentPattern': '^\\s*(elif|else|except|finally)\\b.*:'
+    'increaseIndentPattern': '^\\s*(class|((async\\s+)?(def|with|for))|elif|else|except|finally|if|try|while|interrupt\ when|setup|compose|scenario|behavior|monitor)\\b.*:\\s*$'
+    'decreaseIndentPattern': '^\\s*(elif|else|except|finally|interrupt\ when)\\b.*:'

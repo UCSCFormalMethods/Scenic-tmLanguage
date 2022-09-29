@@ -6,6 +6,6 @@ except ${2:Exception} as ${3:e}:
 finally:
 	${5:pass}]]></content>
     <tabTrigger>try</tabTrigger>
-    <scope>source.python</scope>
+    <scope>source.scenic</scope>
     <description>Try/Except/Finally</description>
 </snippet>

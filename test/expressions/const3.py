@@ -11,17 +11,17 @@ A_Class
 
 
 
-T61STRING     : constant.other.caps.python, source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-20            : constant.numeric.dec.python, source.python
-T61_STRING    : constant.other.caps.python, source.python
-T_STRING      : constant.other.caps.python, source.python
-_T_S_T_R_I_N_G_ : constant.other.caps.python, source.python
-A_CLASS       : constant.other.caps.python, source.python
-              : source.python
-#             : comment.line.number-sign.python, punctuation.definition.comment.python, source.python
- not enough upper-case letters in the beginning : comment.line.number-sign.python, source.python
-_T_s_TRING    : source.python
-A_Class       : source.python
+T61STRING     : constant.other.caps.scenic, source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+20            : constant.numeric.dec.scenic, source.scenic
+T61_STRING    : constant.other.caps.scenic, source.scenic
+T_STRING      : constant.other.caps.scenic, source.scenic
+_T_S_T_R_I_N_G_ : constant.other.caps.scenic, source.scenic
+A_CLASS       : constant.other.caps.scenic, source.scenic
+              : source.scenic
+#             : comment.line.number-sign.scenic, punctuation.definition.comment.scenic, source.scenic
+ not enough upper-case letters in the beginning : comment.line.number-sign.scenic, source.scenic
+_T_s_TRING    : source.scenic
+A_Class       : source.scenic

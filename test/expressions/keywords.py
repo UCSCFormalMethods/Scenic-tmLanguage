@@ -8,49 +8,49 @@ for
 
 
 
-as            : keyword.control.import.python, source.python
-              : source.python
-async         : keyword.control.flow.python, source.python
-              : source.python
-await         : keyword.control.flow.python, source.python
-              : source.python
-continue      : keyword.control.flow.python, source.python
-              : source.python
-del           : keyword.control.flow.python, source.python
-              : source.python
-assert        : keyword.control.flow.python, source.python
-              : source.python
-break         : keyword.control.flow.python, source.python
-              : source.python
-finally       : keyword.control.flow.python, source.python
-from          : keyword.control.import.python, source.python
-              : source.python
-elif          : keyword.control.flow.python, source.python
-              : source.python
-else          : keyword.control.flow.python, source.python
-              : source.python
-if            : keyword.control.flow.python, source.python
-              : source.python
-import        : keyword.control.import.python, source.python
-              : source.python
-except        : keyword.control.flow.python, source.python
-              : source.python
-pass          : keyword.control.flow.python, source.python
-              : source.python
-raise         : keyword.control.flow.python, source.python
-return        : keyword.control.flow.python, source.python
-              : source.python
-try           : keyword.control.flow.python, source.python
-              : source.python
-while         : keyword.control.flow.python, source.python
-              : source.python
-with          : keyword.control.flow.python, source.python
-              : source.python
-nonlocal      : source.python, storage.modifier.declaration.python
-              : source.python
-global        : source.python, storage.modifier.declaration.python
-              : source.python
-class         : source.python, storage.type.class.python
- def          : source.python, storage.type.function.python
-              : source.python
-for           : keyword.control.flow.python, source.python
+as            : keyword.control.import.scenic, source.scenic
+              : source.scenic
+async         : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+await         : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+continue      : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+del           : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+assert        : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+break         : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+finally       : keyword.control.flow.scenic, source.scenic
+from          : keyword.control.import.scenic, source.scenic
+              : source.scenic
+elif          : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+else          : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+if            : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+import        : keyword.control.import.scenic, source.scenic
+              : source.scenic
+except        : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+pass          : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+raise         : keyword.control.flow.scenic, source.scenic
+return        : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+try           : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+while         : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+with          : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+nonlocal      : source.scenic, storage.modifier.declaration.scenic
+              : source.scenic
+global        : source.scenic, storage.modifier.declaration.scenic
+              : source.scenic
+class         : source.scenic, storage.type.class.scenic
+ def          : source.scenic, storage.type.function.scenic
+              : source.scenic
+for           : keyword.control.flow.scenic, source.scenic

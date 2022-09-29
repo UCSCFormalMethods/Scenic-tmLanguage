@@ -5,7 +5,7 @@
 	<key>name</key>
 	<string>Symbol List</string>
 	<key>scope</key>
-	<string>source.python meta.function.python, source.python meta.class.python</string>
+	<string>source.scenic meta.function.scenic, source.scenic meta.class.scenic</string>
 	<key>settings</key>
 	<dict>
 		<key>showInSymbolList</key>
@@ -34,6 +34,6 @@
 		</string>
 	</dict>
 	<key>uuid</key>
-	<string>092a7050-6e20-11e5-bf4c-7c6d62900c7c</string>
+	<string>a8233ac1-3f52-4efd-b7f6-4b4a65afc1c3</string>
 </dict>
 </plist>

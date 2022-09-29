@@ -8,6 +8,6 @@ else:
 finally:
 	${7:pass}]]></content>
     <tabTrigger>try</tabTrigger>
-    <scope>source.python</scope>
+    <scope>source.scenic</scope>
     <description>Try/Except/Else/Finally</description>
 </snippet>

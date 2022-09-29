@@ -5,17 +5,17 @@ foo.if
 
 
 
-foo           : source.python
-.             : meta.member.access.python, punctuation.separator.period.python, source.python
-class         : keyword.control.flow.python, meta.function-call.python, meta.member.access.python, source.python
-(             : meta.function-call.python, meta.member.access.python, punctuation.definition.arguments.begin.python, source.python
-a             : meta.function-call.arguments.python, meta.function-call.python, meta.member.access.python, source.python
-)             : meta.function-call.python, meta.member.access.python, punctuation.definition.arguments.end.python, source.python
-foo           : source.python
-.             : meta.member.access.python, punctuation.separator.period.python, source.python
-and           : keyword.control.flow.python, meta.function-call.python, meta.member.access.python, source.python
-(             : meta.function-call.python, meta.member.access.python, punctuation.definition.arguments.begin.python, source.python
-)             : meta.function-call.python, meta.member.access.python, punctuation.definition.arguments.end.python, source.python
-foo           : source.python
-.             : meta.member.access.python, punctuation.separator.period.python, source.python
-if            : keyword.control.flow.python, meta.member.access.python, source.python
+foo           : source.scenic
+.             : meta.member.access.scenic, punctuation.separator.period.scenic, source.scenic
+class         : keyword.control.flow.scenic, meta.function-call.scenic, meta.member.access.scenic, source.scenic
+(             : meta.function-call.scenic, meta.member.access.scenic, punctuation.definition.arguments.begin.scenic, source.scenic
+a             : meta.function-call.arguments.scenic, meta.function-call.scenic, meta.member.access.scenic, source.scenic
+)             : meta.function-call.scenic, meta.member.access.scenic, punctuation.definition.arguments.end.scenic, source.scenic
+foo           : source.scenic
+.             : meta.member.access.scenic, punctuation.separator.period.scenic, source.scenic
+and           : keyword.control.flow.scenic, meta.function-call.scenic, meta.member.access.scenic, source.scenic
+(             : meta.function-call.scenic, meta.member.access.scenic, punctuation.definition.arguments.begin.scenic, source.scenic
+)             : meta.function-call.scenic, meta.member.access.scenic, punctuation.definition.arguments.end.scenic, source.scenic
+foo           : source.scenic
+.             : meta.member.access.scenic, punctuation.separator.period.scenic, source.scenic
+if            : keyword.control.flow.scenic, meta.member.access.scenic, source.scenic

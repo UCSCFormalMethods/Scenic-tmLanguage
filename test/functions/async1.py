@@ -7,62 +7,62 @@ async def foo():
 
 
 
-@             : entity.name.function.decorator.python, meta.function.decorator.python, punctuation.definition.decorator.python, source.python
-foo           : entity.name.function.decorator.python, meta.function.decorator.python, source.python
-async         : meta.function.python, source.python, storage.type.function.async.python
-              : meta.function.python, source.python
-def           : meta.function.python, source.python, storage.type.function.python
-              : meta.function.python, source.python
-foo           : entity.name.function.python, meta.function.python, source.python
-(             : meta.function.parameters.python, meta.function.python, punctuation.definition.parameters.begin.python, source.python
-)             : meta.function.parameters.python, meta.function.python, punctuation.definition.parameters.end.python, source.python
-:             : meta.function.python, punctuation.section.function.begin.python, source.python
-              : source.python
-a             : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-1             : constant.numeric.dec.python, source.python
-              : source.python
-async         : keyword.control.flow.python, source.python
-              : source.python
-for           : keyword.control.flow.python, source.python
-              : source.python
-a             : source.python
-,             : punctuation.separator.element.python, source.python
-              : source.python
-b             : source.python
-,             : punctuation.separator.element.python, source.python
-              : source.python
-c             : source.python
-              : source.python
-in            : keyword.control.flow.python, source.python
-              : source.python
-b             : source.python
-:             : punctuation.separator.colon.python, source.python
-              : source.python
-async         : keyword.control.flow.python, source.python
-              : source.python
-with          : keyword.control.flow.python, source.python
-              : source.python
-b             : source.python
-              : source.python
-as            : keyword.control.flow.python, source.python
-              : source.python
-d             : source.python
-,             : punctuation.separator.element.python, source.python
-              : source.python
-c             : source.python
-:             : punctuation.separator.colon.python, source.python
-              : source.python
-await         : keyword.control.flow.python, source.python
-              : source.python
-func          : meta.function-call.generic.python, meta.function-call.python, source.python
-(             : meta.function-call.python, punctuation.definition.arguments.begin.python, source.python
-a             : meta.function-call.arguments.python, meta.function-call.python, source.python
-,             : meta.function-call.arguments.python, meta.function-call.python, punctuation.separator.arguments.python, source.python
-              : meta.function-call.arguments.python, meta.function-call.python, source.python
-b             : meta.function-call.arguments.python, meta.function-call.python, source.python, variable.parameter.function-call.python
-=             : keyword.operator.assignment.python, meta.function-call.arguments.python, meta.function-call.python, source.python
-1             : constant.numeric.dec.python, meta.function-call.arguments.python, meta.function-call.python, source.python
-)             : meta.function-call.python, punctuation.definition.arguments.end.python, source.python
+@             : entity.name.function.decorator.scenic, meta.function.decorator.scenic, punctuation.definition.decorator.scenic, source.scenic
+foo           : entity.name.function.decorator.scenic, meta.function.decorator.scenic, source.scenic
+async         : meta.function.scenic, source.scenic, storage.type.function.async.scenic
+              : meta.function.scenic, source.scenic
+def           : meta.function.scenic, source.scenic, storage.type.function.scenic
+              : meta.function.scenic, source.scenic
+foo           : entity.name.function.scenic, meta.function.scenic, source.scenic
+(             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.parameters.begin.scenic, source.scenic
+)             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.parameters.end.scenic, source.scenic
+:             : meta.function.scenic, punctuation.section.function.begin.scenic, source.scenic
+              : source.scenic
+a             : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+1             : constant.numeric.dec.scenic, source.scenic
+              : source.scenic
+async         : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+for           : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+a             : source.scenic
+,             : punctuation.separator.element.scenic, source.scenic
+              : source.scenic
+b             : source.scenic
+,             : punctuation.separator.element.scenic, source.scenic
+              : source.scenic
+c             : source.scenic
+              : source.scenic
+in            : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+b             : source.scenic
+:             : punctuation.separator.colon.scenic, source.scenic
+              : source.scenic
+async         : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+with          : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+b             : source.scenic
+              : source.scenic
+as            : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+d             : source.scenic
+,             : punctuation.separator.element.scenic, source.scenic
+              : source.scenic
+c             : source.scenic
+:             : punctuation.separator.colon.scenic, source.scenic
+              : source.scenic
+await         : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+func          : meta.function-call.generic.scenic, meta.function-call.scenic, source.scenic
+(             : meta.function-call.scenic, punctuation.definition.arguments.begin.scenic, source.scenic
+a             : meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic
+,             : meta.function-call.arguments.scenic, meta.function-call.scenic, punctuation.separator.arguments.scenic, source.scenic
+              : meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic
+b             : meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic, variable.parameter.function-call.scenic
+=             : keyword.operator.assignment.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic
+1             : constant.numeric.dec.scenic, meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic
+)             : meta.function-call.scenic, punctuation.definition.arguments.end.scenic, source.scenic

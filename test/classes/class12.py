@@ -13,76 +13,76 @@ class F:
 
 
 
-class         : meta.class.python, source.python, storage.type.class.python
-              : meta.class.python, source.python
-F             : entity.name.type.class.python, meta.class.python, source.python
-:             : meta.class.python, punctuation.section.class.begin.python, source.python
-              : meta.function.decorator.python, source.python
-@             : entity.name.function.decorator.python, meta.function.decorator.python, punctuation.definition.decorator.python, source.python
-classmethod   : meta.function.decorator.python, source.python, support.type.python
-              : meta.function.python, source.python
-def           : meta.function.python, source.python, storage.type.function.python
-              : meta.function.python, source.python
-meth          : entity.name.function.python, meta.function.python, source.python
-(             : meta.function.parameters.python, meta.function.python, punctuation.definition.parameters.begin.python, source.python
-cls           : meta.function.parameters.python, meta.function.python, source.python, variable.parameter.function.language.python, variable.parameter.function.language.special.cls.python
-,             : meta.function.parameters.python, meta.function.python, punctuation.separator.parameters.python, source.python
-              : meta.function.parameters.python, meta.function.python, source.python
-a             : meta.function.parameters.python, meta.function.python, source.python, variable.parameter.function.language.python
-,             : meta.function.parameters.python, meta.function.python, punctuation.separator.parameters.python, source.python
-              : meta.function.parameters.python, meta.function.python, source.python
-b             : meta.function.parameters.python, meta.function.python, source.python, variable.parameter.function.language.python
-=             : keyword.operator.python, meta.function.parameters.python, meta.function.python, source.python
-1             : constant.numeric.dec.python, meta.function.parameters.python, meta.function.python, source.python
-)             : meta.function.parameters.python, meta.function.python, punctuation.definition.parameters.end.python, source.python
-:             : meta.function.python, punctuation.section.function.begin.python, source.python
-              : source.python
-cls           : source.python, variable.language.special.cls.python
-.             : meta.member.access.python, punctuation.separator.period.python, source.python
-a             : meta.attribute.python, meta.member.access.python, source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-a             : source.python
-              : source.python
-cls           : source.python, variable.language.special.cls.python
-.             : meta.member.access.python, punctuation.separator.period.python, source.python
-b             : meta.attribute.python, meta.member.access.python, source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-b             : source.python
-              : source.python
-print         : meta.function-call.python, source.python, support.function.builtin.python
-(             : meta.function-call.python, punctuation.definition.arguments.begin.python, source.python
-cls           : meta.function-call.arguments.python, meta.function-call.python, source.python, variable.language.special.cls.python
-)             : meta.function-call.python, punctuation.definition.arguments.end.python, source.python
-              : source.python
-cls           : meta.function-call.python, source.python, variable.language.special.cls.python
-(             : meta.function-call.python, punctuation.definition.arguments.begin.python, source.python
-)             : meta.function-call.python, punctuation.definition.arguments.end.python, source.python
-              : source.python
-cls           : source.python, variable.language.special.cls.python
-              : source.python
-+             : keyword.operator.arithmetic.python, source.python
-              : source.python
-1             : constant.numeric.dec.python, source.python
-              : source.python
-a             : source.python
-.             : meta.member.access.python, punctuation.separator.period.python, source.python
-cls           : meta.attribute.python, meta.member.access.python, source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-1             : constant.numeric.dec.python, source.python
-              : source.python
-a             : source.python
-.             : meta.member.access.python, punctuation.separator.period.python, source.python
-cls           : meta.attribute.python, meta.member.access.python, source.python
-.             : meta.member.access.python, punctuation.separator.period.python, source.python
-__name__      : meta.member.access.python, source.python, support.variable.magic.python
-              : source.python
-cls           : meta.item-access.python, source.python, variable.language.special.cls.python
-[             : meta.item-access.python, punctuation.definition.arguments.begin.python, source.python
-123           : constant.numeric.dec.python, meta.item-access.arguments.python, meta.item-access.python, source.python
-]             : meta.item-access.python, punctuation.definition.arguments.end.python, source.python
+class         : meta.class.scenic, source.scenic, storage.type.class.scenic
+              : meta.class.scenic, source.scenic
+F             : entity.name.type.class.scenic, meta.class.scenic, source.scenic
+:             : meta.class.scenic, punctuation.section.class.begin.scenic, source.scenic
+              : meta.function.decorator.scenic, source.scenic
+@             : entity.name.function.decorator.scenic, meta.function.decorator.scenic, punctuation.definition.decorator.scenic, source.scenic
+classmethod   : meta.function.decorator.scenic, source.scenic, support.type.scenic
+              : meta.function.scenic, source.scenic
+def           : meta.function.scenic, source.scenic, storage.type.function.scenic
+              : meta.function.scenic, source.scenic
+meth          : entity.name.function.scenic, meta.function.scenic, source.scenic
+(             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.parameters.begin.scenic, source.scenic
+cls           : meta.function.parameters.scenic, meta.function.scenic, source.scenic, variable.parameter.function.language.scenic, variable.parameter.function.language.special.cls.scenic
+,             : meta.function.parameters.scenic, meta.function.scenic, punctuation.separator.parameters.scenic, source.scenic
+              : meta.function.parameters.scenic, meta.function.scenic, source.scenic
+a             : meta.function.parameters.scenic, meta.function.scenic, source.scenic, variable.parameter.function.language.scenic
+,             : meta.function.parameters.scenic, meta.function.scenic, punctuation.separator.parameters.scenic, source.scenic
+              : meta.function.parameters.scenic, meta.function.scenic, source.scenic
+b             : meta.function.parameters.scenic, meta.function.scenic, source.scenic, variable.parameter.function.language.scenic
+=             : keyword.operator.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+1             : constant.numeric.dec.scenic, meta.function.parameters.scenic, meta.function.scenic, source.scenic
+)             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.parameters.end.scenic, source.scenic
+:             : meta.function.scenic, punctuation.section.function.begin.scenic, source.scenic
+              : source.scenic
+cls           : source.scenic, variable.language.special.cls.scenic
+.             : meta.member.access.scenic, punctuation.separator.period.scenic, source.scenic
+a             : meta.attribute.scenic, meta.member.access.scenic, source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+a             : source.scenic
+              : source.scenic
+cls           : source.scenic, variable.language.special.cls.scenic
+.             : meta.member.access.scenic, punctuation.separator.period.scenic, source.scenic
+b             : meta.attribute.scenic, meta.member.access.scenic, source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+b             : source.scenic
+              : source.scenic
+print         : meta.function-call.scenic, source.scenic, support.function.builtin.scenic
+(             : meta.function-call.scenic, punctuation.definition.arguments.begin.scenic, source.scenic
+cls           : meta.function-call.arguments.scenic, meta.function-call.scenic, source.scenic, variable.language.special.cls.scenic
+)             : meta.function-call.scenic, punctuation.definition.arguments.end.scenic, source.scenic
+              : source.scenic
+cls           : meta.function-call.scenic, source.scenic, variable.language.special.cls.scenic
+(             : meta.function-call.scenic, punctuation.definition.arguments.begin.scenic, source.scenic
+)             : meta.function-call.scenic, punctuation.definition.arguments.end.scenic, source.scenic
+              : source.scenic
+cls           : source.scenic, variable.language.special.cls.scenic
+              : source.scenic
++             : keyword.operator.arithmetic.scenic, source.scenic
+              : source.scenic
+1             : constant.numeric.dec.scenic, source.scenic
+              : source.scenic
+a             : source.scenic
+.             : meta.member.access.scenic, punctuation.separator.period.scenic, source.scenic
+cls           : meta.attribute.scenic, meta.member.access.scenic, source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+1             : constant.numeric.dec.scenic, source.scenic
+              : source.scenic
+a             : source.scenic
+.             : meta.member.access.scenic, punctuation.separator.period.scenic, source.scenic
+cls           : meta.attribute.scenic, meta.member.access.scenic, source.scenic
+.             : meta.member.access.scenic, punctuation.separator.period.scenic, source.scenic
+__name__      : meta.member.access.scenic, source.scenic, support.variable.magic.scenic
+              : source.scenic
+cls           : meta.item-access.scenic, source.scenic, variable.language.special.cls.scenic
+[             : meta.item-access.scenic, punctuation.definition.arguments.begin.scenic, source.scenic
+123           : constant.numeric.dec.scenic, meta.item-access.arguments.scenic, meta.item-access.scenic, source.scenic
+]             : meta.item-access.scenic, punctuation.definition.arguments.end.scenic, source.scenic

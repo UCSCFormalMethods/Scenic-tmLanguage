@@ -21,71 +21,71 @@ class Foo:
 
 
 
-class         : meta.class.python, source.python, storage.type.class.python
-              : meta.class.python, source.python
-Foo           : entity.name.type.class.python, meta.class.python, source.python
-:             : meta.class.python, punctuation.section.class.begin.python, source.python
-              : source.python
-'''           : punctuation.definition.string.begin.python, source.python, string.quoted.docstring.multi.python
-TEST          : source.python, string.quoted.docstring.multi.python
-'''           : punctuation.definition.string.end.python, source.python, string.quoted.docstring.multi.python
-              : source.python
-class         : meta.class.python, source.python, storage.type.class.python
-              : meta.class.python, source.python
-Foo           : entity.name.type.class.python, meta.class.python, source.python
-:             : meta.class.python, punctuation.section.class.begin.python, source.python
-              : source.python
-r             : source.python, storage.type.string.python, string.quoted.docstring.raw.multi.python
-'''           : punctuation.definition.string.begin.python, source.python, string.quoted.docstring.raw.multi.python
-TEST          : source.python, string.quoted.docstring.raw.multi.python
-'''           : punctuation.definition.string.end.python, source.python, string.quoted.docstring.raw.multi.python
-              : source.python
-class         : meta.class.python, source.python, storage.type.class.python
-              : meta.class.python, source.python
-Foo           : entity.name.type.class.python, meta.class.python, source.python
-:             : meta.class.python, punctuation.section.class.begin.python, source.python
-              : source.python
-R             : source.python, storage.type.string.python, string.quoted.docstring.raw.multi.python
-'''           : punctuation.definition.string.begin.python, source.python, string.quoted.docstring.raw.multi.python
-TEST          : source.python, string.quoted.docstring.raw.multi.python
-'''           : punctuation.definition.string.end.python, source.python, string.quoted.docstring.raw.multi.python
-              : source.python
-class         : meta.class.python, source.python, storage.type.class.python
-              : meta.class.python, source.python
-Foo           : entity.name.type.class.python, meta.class.python, source.python
-:             : meta.class.python, punctuation.section.class.begin.python, source.python
-              : source.python
-u             : source.python, storage.type.string.python, string.quoted.multi.python
-'''           : punctuation.definition.string.begin.python, source.python, string.quoted.multi.python
-TEST          : source.python, string.quoted.multi.python
-'''           : punctuation.definition.string.end.python, source.python, string.quoted.multi.python
-              : source.python
-class         : meta.class.python, source.python, storage.type.class.python
-              : meta.class.python, source.python
-Foo           : entity.name.type.class.python, meta.class.python, source.python
-:             : meta.class.python, punctuation.section.class.begin.python, source.python
-              : source.python
-U             : source.python, storage.type.string.python, string.quoted.multi.python
-'''           : punctuation.definition.string.begin.python, source.python, string.quoted.multi.python
-TEST          : source.python, string.quoted.multi.python
-'''           : punctuation.definition.string.end.python, source.python, string.quoted.multi.python
-              : source.python
-class         : meta.class.python, source.python, storage.type.class.python
-              : meta.class.python, source.python
-Foo           : entity.name.type.class.python, meta.class.python, source.python
-:             : meta.class.python, punctuation.section.class.begin.python, source.python
-              : source.python
-b             : source.python, storage.type.string.python, string.quoted.binary.multi.python
-'''           : punctuation.definition.string.begin.python, source.python, string.quoted.binary.multi.python
-TEST          : source.python, string.quoted.binary.multi.python
-'''           : punctuation.definition.string.end.python, source.python, string.quoted.binary.multi.python
-              : source.python
-class         : meta.class.python, source.python, storage.type.class.python
-              : meta.class.python, source.python
-Foo           : entity.name.type.class.python, meta.class.python, source.python
-:             : meta.class.python, punctuation.section.class.begin.python, source.python
-              : source.python
-B             : source.python, storage.type.string.python, string.quoted.binary.multi.python
-'''           : punctuation.definition.string.begin.python, source.python, string.quoted.binary.multi.python
-TEST          : source.python, string.quoted.binary.multi.python
-'''           : punctuation.definition.string.end.python, source.python, string.quoted.binary.multi.python
+class         : meta.class.scenic, source.scenic, storage.type.class.scenic
+              : meta.class.scenic, source.scenic
+Foo           : entity.name.type.class.scenic, meta.class.scenic, source.scenic
+:             : meta.class.scenic, punctuation.section.class.begin.scenic, source.scenic
+              : source.scenic
+'''           : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.docstring.multi.scenic
+TEST          : source.scenic, string.quoted.docstring.multi.scenic
+'''           : punctuation.definition.string.end.scenic, source.scenic, string.quoted.docstring.multi.scenic
+              : source.scenic
+class         : meta.class.scenic, source.scenic, storage.type.class.scenic
+              : meta.class.scenic, source.scenic
+Foo           : entity.name.type.class.scenic, meta.class.scenic, source.scenic
+:             : meta.class.scenic, punctuation.section.class.begin.scenic, source.scenic
+              : source.scenic
+r             : source.scenic, storage.type.string.scenic, string.quoted.docstring.raw.multi.scenic
+'''           : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.docstring.raw.multi.scenic
+TEST          : source.scenic, string.quoted.docstring.raw.multi.scenic
+'''           : punctuation.definition.string.end.scenic, source.scenic, string.quoted.docstring.raw.multi.scenic
+              : source.scenic
+class         : meta.class.scenic, source.scenic, storage.type.class.scenic
+              : meta.class.scenic, source.scenic
+Foo           : entity.name.type.class.scenic, meta.class.scenic, source.scenic
+:             : meta.class.scenic, punctuation.section.class.begin.scenic, source.scenic
+              : source.scenic
+R             : source.scenic, storage.type.string.scenic, string.quoted.docstring.raw.multi.scenic
+'''           : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.docstring.raw.multi.scenic
+TEST          : source.scenic, string.quoted.docstring.raw.multi.scenic
+'''           : punctuation.definition.string.end.scenic, source.scenic, string.quoted.docstring.raw.multi.scenic
+              : source.scenic
+class         : meta.class.scenic, source.scenic, storage.type.class.scenic
+              : meta.class.scenic, source.scenic
+Foo           : entity.name.type.class.scenic, meta.class.scenic, source.scenic
+:             : meta.class.scenic, punctuation.section.class.begin.scenic, source.scenic
+              : source.scenic
+u             : source.scenic, storage.type.string.scenic, string.quoted.multi.scenic
+'''           : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.multi.scenic
+TEST          : source.scenic, string.quoted.multi.scenic
+'''           : punctuation.definition.string.end.scenic, source.scenic, string.quoted.multi.scenic
+              : source.scenic
+class         : meta.class.scenic, source.scenic, storage.type.class.scenic
+              : meta.class.scenic, source.scenic
+Foo           : entity.name.type.class.scenic, meta.class.scenic, source.scenic
+:             : meta.class.scenic, punctuation.section.class.begin.scenic, source.scenic
+              : source.scenic
+U             : source.scenic, storage.type.string.scenic, string.quoted.multi.scenic
+'''           : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.multi.scenic
+TEST          : source.scenic, string.quoted.multi.scenic
+'''           : punctuation.definition.string.end.scenic, source.scenic, string.quoted.multi.scenic
+              : source.scenic
+class         : meta.class.scenic, source.scenic, storage.type.class.scenic
+              : meta.class.scenic, source.scenic
+Foo           : entity.name.type.class.scenic, meta.class.scenic, source.scenic
+:             : meta.class.scenic, punctuation.section.class.begin.scenic, source.scenic
+              : source.scenic
+b             : source.scenic, storage.type.string.scenic, string.quoted.binary.multi.scenic
+'''           : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.binary.multi.scenic
+TEST          : source.scenic, string.quoted.binary.multi.scenic
+'''           : punctuation.definition.string.end.scenic, source.scenic, string.quoted.binary.multi.scenic
+              : source.scenic
+class         : meta.class.scenic, source.scenic, storage.type.class.scenic
+              : meta.class.scenic, source.scenic
+Foo           : entity.name.type.class.scenic, meta.class.scenic, source.scenic
+:             : meta.class.scenic, punctuation.section.class.begin.scenic, source.scenic
+              : source.scenic
+B             : source.scenic, storage.type.string.scenic, string.quoted.binary.multi.scenic
+'''           : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.binary.multi.scenic
+TEST          : source.scenic, string.quoted.binary.multi.scenic
+'''           : punctuation.definition.string.end.scenic, source.scenic, string.quoted.binary.multi.scenic

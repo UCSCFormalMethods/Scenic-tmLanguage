@@ -3,14 +3,14 @@ class Foo:
 
 
 
-class         : meta.class.python, source.python, storage.type.class.python
-              : meta.class.python, source.python
-Foo           : entity.name.type.class.python, meta.class.python, source.python
-:             : meta.class.python, punctuation.section.class.begin.python, source.python
-              : source.python
-__slots__     : source.python, support.variable.magic.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-(             : punctuation.parenthesis.begin.python, source.python
-)             : punctuation.parenthesis.end.python, source.python
+class         : meta.class.scenic, source.scenic, storage.type.class.scenic
+              : meta.class.scenic, source.scenic
+Foo           : entity.name.type.class.scenic, meta.class.scenic, source.scenic
+:             : meta.class.scenic, punctuation.section.class.begin.scenic, source.scenic
+              : source.scenic
+__slots__     : source.scenic, support.variable.magic.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+(             : punctuation.parenthesis.begin.scenic, source.scenic
+)             : punctuation.parenthesis.end.scenic, source.scenic

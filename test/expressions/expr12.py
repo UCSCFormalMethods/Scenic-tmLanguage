@@ -4,14 +4,14 @@ print 1
 
 
 
-print         : meta.item-access.python, source.python, support.function.builtin.python
-              : meta.item-access.python, source.python
-[             : meta.item-access.python, punctuation.definition.arguments.begin.python, source.python
-]             : meta.item-access.python, punctuation.definition.arguments.end.python, source.python
-print         : source.python, support.function.builtin.python
-              : source.python
-{             : punctuation.definition.dict.begin.python, source.python
-}             : punctuation.definition.dict.end.python, source.python
-print         : source.python, support.function.builtin.python
-              : source.python
-1             : constant.numeric.dec.python, source.python
+print         : meta.item-access.scenic, source.scenic, support.function.builtin.scenic
+              : meta.item-access.scenic, source.scenic
+[             : meta.item-access.scenic, punctuation.definition.arguments.begin.scenic, source.scenic
+]             : meta.item-access.scenic, punctuation.definition.arguments.end.scenic, source.scenic
+print         : source.scenic, support.function.builtin.scenic
+              : source.scenic
+{             : punctuation.definition.dict.begin.scenic, source.scenic
+}             : punctuation.definition.dict.end.scenic, source.scenic
+print         : source.scenic, support.function.builtin.scenic
+              : source.scenic
+1             : constant.numeric.dec.scenic, source.scenic

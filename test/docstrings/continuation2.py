@@ -4,9 +4,9 @@
 
 
 
-'             : punctuation.definition.string.begin.python, source.python, string.quoted.docstring.single.python
-              : invalid.illegal.newline.python, source.python, string.quoted.docstring.single.python
-'             : punctuation.definition.string.begin.python, source.python, string.quoted.docstring.single.python
-              : invalid.illegal.newline.python, source.python, string.quoted.docstring.single.python
-#             : comment.line.number-sign.python, punctuation.definition.comment.python, source.python
- comment      : comment.line.number-sign.python, source.python
+'             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.docstring.single.scenic
+              : invalid.illegal.newline.scenic, source.scenic, string.quoted.docstring.single.scenic
+'             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.docstring.single.scenic
+              : invalid.illegal.newline.scenic, source.scenic, string.quoted.docstring.single.scenic
+#             : comment.line.number-sign.scenic, punctuation.definition.comment.scenic, source.scenic
+ comment      : comment.line.number-sign.scenic, source.scenic

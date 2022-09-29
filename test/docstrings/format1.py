@@ -5,9 +5,9 @@ r'''Module docstring
 
 
 
-r             : source.python, storage.type.string.python, string.quoted.docstring.raw.multi.python
-'''           : punctuation.definition.string.begin.python, source.python, string.quoted.docstring.raw.multi.python
-Module docstring : source.python, string.quoted.docstring.raw.multi.python
-              : source.python, string.quoted.docstring.raw.multi.python
-    %(language)s has %(number)03d quote types. : source.python, string.quoted.docstring.raw.multi.python
-'''           : punctuation.definition.string.end.python, source.python, string.quoted.docstring.raw.multi.python
+r             : source.scenic, storage.type.string.scenic, string.quoted.docstring.raw.multi.scenic
+'''           : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.docstring.raw.multi.scenic
+Module docstring : source.scenic, string.quoted.docstring.raw.multi.scenic
+              : source.scenic, string.quoted.docstring.raw.multi.scenic
+    %(language)s has %(number)03d quote types. : source.scenic, string.quoted.docstring.raw.multi.scenic
+'''           : punctuation.definition.string.end.scenic, source.scenic, string.quoted.docstring.raw.multi.scenic

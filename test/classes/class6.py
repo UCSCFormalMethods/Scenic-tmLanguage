@@ -2,14 +2,14 @@ class Foo(metaclass=FooMeta): pass
 
 
 
-class         : meta.class.python, source.python, storage.type.class.python
-              : meta.class.python, source.python
-Foo           : entity.name.type.class.python, meta.class.python, source.python
-(             : meta.class.inheritance.python, meta.class.python, punctuation.definition.inheritance.begin.python, source.python
-metaclass     : meta.class.inheritance.python, meta.class.python, source.python, support.type.metaclass.python
-=             : keyword.operator.assignment.python, meta.class.inheritance.python, meta.class.python, source.python
-FooMeta       : entity.other.inherited-class.python, meta.class.inheritance.python, meta.class.python, source.python
-)             : meta.class.inheritance.python, meta.class.python, punctuation.definition.inheritance.end.python, source.python
-:             : meta.class.python, punctuation.section.class.begin.python, source.python
-              : source.python
-pass          : keyword.control.flow.python, source.python
+class         : meta.class.scenic, source.scenic, storage.type.class.scenic
+              : meta.class.scenic, source.scenic
+Foo           : entity.name.type.class.scenic, meta.class.scenic, source.scenic
+(             : meta.class.inheritance.scenic, meta.class.scenic, punctuation.definition.inheritance.begin.scenic, source.scenic
+metaclass     : meta.class.inheritance.scenic, meta.class.scenic, source.scenic, support.type.metaclass.scenic
+=             : keyword.operator.assignment.scenic, meta.class.inheritance.scenic, meta.class.scenic, source.scenic
+FooMeta       : entity.other.inherited-class.scenic, meta.class.inheritance.scenic, meta.class.scenic, source.scenic
+)             : meta.class.inheritance.scenic, meta.class.scenic, punctuation.definition.inheritance.end.scenic, source.scenic
+:             : meta.class.scenic, punctuation.section.class.begin.scenic, source.scenic
+              : source.scenic
+pass          : keyword.control.flow.scenic, source.scenic

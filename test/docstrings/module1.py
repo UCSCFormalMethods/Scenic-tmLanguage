@@ -9,31 +9,31 @@ B'''TEST'''
 
 
 
-'''           : punctuation.definition.string.begin.python, source.python, string.quoted.docstring.multi.python
-TEST          : source.python, string.quoted.docstring.multi.python
-'''           : punctuation.definition.string.end.python, source.python, string.quoted.docstring.multi.python
-r             : source.python, storage.type.string.python, string.quoted.docstring.raw.multi.python
-'''           : punctuation.definition.string.begin.python, source.python, string.quoted.docstring.raw.multi.python
-TEST          : source.python, string.quoted.docstring.raw.multi.python
-'''           : punctuation.definition.string.end.python, source.python, string.quoted.docstring.raw.multi.python
-R             : source.python, storage.type.string.python, string.quoted.docstring.raw.multi.python
-'''           : punctuation.definition.string.begin.python, source.python, string.quoted.docstring.raw.multi.python
-TEST          : source.python, string.quoted.docstring.raw.multi.python
-'''           : punctuation.definition.string.end.python, source.python, string.quoted.docstring.raw.multi.python
-              : source.python
-u             : source.python, storage.type.string.python, string.quoted.multi.python
-'''           : punctuation.definition.string.begin.python, source.python, string.quoted.multi.python
-TEST          : source.python, string.quoted.multi.python
-'''           : punctuation.definition.string.end.python, source.python, string.quoted.multi.python
-U             : source.python, storage.type.string.python, string.quoted.multi.python
-'''           : punctuation.definition.string.begin.python, source.python, string.quoted.multi.python
-TEST          : source.python, string.quoted.multi.python
-'''           : punctuation.definition.string.end.python, source.python, string.quoted.multi.python
-b             : source.python, storage.type.string.python, string.quoted.binary.multi.python
-'''           : punctuation.definition.string.begin.python, source.python, string.quoted.binary.multi.python
-TEST          : source.python, string.quoted.binary.multi.python
-'''           : punctuation.definition.string.end.python, source.python, string.quoted.binary.multi.python
-B             : source.python, storage.type.string.python, string.quoted.binary.multi.python
-'''           : punctuation.definition.string.begin.python, source.python, string.quoted.binary.multi.python
-TEST          : source.python, string.quoted.binary.multi.python
-'''           : punctuation.definition.string.end.python, source.python, string.quoted.binary.multi.python
+'''           : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.docstring.multi.scenic
+TEST          : source.scenic, string.quoted.docstring.multi.scenic
+'''           : punctuation.definition.string.end.scenic, source.scenic, string.quoted.docstring.multi.scenic
+r             : source.scenic, storage.type.string.scenic, string.quoted.docstring.raw.multi.scenic
+'''           : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.docstring.raw.multi.scenic
+TEST          : source.scenic, string.quoted.docstring.raw.multi.scenic
+'''           : punctuation.definition.string.end.scenic, source.scenic, string.quoted.docstring.raw.multi.scenic
+R             : source.scenic, storage.type.string.scenic, string.quoted.docstring.raw.multi.scenic
+'''           : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.docstring.raw.multi.scenic
+TEST          : source.scenic, string.quoted.docstring.raw.multi.scenic
+'''           : punctuation.definition.string.end.scenic, source.scenic, string.quoted.docstring.raw.multi.scenic
+              : source.scenic
+u             : source.scenic, storage.type.string.scenic, string.quoted.multi.scenic
+'''           : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.multi.scenic
+TEST          : source.scenic, string.quoted.multi.scenic
+'''           : punctuation.definition.string.end.scenic, source.scenic, string.quoted.multi.scenic
+U             : source.scenic, storage.type.string.scenic, string.quoted.multi.scenic
+'''           : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.multi.scenic
+TEST          : source.scenic, string.quoted.multi.scenic
+'''           : punctuation.definition.string.end.scenic, source.scenic, string.quoted.multi.scenic
+b             : source.scenic, storage.type.string.scenic, string.quoted.binary.multi.scenic
+'''           : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.binary.multi.scenic
+TEST          : source.scenic, string.quoted.binary.multi.scenic
+'''           : punctuation.definition.string.end.scenic, source.scenic, string.quoted.binary.multi.scenic
+B             : source.scenic, storage.type.string.scenic, string.quoted.binary.multi.scenic
+'''           : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.binary.multi.scenic
+TEST          : source.scenic, string.quoted.binary.multi.scenic
+'''           : punctuation.definition.string.end.scenic, source.scenic, string.quoted.binary.multi.scenic

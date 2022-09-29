@@ -4,42 +4,42 @@ replace = {'"' : R'\"',
 
 
 
-replace       : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-{             : punctuation.definition.dict.begin.python, source.python
-'             : punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-"             : source.python, string.quoted.single.python
-'             : punctuation.definition.string.end.python, source.python, string.quoted.single.python
-              : source.python
-:             : punctuation.separator.dict.python, source.python
-              : source.python
-R             : source.python, storage.type.string.python, string.quoted.raw.single.python
-'             : punctuation.definition.string.begin.python, source.python, string.quoted.raw.single.python
-\"            : source.python, string.quoted.raw.single.python
-'             : punctuation.definition.string.end.python, source.python, string.quoted.raw.single.python
-,             : punctuation.separator.element.python, source.python
-              : source.python
-"             : punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-'             : source.python, string.quoted.single.python
-"             : punctuation.definition.string.end.python, source.python, string.quoted.single.python
-              : source.python
-:             : punctuation.separator.dict.python, source.python
-              : source.python
-R             : source.python, storage.type.string.python, string.quoted.raw.single.python
-'             : punctuation.definition.string.begin.python, source.python, string.quoted.raw.single.python
-\'            : source.python, string.quoted.raw.single.python
-'             : punctuation.definition.string.end.python, source.python, string.quoted.raw.single.python
-,             : punctuation.separator.element.python, source.python
-              : source.python
-'             : punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-\\            : constant.character.escape.python, source.python, string.quoted.single.python
-'             : punctuation.definition.string.end.python, source.python, string.quoted.single.python
-:             : punctuation.separator.dict.python, source.python
-              : source.python
-R             : source.python, storage.type.string.python, string.quoted.raw.single.python
-'             : punctuation.definition.string.begin.python, source.python, string.quoted.raw.single.python
-\\            : source.python, string.quoted.raw.single.python
-'             : punctuation.definition.string.end.python, source.python, string.quoted.raw.single.python
-}             : punctuation.definition.dict.end.python, source.python
+replace       : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+{             : punctuation.definition.dict.begin.scenic, source.scenic
+'             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+"             : source.scenic, string.quoted.single.scenic
+'             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.single.scenic
+              : source.scenic
+:             : punctuation.separator.dict.scenic, source.scenic
+              : source.scenic
+R             : source.scenic, storage.type.string.scenic, string.quoted.raw.single.scenic
+'             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.raw.single.scenic
+\"            : source.scenic, string.quoted.raw.single.scenic
+'             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.raw.single.scenic
+,             : punctuation.separator.element.scenic, source.scenic
+              : source.scenic
+"             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+'             : source.scenic, string.quoted.single.scenic
+"             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.single.scenic
+              : source.scenic
+:             : punctuation.separator.dict.scenic, source.scenic
+              : source.scenic
+R             : source.scenic, storage.type.string.scenic, string.quoted.raw.single.scenic
+'             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.raw.single.scenic
+\'            : source.scenic, string.quoted.raw.single.scenic
+'             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.raw.single.scenic
+,             : punctuation.separator.element.scenic, source.scenic
+              : source.scenic
+'             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+\\            : constant.character.escape.scenic, source.scenic, string.quoted.single.scenic
+'             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.single.scenic
+:             : punctuation.separator.dict.scenic, source.scenic
+              : source.scenic
+R             : source.scenic, storage.type.string.scenic, string.quoted.raw.single.scenic
+'             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.raw.single.scenic
+\\            : source.scenic, string.quoted.raw.single.scenic
+'             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.raw.single.scenic
+}             : punctuation.definition.dict.end.scenic, source.scenic

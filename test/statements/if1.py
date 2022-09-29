@@ -7,37 +7,37 @@ else:
 
 
 
-if            : keyword.control.flow.python, source.python
-              : source.python
-(             : punctuation.parenthesis.begin.python, source.python
-a             : source.python
-              : source.python
-if            : keyword.control.flow.python, source.python
-              : source.python
-b             : source.python
-              : source.python
-else          : keyword.control.flow.python, source.python
-              : source.python
-c             : source.python
-)             : punctuation.parenthesis.end.python, source.python
-:             : punctuation.separator.colon.python, source.python
-              : source.python
-1             : constant.numeric.dec.python, source.python
-elif          : keyword.control.flow.python, source.python
-              : source.python
-b             : source.python
-              : source.python
-or            : keyword.operator.logical.python, source.python
-              : source.python
-c             : source.python
-              : source.python
-and           : keyword.operator.logical.python, source.python
-              : source.python
-d             : source.python
-:             : punctuation.separator.colon.python, source.python
-              : source.python
-2             : constant.numeric.dec.python, source.python
-else          : keyword.control.flow.python, source.python
-:             : punctuation.separator.colon.python, source.python
-              : source.python
-3             : constant.numeric.dec.python, source.python
+if            : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+(             : punctuation.parenthesis.begin.scenic, source.scenic
+a             : source.scenic
+              : source.scenic
+if            : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+b             : source.scenic
+              : source.scenic
+else          : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+c             : source.scenic
+)             : punctuation.parenthesis.end.scenic, source.scenic
+:             : punctuation.separator.colon.scenic, source.scenic
+              : source.scenic
+1             : constant.numeric.dec.scenic, source.scenic
+elif          : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+b             : source.scenic
+              : source.scenic
+or            : keyword.operator.logical.scenic, source.scenic
+              : source.scenic
+c             : source.scenic
+              : source.scenic
+and           : keyword.operator.logical.scenic, source.scenic
+              : source.scenic
+d             : source.scenic
+:             : punctuation.separator.colon.scenic, source.scenic
+              : source.scenic
+2             : constant.numeric.dec.scenic, source.scenic
+else          : keyword.control.flow.scenic, source.scenic
+:             : punctuation.separator.colon.scenic, source.scenic
+              : source.scenic
+3             : constant.numeric.dec.scenic, source.scenic

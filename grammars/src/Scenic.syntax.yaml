@@ -1,12 +1,18 @@
 ---
-name: MagicPython
-scopeName: source.python
-# NOTE: remember to update package.json with VSCode file types.
-fileTypes: [py, py3, rpy, pyw, cpy, pyi,
-            SConstruct, Sconstruct, sconstruct, SConscript,
-            gyp, gypi, wsgi, kv, Snakefile, smk, tac]
-firstLineMatch: ^#![ \t]*/.*\bpython[\d\.]*\b
-uuid: 742deb57-6e38-4192-bed6-410746efd85d
+# TextMate grammar for the Scenic scenario description language,
+# by Daniel Fremont.
+# https://scenic-lang.readthedocs.io/
+#
+# This grammar is based on the MagicPython grammar by MagicStack Inc.,
+# available at https://github.com/MagicStack/MagicPython.
+#
+# This file is a modified version of MagicPython.syntax.yaml; all other .yaml
+# files in this directory are copied from MagicPython without changes. The
+# original files are distributed under the MIT License: see the LICENSE file.
+name: Scenic
+scopeName: source.scenic
+fileTypes: [scenic]
+uuid: D2D1386D-B1E9-4A1B-9A90-C4132CC17E40
 
 patterns:
   - include: '#statement'
@@ -65,7 +71,7 @@ repository:
 
     - file: 'regexp.wrapper.syntax.yaml'
       vars:
-        scopename: string.regexp.quoted.single.python
+        scopename: string.regexp.quoted.single.scenic
         prefix: 'single-one-'
         basename: 'regexp'
         nested: ''
@@ -75,7 +81,7 @@ repository:
 
     - file: 'regexp.wrapper.syntax.yaml'
       vars:
-        scopename: string.regexp.quoted.multi.python
+        scopename: string.regexp.quoted.multi.scenic
         prefix: 'single-three-'
         basename: 'regexp'
         nested: "- include: '#comments-string-single-three'"
@@ -85,7 +91,7 @@ repository:
 
     - file: 'regexp.wrapper.syntax.yaml'
       vars:
-        scopename: string.regexp.quoted.single.python
+        scopename: string.regexp.quoted.single.scenic
         prefix: 'double-one-'
         basename: 'regexp'
         nested: ''
@@ -95,7 +101,7 @@ repository:
 
     - file: 'regexp.wrapper.syntax.yaml'
       vars:
-        scopename: string.regexp.quoted.multi.python
+        scopename: string.regexp.quoted.multi.scenic
         prefix: 'double-three-'
         basename: 'regexp'
         nested: "- include: '#comments-string-double-three'"
@@ -137,8 +143,8 @@ repository:
 
     - file: 'regexp.wrapper.syntax.yaml'
       vars:
-        scopename: string.regexp.quoted.single.python
-                   string.interpolated.python
+        scopename: string.regexp.quoted.single.scenic
+                   string.interpolated.scenic
         prefix: 'single-one-'
         basename: 'fregexp'
         nested: ''
@@ -148,8 +154,8 @@ repository:
 
     - file: 'regexp.wrapper.syntax.yaml'
       vars:
-        scopename: string.regexp.quoted.multi.python
-                   string.interpolated.python
+        scopename: string.regexp.quoted.multi.scenic
+                   string.interpolated.scenic
         prefix: 'single-three-'
         basename: 'fregexp'
         nested: "- include: '#comments-string-single-three'"
@@ -159,8 +165,8 @@ repository:
 
     - file: 'regexp.wrapper.syntax.yaml'
       vars:
-        scopename: string.regexp.quoted.single.python
-                   string.interpolated.python
+        scopename: string.regexp.quoted.single.scenic
+                   string.interpolated.scenic
         prefix: 'double-one-'
         basename: 'fregexp'
         nested: ''
@@ -170,8 +176,8 @@ repository:
 
     - file: 'regexp.wrapper.syntax.yaml'
       vars:
-        scopename: string.regexp.quoted.multi.python
-                   string.interpolated.python
+        scopename: string.regexp.quoted.multi.scenic
+                   string.interpolated.scenic
         prefix: 'double-three-'
         basename: 'fregexp'
         nested: "- include: '#comments-string-double-three'"
@@ -220,22 +226,86 @@ repository:
       - include: '#import'
       - include: '#class-declaration'
       - include: '#function-declaration'
-      - include: '#generator'
+      - include: '#scenario-declaration'
+      - include: '#monitor-declaration'
       - include: '#statement-keyword'
+      - include: '#param-statement'
+      - include: '#statement-keyword-scenic'
       - include: '#assignment-operator'
       - include: '#decorator'
+      - include: '#property-declaration'
       - include: '#docstring-statement'
       - include: '#semicolon'
+      - include: '#instance-statement'
+
+  statement-keyword-scenic:
+    patterns:
+      - comment: These statements match only at the start of a line.
+        name: keyword.control.flow.scenic
+        match: |
+          (?x)
+            ^\s*(
+              model | simulator | param
+              | require\ always | require\ eventually | require
+              | terminate\ when | terminate\ after
+              | mutate
+              | record\ initial | record\ final | record
+              | take | wait | terminate
+              | do\ choose | do\ shuffle | do
+              | abort | override
+              | try | interrupt\ when
+            )\b
+      - comment: These modifiers match only at the end of a line (excluding comments).
+        name: keyword.control.flow.scenic
+        match: |
+          (?x)
+            \b(?<!\.)(seconds | steps)\b (?= \s*(\#.*)? $)
+      - comment: These keywords occur mid-line and have to be matched everywhere.
+        name: keyword.control.flow.scenic
+        match: |
+          (?x)
+            \b(?<!\.)(
+              initial\ scenario | until
+            )\b
+      - name: keyword.control.flow.scenic
+        match: |
+          (?x)
+            ^\s*(setup | compose | precondition | invariant)(:)
+        captures:
+          '1': {name: keyword.control.flow.scenic}
+          '2': {name: punctuation.section.function.begin.scenic}
+
+  param-statement:
+    comment: Extra rule to prevent param names from being colored if they happen
+             to agree with a built-in name
+    patterns:
+      - match: |
+          (?x)
+            ^\s*(param) \s* [[:alpha:]_]\w* \s* (=)
+        captures:
+          '1': {name: keyword.control.flow.scenic}
+          '2': {name: keyword.operator.assignment.scenic}
+
+  property-declaration:
+    patterns:
+      - match: |
+          (?x)
+            ^\s+
+            (?!else)
+            ([[:alpha:]_]\w*)(:)\s+
+        captures:
+          '1': {name: entity.name.property.scenic}
+          '2': {name: punctuation.separator.colon.scenic}
 
   semicolon:
     patterns:
-      - name: invalid.deprecated.semicolon.python
+      - name: invalid.deprecated.semicolon.scenic
         match: '\;$'
 
   comments:
     patterns:
-      - name: comment.line.number-sign.python
-        contentName: meta.typehint.comment.python
+      - name: comment.line.number-sign.scenic
+        contentName: meta.typehint.comment.scenic
 
         begin: |
           (?x)
@@ -249,17 +319,17 @@ repository:
 
         end: (?:$|(?=\#))
         beginCaptures:
-          '0': {name: meta.typehint.comment.python}
-          '1': {name: comment.typehint.directive.notation.python}
+          '0': {name: meta.typehint.comment.scenic}
+          '1': {name: comment.typehint.directive.notation.scenic}
 
         patterns:
-          - name: comment.typehint.ignore.notation.python
+          - name: comment.typehint.ignore.notation.scenic
             match: |
               (?x)
                 \G ignore
                 (?= \s* (?: $ | \#))
 
-          - name: comment.typehint.type.notation.python
+          - name: comment.typehint.type.notation.scenic
             match: |
               (?x)
                 (?<!\.)\b(
@@ -269,10 +339,10 @@ repository:
                   | Any | None
                 )\b
 
-          - name: comment.typehint.punctuation.notation.python
+          - name: comment.typehint.punctuation.notation.scenic
             match: ([\[\]\(\),\.\=\*]|(->))
 
-          - name: comment.typehint.variable.notation.python
+          - name: comment.typehint.variable.notation.scenic
             match: ([[:alpha:]_]\w*)
 
       - include: '#comments-base'
@@ -289,52 +359,52 @@ repository:
 
   docstring:
     patterns:
-      - name: string.quoted.docstring.multi.python
+      - name: string.quoted.docstring.multi.scenic
         begin: (\'\'\'|\"\"\")
         end: (\1)
         beginCaptures:
-          '1': {name: punctuation.definition.string.begin.python}
+          '1': {name: punctuation.definition.string.begin.scenic}
         endCaptures:
-          '1': {name: punctuation.definition.string.end.python}
+          '1': {name: punctuation.definition.string.end.scenic}
         patterns:
           - include: '#docstring-prompt'
           - include: '#codetags'
           - include: '#docstring-guts-unicode'
 
-      - name: string.quoted.docstring.raw.multi.python
+      - name: string.quoted.docstring.raw.multi.scenic
         begin: ([rR])(\'\'\'|\"\"\")
         end: (\2)
         beginCaptures:
-          '1': {name: storage.type.string.python}
-          '2': {name: punctuation.definition.string.begin.python}
+          '1': {name: storage.type.string.scenic}
+          '2': {name: punctuation.definition.string.begin.scenic}
         endCaptures:
-          '1': {name: punctuation.definition.string.end.python}
+          '1': {name: punctuation.definition.string.end.scenic}
         patterns:
           - include: '#string-consume-escape'
           - include: '#docstring-prompt'
           - include: '#codetags'
 
-      - name: string.quoted.docstring.single.python
+      - name: string.quoted.docstring.single.scenic
         begin: (\'|\")
         end: (\1)|(\n)
         beginCaptures:
-          '1': {name: punctuation.definition.string.begin.python}
+          '1': {name: punctuation.definition.string.begin.scenic}
         endCaptures:
-          '1': {name: punctuation.definition.string.end.python}
-          '2': {name: invalid.illegal.newline.python}
+          '1': {name: punctuation.definition.string.end.scenic}
+          '2': {name: invalid.illegal.newline.scenic}
         patterns:
           - include: '#codetags'
           - include: '#docstring-guts-unicode'
 
-      - name: string.quoted.docstring.raw.single.python
+      - name: string.quoted.docstring.raw.single.scenic
         begin: ([rR])(\'|\")
         end: (\2)|(\n)
         beginCaptures:
-          '1': {name: storage.type.string.python}
-          '2': {name: punctuation.definition.string.begin.python}
+          '1': {name: storage.type.string.scenic}
+          '2': {name: punctuation.definition.string.begin.scenic}
         endCaptures:
-          '1': {name: punctuation.definition.string.end.python}
-          '2': {name: invalid.illegal.newline.python}
+          '1': {name: punctuation.definition.string.end.scenic}
+          '2': {name: invalid.illegal.newline.scenic}
         patterns:
           - include: '#string-consume-escape'
           - include: '#codetags'
@@ -353,41 +423,27 @@ repository:
           ((?:>>>|\.\.\.) \s) (?=\s*\S)
         )
     captures:
-      '1': {name: keyword.control.flow.python}
+      '1': {name: keyword.control.flow.scenic}
 
   statement-keyword:
     patterns:
-      - name: storage.type.function.python
+      - name: storage.type.function.scenic
         match: \b((async\s+)?\s*def)\b
-      - name: keyword.control.flow.python
-        comment: |
-          if `as` is eventually followed by `:` or line continuation
-          it's probably control flow like:
-              with foo as bar, \
-                   Foo as Bar:
-                try:
-                  do_stuff()
-                except Exception as e:
-                  pass
-        match: \b(?<!\.)as\b(?=.*[:\\])
-      - name: keyword.control.import.python
-        comment: other legal use of `as` is in an import
-        match: \b(?<!\.)as\b
-      - name: keyword.control.flow.python
+      - name: keyword.control.flow.scenic
         match: |
           (?x)
             \b(?<!\.)(
-              async | continue | del | assert | break | finally | for
+              as | async | continue | del | assert | break | finally | for
               | from | elif | else | if | except | pass | raise
               | return | try | while | with
             )\b
-      - name: storage.modifier.declaration.python
+      - name: storage.modifier.declaration.scenic
         match: |
           (?x)
             \b(?<!\.)(
               global | nonlocal
             )\b
-      - name: storage.type.class.python
+      - name: storage.type.class.scenic
         match: \b(?<!\.)(class)\b
 
   expression-bare:
@@ -399,20 +455,20 @@ repository:
       - include: '#regexp'
       - include: '#string'
       - include: '#lambda'
-      - include: '#generator'
       - include: '#illegal-operator'
       - include: '#operator'
       - include: '#curly-braces'
       - include: '#item-access'
       - include: '#list'
-      - include: '#odd-function-call'
       - include: '#round-braces'
       - include: '#function-call'
       - include: '#builtin-functions'
       - include: '#builtin-types'
+      - include: '#builtin-types-scenic'
       - include: '#builtin-exceptions'
       - include: '#magic-names'
       - include: '#special-names'
+      - include: '#builtin-names-scenic'
       - include: '#illegal-names'
       - include: '#special-variables'
       - include: '#ellipsis'
@@ -435,7 +491,6 @@ repository:
         match: (?x) \b ([[:alpha:]_]\w*) \b
 
   member-access:
-    name: meta.member.access.python
     begin: (\.)\s*(?!\.)
     end: |
       (?x)
@@ -447,11 +502,10 @@ repository:
         (^|(?<=\s))(?=[^\\\w\s]) |
         $
     beginCaptures:
-      '1': {name: punctuation.separator.period.python}
+      '1': {name: punctuation.separator.period.scenic}
     patterns:
       - include: '#function-call'
       - include: '#member-access-base'
-      - include: '#member-access-attribute'
 
   member-access-base:
     patterns:
@@ -462,15 +516,8 @@ repository:
       - include: '#line-continuation'
       - include: '#item-access'
 
-  member-access-attribute:
-    comment: Highlight attribute access in otherwise non-specialized cases.
-    name: meta.attribute.python
-    match: |
-      (?x)
-        \b ([[:alpha:]_]\w*) \b
-
   special-names:
-    name: constant.other.caps.python
+    name: constant.other.caps.scenic
     match: |
       (?x)
         \b
@@ -489,11 +536,11 @@ repository:
     begin: \{
     end: \}
     beginCaptures:
-      '0': {name: punctuation.definition.dict.begin.python}
+      '0': {name: punctuation.definition.dict.begin.scenic}
     endCaptures:
-      '0': {name: punctuation.definition.dict.end.python}
+      '0': {name: punctuation.definition.dict.end.scenic}
     patterns:
-      - name: punctuation.separator.dict.python
+      - name: punctuation.separator.dict.scenic
         match: ":"
       - include: '#expression'
 
@@ -501,34 +548,19 @@ repository:
     begin: \[
     end: \]
     beginCaptures:
-      '0': {name: punctuation.definition.list.begin.python}
+      '0': {name: punctuation.definition.list.begin.scenic}
     endCaptures:
-      '0': {name: punctuation.definition.list.end.python}
+      '0': {name: punctuation.definition.list.end.scenic}
     patterns:
       - include: '#expression'
-
-  odd-function-call:
-    comment: |
-      A bit obscured function call where there may have been an
-      arbitrary number of other operations to get the function.
-      E.g. "arr[idx](args)"
-    begin: |
-      (?x)
-        (?<= \] | \) ) \s*
-        (?=\()
-    end: (\))
-    endCaptures:
-      '1': {name: punctuation.definition.arguments.end.python}
-    patterns:
-      - include: '#function-arguments'
 
   round-braces:
     begin: \(
     end: \)
     beginCaptures:
-      '0': {name: punctuation.parenthesis.begin.python}
+      '0': {name: punctuation.parenthesis.begin.scenic}
     endCaptures:
-      '0': {name: punctuation.parenthesis.end.python}
+      '0': {name: punctuation.parenthesis.end.scenic}
     patterns:
       - include: '#expression'
 
@@ -536,8 +568,8 @@ repository:
     patterns:
       - match: '(\\)\s*(\S.*$\n?)'
         captures:
-          '1': {name: punctuation.separator.continuation.line.python}
-          '2': {name: invalid.illegal.line.continuation.python}
+          '1': {name: punctuation.separator.continuation.line.scenic}
+          '2': {name: invalid.illegal.line.continuation.scenic}
       - begin: '(\\)\s*$\n?'
         # Line continuation matching ends on anything that is not a
         # potential docstring. For docstring-like strings we explicitly
@@ -551,19 +583,89 @@ repository:
                 (\G $)  (?# '\G' is necessary for ST)
             )
         beginCaptures:
-          '1': {name: punctuation.separator.continuation.line.python}
+          '1': {name: punctuation.separator.continuation.line.scenic}
         patterns:
           - include: '#regexp'
           - include: '#string'
 
   assignment-operator:
-    name: keyword.operator.assignment.python
+    name: keyword.operator.assignment.scenic
     match: |
       (?x)
            <<= | >>= | //= | \*\*=
           | \+= | -= | /= | @=
           | \*= | %= | ~= | \^= | &= | \|=
           | =(?!=)
+
+  instance-statement:
+    name: meta.instance.scenic
+    begin: |
+      (?x)
+        ^\s*
+        (?: (?: (ego) | [[:alpha:]_]\w* ) \s* (=) | (return))? \s*
+        (?! True|False|None|NotImplemented|Ellipsis) ([[:upper:]]\w*)
+        (?=
+          \s* (\#.*)? $
+          | \s+ (
+            (with) \s+ \b[[:alpha:]_]\w*
+            | (
+              at | offset\ by | offset\ along
+              | ((left | right | ahead)\ of) | behind
+              | beyond
+              | visible\ from | visible
+              | not\ visible\ from | not\ visible
+              | in | on
+              | following
+              | facing\ (toward | away\ from) | facing
+              | apparently\ facing
+            )
+          )
+        )\b
+    end: \n
+    beginCaptures:
+      '1': {name: variable.language.special.ego.scenic}
+      '2': {name: keyword.operator.assignment.scenic}
+      '3': {name: keyword.control.flow.scenic}
+      '4': {name: entity.name.instance.scenic markup.bold}
+    patterns:
+      - include: '#specifier'
+      - include: '#line-continuation'
+
+  specifier:
+    name: meta.specifier.scenic
+    begin: |
+      (?x)
+        \b(?<!\.) (?:
+          (with) \s+ \b[[:alpha:]_]\w*
+          | (
+            at | offset\ by | offset\ along
+            | ((left | right | ahead)\ of) | behind
+            | beyond
+            | visible\ from | visible
+            | not\ visible\ from | not\ visible
+            | in | on
+            | following
+            | facing\ (toward | away\ from) | facing
+            | apparently\ facing
+          )
+        )\b
+    end: |
+      (?x)
+        (,) \s* (?: (\#.*)? \n)?
+        | (?=\n)
+    beginCaptures:
+      '1': {name: keyword.other.specifier.scenic}
+      '2': {name: keyword.other.specifier.scenic}
+    endCaptures:
+      '1': {name: punctuation.separator.specifier.scenic}
+      '2': {name: comment.line.number-sign.scenic}
+    patterns:
+      - comment: Special case to eagerly match line continuations, avoiding a
+                 corner of the Python grammar meant to catch docstrings.
+        match: '(\\)\s*\n'
+        captures:
+          '1': {name: punctuation.separator.continuation.line.scenic}
+      - include: '#expression'
 
   operator:
     match: |
@@ -582,29 +684,47 @@ repository:
 
           | (!= | == | >= | <= | < | >)                          (?# 5)
 
+          | (                                                    (?# 6)
+            deg
+            | (?:
+                (?:relative | apparent)\ heading\ of
+                | distance\ (?:from | to) | distance
+                | angle\ from | angle | can\ see
+                | at | relative\ to
+                | offset\ by | offset\ along
+                | visible | not\ visible
+                | (?:front | back | left | right)\ of
+                | (?:(?:front | back)\ (?:left | right))\ of
+                | to | by
+              )\b(?!\s*[)}\]])
+            )
+
     captures:
-      '1': {name: keyword.operator.logical.python}
-      '2': {name: keyword.control.flow.python}
-      '3': {name: keyword.operator.bitwise.python}
-      '4': {name: keyword.operator.arithmetic.python}
-      '5': {name: keyword.operator.comparison.python}
+      '1': {name: keyword.operator.logical.scenic}
+      '2': {name: keyword.control.flow.scenic}
+      '3': {name: keyword.operator.bitwise.scenic}
+      '4': {name: keyword.operator.arithmetic.scenic}
+      '5': {name: keyword.operator.comparison.scenic}
+      '6': {name: keyword.operator.scenic}
 
   punctuation:
     patterns:
-      - name: punctuation.separator.colon.python
+      - name: punctuation.separator.colon.scenic
         match: ":"
-      - name: punctuation.separator.element.python
+      - name: punctuation.separator.element.scenic
         match: ","
 
   literal:
     patterns:
-      - name: constant.language.python
+      - name: constant.language.scenic
         match: \b(True|False|None|NotImplemented|Ellipsis)\b
+      - name: constant.language.scenic
+        match: \b(everywhere|nowhere)\b
 
       - include: '#number'
 
   number:
-    name: constant.numeric.python
+    name: constant.numeric.scenic
     patterns:
       - include: '#number-float'
       - include: '#number-dec'
@@ -612,11 +732,11 @@ repository:
       - include: '#number-oct'
       - include: '#number-bin'
       - include: '#number-long'
-      - name: invalid.illegal.name.python
+      - name: invalid.illegal.name.scenic
         match: \b[0-9]+\w+
 
   number-float:
-    name: constant.numeric.float.python
+    name: constant.numeric.float.scenic
     match: |
       (?x)
         (?<! \w)(?:
@@ -631,10 +751,10 @@ repository:
           [0-9](?: _?[0-9] )* (?: [eE][+-]?[0-9](?: _?[0-9] )* )
         )([jJ])?\b
     captures:
-      '1': {name: storage.type.imaginary.number.python}
+      '1': {name: storage.type.imaginary.number.scenic}
 
   number-dec:
-    name: constant.numeric.dec.python
+    name: constant.numeric.dec.scenic
     match: |
       (?x)
         (?<![\w\.])(?:
@@ -647,41 +767,42 @@ repository:
             0 ([0-9]+)(?![eE\.])
         )\b
     captures:
-      '1': {name: storage.type.imaginary.number.python}
-      '2': {name: invalid.illegal.dec.python}
+      '1': {name: storage.type.imaginary.number.scenic}
+      '2': {name: invalid.illegal.dec.scenic}
+      '3': {name: invalid.illegal.dec.scenic}
 
   number-hex:
-    name: constant.numeric.hex.python
+    name: constant.numeric.hex.scenic
     match: |
       (?x)
         (?<![\w\.])
           (0[xX]) (_?[0-9a-fA-F])+
         \b
     captures:
-      '1': {name: storage.type.number.python}
+      '1': {name: storage.type.number.scenic}
 
   number-oct:
-    name: constant.numeric.oct.python
+    name: constant.numeric.oct.scenic
     match: |
       (?x)
         (?<![\w\.])
           (0[oO]) (_?[0-7])+
         \b
     captures:
-      '1': {name: storage.type.number.python}
+      '1': {name: storage.type.number.scenic}
 
   number-bin:
-    name: constant.numeric.bin.python
+    name: constant.numeric.bin.scenic
     match: |
       (?x)
         (?<![\w\.])
           (0[bB]) (_?[01])+
         \b
     captures:
-      '1': {name: storage.type.number.python}
+      '1': {name: storage.type.number.scenic}
 
   number-long:
-    name: constant.numeric.bin.python
+    name: constant.numeric.bin.scenic
     comment: this is to support python2 syntax for long ints
     match: |
       (?x)
@@ -689,7 +810,7 @@ repository:
           ([1-9][0-9]* | 0) ([lL])
         \b
     captures:
-      '2': {name: storage.type.number.python}
+      '2': {name: storage.type.number.scenic}
 
   regexp:
     patterns:
@@ -763,9 +884,9 @@ repository:
     begin: (\{)(?=[^\n}]*$\n?)
     end: (\})|(?=\n)
     beginCaptures:
-      '1': {name: constant.character.format.placeholder.other.python}
+      '1': {name: constant.character.format.placeholder.other.scenic}
     endCaptures:
-      '1': {name: constant.character.format.placeholder.other.python}
+      '1': {name: constant.character.format.placeholder.other.scenic}
     patterns:
       - include: '#fstring-terminator-single'
       - include: '#f-expression'
@@ -775,7 +896,7 @@ repository:
       - include: '#impossible'
 
   f-expression:
-    comment: All valid Python expressions, except comments and line continuation
+    comment: All valid Python expressions, except comments and line cont
     patterns:
       - include: '#expression-bare'
       - include: '#member-access'
@@ -784,7 +905,7 @@ repository:
 
   escape-sequence-unicode:
     patterns:
-      - name: constant.character.escape.python
+      - name: constant.character.escape.scenic
         match: |
           (?x)
             \\ (
@@ -794,7 +915,7 @@ repository:
                )
 
   escape-sequence:
-    name: constant.character.escape.python
+    name: constant.character.escape.scenic
     match: |
       (?x)
         \\ (
@@ -804,11 +925,11 @@ repository:
            )
 
   string-line-continuation:
-    name: constant.language.python
+    name: constant.language.scenic
     match: \\$
 
   string-formatting:
-    name: meta.format.percent.python
+    name: meta.format.percent.scenic
     match: |
       (?x)
         (
@@ -819,11 +940,11 @@ repository:
             [diouxXeEfFgGcrsab%]
         )
     captures:
-      '1': {name: constant.character.format.placeholder.other.python}
+      '1': {name: constant.character.format.placeholder.other.scenic}
 
   string-brace-formatting:
     patterns:
-      - name: meta.format.brace.python
+      - name: meta.format.brace.scenic
         match: |
           (?x)
             (
@@ -838,21 +959,21 @@ repository:
             )
         captures:
           # We use this awkward scope name instead of perhaps more
-          # elegant "support.other.format.python" because it appears
+          # elegant "support.other.format.scenic" because it appears
           # that by default it gives a better visual result in various
           # systems (e.g. GitHub). This is due to the fact that
           # "storage.type..." is more likely to have special
           # highlighting in any given color scheme than
           # "support.other..."
-          '1': {name: constant.character.format.placeholder.other.python}
-          '3': {name: storage.type.format.python}
-          '4': {name: storage.type.format.python}
+          '1': {name: constant.character.format.placeholder.other.scenic}
+          '3': {name: storage.type.format.scenic}
+          '4': {name: storage.type.format.scenic}
 
       # The reason for 2 separate rules is to establish which one
       # should be matched with a higher priority. The rule below is
       # more generic, so it should be matched only if the specific one
       # didn't.
-      - name: meta.format.brace.python
+      - name: meta.format.brace.scenic
         match: |
           (?x)
             (
@@ -866,9 +987,9 @@ repository:
               }
             )
         captures:
-          '1': {name: constant.character.format.placeholder.other.python}
-          '3': {name: storage.type.format.python}
-          '4': {name: storage.type.format.python}
+          '1': {name: constant.character.format.placeholder.other.scenic}
+          '3': {name: storage.type.format.scenic}
+          '4': {name: storage.type.format.scenic}
 
   fstring-formatting:
     patterns:
@@ -876,34 +997,26 @@ repository:
       - include: '#fstring-formatting-singe-brace'
 
   fstring-formatting-singe-brace:
-    name: invalid.illegal.brace.python
+    name: invalid.illegal.brace.scenic
     match: (}(?!}))
 
   import:
     comment: |
-      Import statements used to correctly mark `from`, `import`, and `as`
+      Import statements
     patterns:
-      - begin: \b(?<!\.)(from)\b(?=.+import)
-        end: $|(?=import)
-        beginCaptures:
-          '1': {name: keyword.control.import.python}
-        patterns:
-          - name: punctuation.separator.period.python
-            match: \.+
-          - include: '#expression'
-
-      - begin: \b(?<!\.)(import)\b
-        end: $
-        beginCaptures:
-          '1': {name: keyword.control.import.python}
-        patterns:
-          - name: keyword.control.import.python
-            match: \b(?<!\.)as\b
-          - include: '#expression'
+      - match: |
+          (?x)
+            \s* \b(from) \s*(\.+)\s* (import\b)?
+        captures:
+          '1': {name: keyword.control.import.scenic}
+          '2': {name: punctuation.separator.period.scenic}
+          '3': {name: keyword.control.import.scenic}
+      - name: keyword.control.import.scenic
+        match: \b(?<!\.)import\b
 
   class-declaration:
     patterns:
-      - name: meta.class.python
+      - name: meta.class.scenic
         begin: |
           (?x)
             \s*(class)\s+
@@ -912,9 +1025,9 @@ repository:
               )
         end: (:)
         beginCaptures:
-          '1': {name: storage.type.class.python}
+          '1': {name: storage.type.class.scenic}
         endCaptures:
-          '1': {name: punctuation.section.class.begin.python}
+          '1': {name: punctuation.section.class.begin.scenic}
         patterns:
           - include: '#class-name'
           - include: '#class-inheritance'
@@ -923,27 +1036,27 @@ repository:
     patterns:
       - include: '#illegal-object-name'
       - include: '#builtin-possible-callables'
-      - name: entity.name.type.class.python
+      - name: entity.name.type.class.scenic
         match: |
           (?x)
             \b ([[:alpha:]_]\w*) \b
 
   class-inheritance:
-    name: meta.class.inheritance.python
+    name: meta.class.inheritance.scenic
     begin: (\()
     end: (\))
     beginCaptures:
-      '1': {name: punctuation.definition.inheritance.begin.python}
+      '1': {name: punctuation.definition.inheritance.begin.scenic}
     endCaptures:
-      '1': {name: punctuation.definition.inheritance.end.python}
+      '1': {name: punctuation.definition.inheritance.end.scenic}
     patterns:
-      - name: keyword.operator.unpacking.arguments.python
+      - name: keyword.operator.unpacking.arguments.scenic
         match: (\*\*|\*)
-      - name: punctuation.separator.inheritance.python
+      - name: punctuation.separator.inheritance.scenic
         match: ','
-      - name: keyword.operator.assignment.python
+      - name: keyword.operator.assignment.scenic
         match: =(?!=)
-      - name: support.type.metaclass.python
+      - name: support.type.metaclass.scenic
         match: \bmetaclass\b
       - include: '#illegal-names'
       - include: '#class-kwarg'
@@ -957,26 +1070,25 @@ repository:
       (?x)
         \b ([[:alpha:]_]\w*) \s*(=)(?!=)
     captures:
-      # "variable.parameter.class.python" scope is more important
+      # "variable.parameter.class.scenic" scope is more important
       # and hence we specify it first to highlight class parameters
       # as kwargs in Atom/VSCode/GH.
-      '1': {name: variable.parameter.class.python
-                  entity.other.inherited-class.python}
-      '2': {name: keyword.operator.assignment.python}
+      '1': {name: variable.parameter.class.scenic
+                  entity.other.inherited-class.scenic}
+      '2': {name: keyword.operator.assignment.scenic}
 
   inheritance-identifier:
     match: |
       (?x)
         \b ([[:alpha:]_]\w*) \b
     captures:
-      '1': {name: entity.other.inherited-class.python}
+      '1': {name: entity.other.inherited-class.scenic}
 
   member-access-class:
-    name: meta.member.access.python
     begin: (\.)\s*(?!\.)
     end: (?<=\S)(?=\W)|$
     beginCaptures:
-      '1': {name: punctuation.separator.period.python}
+      '1': {name: punctuation.separator.period.scenic}
     patterns:
       - include: '#call-wrapper-inheritance'
       - include: '#member-access-base'
@@ -986,30 +1098,30 @@ repository:
     patterns:
       - match: ((?<=\.)lambda|lambda(?=\s*[\.=]))
         captures:
-          '1': {name: keyword.control.flow.python}
+          '1': {name: keyword.control.flow.scenic}
       - match: \b(lambda)\s*?(?=[,\n]|$)
         captures:
-          '1': {name: storage.type.function.lambda.python}
-      - name: meta.lambda-function.python
+          '1': {name: storage.type.function.lambda.scenic}
+      - name: meta.lambda-function.scenic
         begin: |
           (?x)
             \b (lambda) \b
         end: (:)|(\n)
         beginCaptures:
-          '1': {name: storage.type.function.lambda.python}
+          '1': {name: storage.type.function.lambda.scenic}
         endCaptures:
-          '1': {name: punctuation.section.function.lambda.begin.python}
+          '1': {name: punctuation.section.function.lambda.begin.scenic}
 
-        contentName: meta.function.lambda.parameters.python
+        contentName: meta.function.lambda.parameters.scenic
         patterns:
-          - name: keyword.operator.unpacking.parameter.python
+          - name: keyword.operator.unpacking.parameter.scenic
             match: (\*\*|\*)
           - include: '#lambda-nested-incomplete'
           - include: '#illegal-names'
           - match: ([[:alpha:]_]\w*)\s*(?:(,)|(?=:|$))
             captures:
-              '1': {name: variable.parameter.function.language.python}
-              '2': {name: punctuation.separator.parameters.python}
+              '1': {name: variable.parameter.function.language.scenic}
+              '2': {name: punctuation.separator.parameters.scenic}
 
           - include: '#comments'
           - include: '#backticks'
@@ -1019,11 +1131,11 @@ repository:
           - include: '#illegal-operator'
 
   lambda-incomplete:
-    name: storage.type.function.lambda.python
+    name: storage.type.function.lambda.scenic
     match: \blambda(?=\s*[,)])
 
   lambda-nested-incomplete:
-    name: storage.type.function.lambda.python
+    name: storage.type.function.lambda.scenic
     match: \blambda(?=\s*[:,)])
 
   lambda-parameter-with-default:
@@ -1033,28 +1145,15 @@ repository:
         ([[:alpha:]_]\w*) \s* (=)
     end: (,)|(?=:|$)
     beginCaptures:
-      '1': {name: variable.parameter.function.language.python}
-      '2': {name: keyword.operator.python}
+      '1': {name: variable.parameter.function.language.scenic}
+      '2': {name: keyword.operator.scenic}
     endCaptures:
-      '1': {name: punctuation.separator.parameters.python}
-    patterns:
-      - include: '#expression'
-
-  generator:
-    comment: |
-      Match "for ... in" construct used in generators and for loops to
-      correctly identify the "in" as a control flow keyword.
-    begin: \bfor\b
-    beginCaptures:
-      '0': {name: keyword.control.flow.python}
-    end: \bin\b
-    endCaptures:
-      '0': {name: keyword.control.flow.python}
+      '1': {name: punctuation.separator.parameters.scenic}
     patterns:
       - include: '#expression'
 
   function-declaration:
-    name: meta.function.python
+    name: meta.function.scenic
     begin: |
       (?x)
         \s*
@@ -1065,11 +1164,11 @@ repository:
 
     end: (:|(?=[#'"\n]))
     beginCaptures:
-      '1': {name: storage.type.function.async.python}
-      '2': {name: storage.type.function.python}
+      '1': {name: storage.type.function.async.scenic}
+      '2': {name: storage.type.function.scenic}
 
     endCaptures:
-      '1': {name: punctuation.section.function.begin.python}
+      '1': {name: punctuation.section.function.begin.scenic}
 
     patterns:
       - include: '#function-def-name'
@@ -1077,26 +1176,67 @@ repository:
       - include: '#line-continuation'
       - include: '#return-annotation'
 
+  scenario-declaration:
+    comment: Also handles behavior declarations.
+    name: meta.function.scenic
+    begin: |
+      (?x)
+        ^\s*
+        \b(scenario | behavior)\s+
+          (?=
+            [[:alpha:]_][[:word:]]* \s* \(
+          )
+
+    end: (:|(?=[#'"\n]))
+    beginCaptures:
+      '1': {name: storage.type.function.scenic}
+
+    endCaptures:
+      '1': {name: punctuation.section.function.begin.scenic}
+
+    patterns:
+      - include: '#function-def-name'
+      - include: '#parameters'
+      - include: '#line-continuation'
+      - include: '#return-annotation'
+
+  monitor-declaration:
+    name: meta.function.scenic
+    begin: |
+      (?x)
+        ^\s*
+        \b(monitor)\s+
+          (?=
+            [[:alpha:]_][[:word:]]* \s* :
+          )
+    end: (:)
+    beginCaptures:
+      '1': {name: storage.type.function.scenic}
+    endCaptures:
+      '1': {name: punctuation.section.function.begin.scenic}
+    patterns:
+      - include: '#function-def-name'
+
   function-def-name:
     patterns:
       - include: '#illegal-object-name'
       - include: '#builtin-possible-callables'
-      - name: entity.name.function.python
+      - name: entity.name.function.scenic
         match: |
           (?x)
             \b ([[:alpha:]_]\w*) \b
 
   parameters:
-    name: meta.function.parameters.python
+    name: meta.function.parameters.scenic
     begin: (\()
     end: (\))
     beginCaptures:
-      '1': {name: punctuation.definition.parameters.begin.python}
+      '1': {name: punctuation.definition.parameters.begin.scenic}
     endCaptures:
-      '1': {name: punctuation.definition.parameters.end.python}
+      '1': {name: punctuation.definition.parameters.end.scenic}
 
     patterns:
-      - name: keyword.operator.unpacking.parameter.python
+      - name: keyword.operator.unpacking.parameter.scenic
         match: (\*\*|\*)
       - include: '#lambda-incomplete'
       - include: '#illegal-names'
@@ -1107,8 +1247,8 @@ repository:
             ([[:alpha:]_]\w*)
               \s* (?: (,) | (?=[)#\n=]))
         captures:
-          '1': {name: variable.parameter.function.language.python}
-          '2': {name: punctuation.separator.parameters.python}
+          '1': {name: variable.parameter.function.language.scenic}
+          '2': {name: punctuation.separator.parameters.scenic}
 
       - include: '#comments'
       - include: '#loose-default'
@@ -1119,18 +1259,18 @@ repository:
       (?x)
         \b ((self)|(cls)) \b \s*(?:(,)|(?=\)))
     captures:
-      '1': {name: variable.parameter.function.language.python}
-      '2': {name: variable.parameter.function.language.special.self.python}
-      '3': {name: variable.parameter.function.language.special.cls.python}
-      '4': {name: punctuation.separator.parameters.python}
+      '1': {name: variable.parameter.function.language.scenic}
+      '2': {name: variable.parameter.function.language.special.self.scenic}
+      '3': {name: variable.parameter.function.language.special.cls.scenic}
+      '4': {name: punctuation.separator.parameters.scenic}
 
   loose-default:
     begin: (=)
     end: (,)|(?=\))
     beginCaptures:
-      '1': {name: keyword.operator.python}
+      '1': {name: keyword.operator.scenic}
     endCaptures:
-      '1': {name: punctuation.separator.parameters.python}
+      '1': {name: punctuation.separator.parameters.scenic}
     patterns:
       - include: '#expression'
 
@@ -1141,26 +1281,26 @@ repository:
         ([[:alpha:]_]\w*) \s* (:)
     end: (,)|(?=\))
     beginCaptures:
-      '1': {name: variable.parameter.function.language.python}
-      '2': {name: punctuation.separator.annotation.python}
+      '1': {name: variable.parameter.function.language.scenic}
+      '2': {name: punctuation.separator.annotation.scenic}
     endCaptures:
-      '1': {name: punctuation.separator.parameters.python}
+      '1': {name: punctuation.separator.parameters.scenic}
     patterns:
       - include: '#expression'
-      - name: keyword.operator.assignment.python
+      - name: keyword.operator.assignment.scenic
         match: =(?!=)
 
   return-annotation:
     begin: (->)
     end: (?=:)
     beginCaptures:
-      '1': {name: punctuation.separator.annotation.result.python}
+      '1': {name: punctuation.separator.annotation.result.scenic}
     patterns:
       - include: '#expression'
 
   item-access:
     patterns:
-      - name: meta.item-access.python
+      - name: meta.item-access.scenic
         begin: |
           (?x)
             \b(?=
@@ -1168,7 +1308,7 @@ repository:
             )
         end: (\])
         endCaptures:
-          '1': {name: punctuation.definition.arguments.end.python}
+          '1': {name: punctuation.definition.arguments.end.scenic}
         patterns:
           - include: '#item-name'
           - include: '#item-index'
@@ -1179,8 +1319,7 @@ repository:
       - include: '#special-variables'
       - include: '#builtin-functions'
       - include: '#special-names'
-      - name: meta.indexed-name.python
-        match: |
+      - match: |
           (?x)
             \b ([[:alpha:]_]\w*) \b
 
@@ -1188,15 +1327,15 @@ repository:
     begin: (\[)
     end: (?=\])
     beginCaptures:
-      '1': {name: punctuation.definition.arguments.begin.python}
-    contentName: meta.item-access.arguments.python
+      '1': {name: punctuation.definition.arguments.begin.scenic}
+    contentName: meta.item-access.arguments.scenic
     patterns:
-      - name: punctuation.separator.slice.python
+      - name: punctuation.separator.slice.scenic
         match: ":"
       - include: '#expression'
 
   decorator:
-    name: meta.function.decorator.python
+    name: meta.function.decorator.scenic
     begin: |
       (?x)
         ^\s*
@@ -1208,11 +1347,11 @@ repository:
             (?: (.*?) (?=\s*(?:\#|$)) )
           | (?=\n|\#)
     beginCaptures:
-      '1': {name: entity.name.function.decorator.python}
-      '2': {name: punctuation.definition.decorator.python}
+      '1': {name: entity.name.function.decorator.scenic}
+      '2': {name: punctuation.definition.decorator.scenic}
     endCaptures:
-      '1': {name: punctuation.definition.arguments.end.python}
-      '2': {name: invalid.illegal.decorator.python}
+      '1': {name: punctuation.definition.arguments.end.scenic}
+      '2': {name: invalid.illegal.decorator.scenic}
 
     patterns:
       - include: '#decorator-name'
@@ -1222,23 +1361,23 @@ repository:
     patterns:
       - include: '#builtin-callables'
       - include: '#illegal-object-name'
-      - name: entity.name.function.decorator.python
+      - name: entity.name.function.decorator.scenic
         match: |
           (?x)
             ([[:alpha:]_]\w*) | (\.)
         captures:
-          '2': {name: punctuation.separator.period.python}
+          '2': {name: punctuation.separator.period.scenic}
       - include: '#line-continuation'
-      - name: invalid.illegal.decorator.python
+      - name: invalid.illegal.decorator.scenic
         match: |
           (?x)
             \s* ([^([:alpha:]\s_\.#\\] .*?) (?=\#|$)
         captures:
-          '1': {name: invalid.illegal.decorator.python}
+          '1': {name: invalid.illegal.decorator.scenic}
 
   call-wrapper-inheritance:
     comment: same as a function call, but in inheritance context
-    name: meta.function-call.python
+    name: meta.function-call.scenic
     begin: |
       (?x)
         \b(?=
@@ -1246,7 +1385,7 @@ repository:
         )
     end: (\))
     endCaptures:
-      '1': {name: punctuation.definition.arguments.end.python}
+      '1': {name: punctuation.definition.arguments.end.scenic}
     patterns:
       - include: '#inheritance-name'
       - include: '#function-arguments'
@@ -1258,8 +1397,7 @@ repository:
       - include: '#inheritance-identifier'
 
   function-call:
-    name: meta.function-call.python
-    comment: Regular function call of the type "name(args)"
+    name: meta.function-call.scenic
     begin: |
       (?x)
         \b(?=
@@ -1267,7 +1405,7 @@ repository:
         )
     end: (\))
     endCaptures:
-      '1': {name: punctuation.definition.arguments.end.python}
+      '1': {name: punctuation.definition.arguments.end.scenic}
     patterns:
       - include: '#special-variables'
       - include: '#function-name'
@@ -1277,7 +1415,7 @@ repository:
     patterns:
       - include: '#builtin-possible-callables'
       - comment: Some color schemas support meta.function-call.generic scope
-        name: meta.function-call.generic.python
+        name: meta.function-call.generic.scenic variable.function.scenic
         match: |
           (?x)
             \b ([[:alpha:]_]\w*) \b
@@ -1286,30 +1424,30 @@ repository:
     begin: (\()
     end: (?=\))(?!\)\s*\()
     beginCaptures:
-      '1': {name: punctuation.definition.arguments.begin.python}
-    contentName: meta.function-call.arguments.python
+      '1': {name: punctuation.definition.arguments.begin.scenic}
+    contentName: meta.function-call.arguments.scenic
     patterns:
-      - name: punctuation.separator.arguments.python
+      - name: punctuation.separator.arguments.scenic
         match: (,)
       - match: |
           (?x)
             (?:(?<=[,(])|^) \s* (\*{1,2})
         captures:
-          '1': {name: keyword.operator.unpacking.arguments.python}
+          '1': {name: keyword.operator.unpacking.arguments.scenic}
       - include: '#lambda-incomplete'
       - include: '#illegal-names'
       - match: '\b([[:alpha:]_]\w*)\s*(=)(?!=)'
         captures:
-          '1': {name: variable.parameter.function-call.python}
-          '2': {name: keyword.operator.assignment.python}
+          '1': {name: variable.parameter.function-call.scenic}
+          '2': {name: keyword.operator.assignment.scenic}
 
-      - name: keyword.operator.assignment.python
+      - name: keyword.operator.assignment.scenic
         match: =(?!=)
       - include: '#expression'
       - match: \s*(\))\s*(\()
         captures:
-          '1': {name: punctuation.definition.arguments.end.python}
-          '2': {name: punctuation.definition.arguments.begin.python}
+          '1': {name: punctuation.definition.arguments.end.scenic}
+          '2': {name: punctuation.definition.arguments.begin.scenic}
 
   builtin-callables:
     patterns:
@@ -1318,6 +1456,7 @@ repository:
       - include: '#builtin-exceptions'
       - include: '#builtin-functions'
       - include: '#builtin-types'
+      - include: '#builtin-types-scenic'
 
   builtin-possible-callables:
     patterns:
@@ -1325,7 +1464,7 @@ repository:
       - include: '#magic-names'
 
   builtin-exceptions:
-    name: support.type.exception.python
+    name: support.type.exception.scenic
     match: |
       (?x) (?<!\.) \b(
         (
@@ -1349,11 +1488,12 @@ repository:
         SystemExit | Stop(Async)?Iteration
         | KeyboardInterrupt
         | GeneratorExit | (Base)?Exception
+        | (Guard | Precondition | Invariant)Violation
       )\b
 
   builtin-functions:
     patterns:
-      - name: support.function.builtin.python
+      - name: support.function.builtin.scenic
         match: |
           (?x)
             (?<!\.) \b(
@@ -1367,7 +1507,15 @@ repository:
               | setattr | sorted | sum | vars | zip
             )\b
 
-      - name: variable.legacy.builtin.python
+      - name: support.function.builtin.scenic
+        match: |
+          (?x)
+            (?<!\.) \b(
+              resample | localPath | verbosePrint | simulation
+              | sin | cos | hypot
+            )\b
+
+      - name: variable.legacy.builtin.scenic
         match: |
           (?x)
             (?<!\.) \b(
@@ -1376,7 +1524,7 @@ repository:
             )\b
 
   builtin-types:
-    name: support.type.python
+    name: support.type.scenic
     match: |
       (?x)
         (?<!\.) \b(
@@ -1388,6 +1536,29 @@ repository:
               and is special enough to be highlighted differently from
               other built-ins)
           | super
+        )\b
+
+  builtin-types-scenic:
+    name: support.type.scenic
+    match: |
+      (?x)
+        (?<!\.) \b(
+          Point | OrientedPoint | Object
+          | Vector | VectorField | PolygonalVectorField
+          | Region | PointSetRegion | RectangularRegion | CircularRegion
+          | SectorRegion | PolygonalRegion | PolylineRegion
+          | Workspace
+          | Range | DiscreteRange | Options | Discrete | Uniform
+          | Normal | TruncatedNormal
+          | VerifaiParameter | VerifaiRange | VerifaiDiscreteRange | VerifaiOptions
+        )\b
+
+  builtin-names-scenic:
+    name: support.constant.scenic
+    match: |
+      (?x)
+        (?<!\.) \b(
+          globalParameters
         )\b
 
   magic-function-names:
@@ -1419,7 +1590,7 @@ repository:
           )__
         )\b
     captures:
-      '1': {name: support.function.magic.python}
+      '1': {name: support.function.magic.scenic}
 
   magic-variable-names:
     comment: magic variables which a class/module may have.
@@ -1436,7 +1607,7 @@ repository:
           )__
         )\b
     captures:
-      '1': {name: support.variable.magic.python}
+      '1': {name: support.variable.magic.scenic}
 
   magic-names:
     patterns:
@@ -1448,36 +1619,38 @@ repository:
       (?x)
         \b(?:
           (
-            and | assert | async | await | break | class | continue | def
+            and | as | assert | async | await | break | class | continue | def
             | del | elif | else | except | finally | for | from | global
             | if | in | is | (?<=\.)lambda | lambda(?=\s*[\.=])
             | nonlocal | not | or | pass | raise | return | try | while | with
             | yield
           ) | (
-            as | import
+            import
           )
         )\b
     captures:
-      '1': {name: keyword.control.flow.python}
-      '2': {name: keyword.control.import.python}
+      '1': {name: keyword.control.flow.scenic}
+      '2': {name: keyword.control.import.scenic}
 
 
   special-variables:
     match: |
       (?x)
         \b (?<!\.) (?:
-          (self) | (cls)
+          (self) | (cls) | (ego) | (workspace)
         )\b
     captures:
-      '1': {name: variable.language.special.self.python}
-      '2': {name: variable.language.special.cls.python}
+      '1': {name: variable.language.special.self.scenic}
+      '2': {name: variable.language.special.cls.scenic}
+      '3': {name: variable.language.special.ego.scenic}
+      '4': {name: variable.language.special.workspace.scenic}
 
   ellipsis:
-    name: constant.other.ellipsis.python
+    name: constant.other.ellipsis.scenic
     match: \.\.\.
 
   backticks:
-    name: invalid.deprecated.backtick.python
+    name: invalid.deprecated.backtick.scenic
     begin: \`
     end: (?:\`|(?<!\\)(\n))
     patterns:
@@ -1485,20 +1658,20 @@ repository:
 
   illegal-operator:
     patterns:
-      - name: invalid.illegal.operator.python
+      - name: invalid.illegal.operator.scenic
         match: '&&|\|\||--|\+\+'
-      - name: invalid.illegal.operator.python
+      - name: invalid.illegal.operator.scenic
         match: '[?$]'
-      - name: invalid.illegal.operator.python
+      - name: invalid.illegal.operator.scenic
         comment: We don't want `!` to flash when we're typing `!=`
         match: '!\b'
 
   illegal-object-name:
     comment: It's illegal to name class or function "True"
-    name: keyword.illegal.name.python
+    name: keyword.illegal.name.scenic
     match: \b(True|False|None)\b
 
   illegal-anno:
-    name: invalid.illegal.annotation.python
+    name: invalid.illegal.annotation.scenic
     match: '->'
 ...

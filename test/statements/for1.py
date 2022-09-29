@@ -5,25 +5,25 @@ else:
 
 
 
-for           : keyword.control.flow.python, source.python
-              : source.python
-a             : source.python
-,             : punctuation.separator.element.python, source.python
-              : source.python
-b             : source.python
-,             : punctuation.separator.element.python, source.python
-              : source.python
-c             : source.python
-              : source.python
-in            : keyword.control.flow.python, source.python
-              : source.python
-b             : source.python
-:             : punctuation.separator.colon.python, source.python
-              : source.python
-pass          : keyword.control.flow.python, source.python
-else          : keyword.control.flow.python, source.python
-:             : punctuation.separator.colon.python, source.python
-              : source.python
-1             : constant.numeric.dec.python, source.python
-/             : keyword.operator.arithmetic.python, source.python
-0             : constant.numeric.dec.python, source.python
+for           : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+a             : source.scenic
+,             : punctuation.separator.element.scenic, source.scenic
+              : source.scenic
+b             : source.scenic
+,             : punctuation.separator.element.scenic, source.scenic
+              : source.scenic
+c             : source.scenic
+              : source.scenic
+in            : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+b             : source.scenic
+:             : punctuation.separator.colon.scenic, source.scenic
+              : source.scenic
+pass          : keyword.control.flow.scenic, source.scenic
+else          : keyword.control.flow.scenic, source.scenic
+:             : punctuation.separator.colon.scenic, source.scenic
+              : source.scenic
+1             : constant.numeric.dec.scenic, source.scenic
+/             : keyword.operator.arithmetic.scenic, source.scenic
+0             : constant.numeric.dec.scenic, source.scenic

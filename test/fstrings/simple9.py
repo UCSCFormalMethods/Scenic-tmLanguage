@@ -3,12 +3,12 @@ f'foo {{{bar}}}'
 
 
 
-f             : meta.fstring.python, source.python, storage.type.string.python, string.interpolated.python, string.quoted.single.python
-'             : meta.fstring.python, punctuation.definition.string.begin.python, source.python, string.interpolated.python, string.quoted.single.python
-foo           : meta.fstring.python, source.python, string.interpolated.python, string.quoted.single.python
-{{            : constant.character.escape.python, meta.fstring.python, source.python
-{             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-bar           : meta.fstring.python, source.python
-}             : constant.character.format.placeholder.other.python, meta.fstring.python, source.python
-}}            : constant.character.escape.python, meta.fstring.python, source.python
-'             : meta.fstring.python, punctuation.definition.string.end.python, source.python, string.interpolated.python, string.quoted.single.python
+f             : meta.fstring.scenic, source.scenic, storage.type.string.scenic, string.interpolated.scenic, string.quoted.single.scenic
+'             : meta.fstring.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic
+foo           : meta.fstring.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic
+{{            : constant.character.escape.scenic, meta.fstring.scenic, source.scenic
+{             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+bar           : meta.fstring.scenic, source.scenic
+}             : constant.character.format.placeholder.other.scenic, meta.fstring.scenic, source.scenic
+}}            : constant.character.escape.scenic, meta.fstring.scenic, source.scenic
+'             : meta.fstring.scenic, punctuation.definition.string.end.scenic, source.scenic, string.interpolated.scenic, string.quoted.single.scenic

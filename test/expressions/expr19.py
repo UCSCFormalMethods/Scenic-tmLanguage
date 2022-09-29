@@ -12,40 +12,40 @@ a. \
 
 
 
-a             : source.python
-.             : meta.member.access.python, punctuation.separator.period.python, source.python
-              : meta.member.access.python, source.python
-#             : comment.line.number-sign.python, punctuation.definition.comment.python, source.python
-foo           : comment.line.number-sign.python, source.python
-a             : source.python
-.             : meta.member.access.python, punctuation.separator.period.python, source.python
-              : meta.member.access.python, source.python
-#             : comment.line.number-sign.python, punctuation.definition.comment.python, source.python
-foo           : comment.line.number-sign.python, source.python
-a             : source.python
-.             : meta.member.access.python, punctuation.separator.period.python, source.python
-              : meta.member.access.python, source.python
-\             : meta.member.access.python, punctuation.separator.continuation.line.python, source.python
-              : meta.member.access.python, source.python
-#             : comment.line.number-sign.python, punctuation.definition.comment.python, source.python
-foo           : comment.line.number-sign.python, source.python
-a             : source.python
-.             : meta.member.access.python, punctuation.separator.period.python, source.python
-              : meta.member.access.python, source.python
-'             : punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-bar           : source.python, string.quoted.single.python
-'             : punctuation.definition.string.end.python, source.python, string.quoted.single.python
-a             : source.python
-.             : meta.member.access.python, punctuation.separator.period.python, source.python
-              : meta.member.access.python, source.python
-'             : punctuation.definition.string.begin.python, source.python, string.quoted.docstring.single.python
-bar           : source.python, string.quoted.docstring.single.python
-'             : punctuation.definition.string.end.python, source.python, string.quoted.docstring.single.python
-a             : source.python
-.             : meta.member.access.python, punctuation.separator.period.python, source.python
-              : meta.member.access.python, source.python
-\             : meta.member.access.python, punctuation.separator.continuation.line.python, source.python
-              : meta.member.access.python, source.python
-'             : meta.member.access.python, punctuation.definition.string.begin.python, source.python, string.quoted.single.python
-bar           : meta.member.access.python, source.python, string.quoted.single.python
-'             : meta.member.access.python, punctuation.definition.string.end.python, source.python, string.quoted.single.python
+a             : source.scenic
+.             : meta.member.access.scenic, punctuation.separator.period.scenic, source.scenic
+              : meta.member.access.scenic, source.scenic
+#             : comment.line.number-sign.scenic, punctuation.definition.comment.scenic, source.scenic
+foo           : comment.line.number-sign.scenic, source.scenic
+a             : source.scenic
+.             : meta.member.access.scenic, punctuation.separator.period.scenic, source.scenic
+              : meta.member.access.scenic, source.scenic
+#             : comment.line.number-sign.scenic, punctuation.definition.comment.scenic, source.scenic
+foo           : comment.line.number-sign.scenic, source.scenic
+a             : source.scenic
+.             : meta.member.access.scenic, punctuation.separator.period.scenic, source.scenic
+              : meta.member.access.scenic, source.scenic
+\             : meta.member.access.scenic, punctuation.separator.continuation.line.scenic, source.scenic
+              : meta.member.access.scenic, source.scenic
+#             : comment.line.number-sign.scenic, punctuation.definition.comment.scenic, source.scenic
+foo           : comment.line.number-sign.scenic, source.scenic
+a             : source.scenic
+.             : meta.member.access.scenic, punctuation.separator.period.scenic, source.scenic
+              : meta.member.access.scenic, source.scenic
+'             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+bar           : source.scenic, string.quoted.single.scenic
+'             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.single.scenic
+a             : source.scenic
+.             : meta.member.access.scenic, punctuation.separator.period.scenic, source.scenic
+              : meta.member.access.scenic, source.scenic
+'             : punctuation.definition.string.begin.scenic, source.scenic, string.quoted.docstring.single.scenic
+bar           : source.scenic, string.quoted.docstring.single.scenic
+'             : punctuation.definition.string.end.scenic, source.scenic, string.quoted.docstring.single.scenic
+a             : source.scenic
+.             : meta.member.access.scenic, punctuation.separator.period.scenic, source.scenic
+              : meta.member.access.scenic, source.scenic
+\             : meta.member.access.scenic, punctuation.separator.continuation.line.scenic, source.scenic
+              : meta.member.access.scenic, source.scenic
+'             : meta.member.access.scenic, punctuation.definition.string.begin.scenic, source.scenic, string.quoted.single.scenic
+bar           : meta.member.access.scenic, source.scenic, string.quoted.single.scenic
+'             : meta.member.access.scenic, punctuation.definition.string.end.scenic, source.scenic, string.quoted.single.scenic

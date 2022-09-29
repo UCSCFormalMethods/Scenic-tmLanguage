@@ -3,27 +3,27 @@ def f(): return 1 # this line should not break
 
 
 
-anon          : source.python
-              : source.python
-=             : keyword.operator.assignment.python, source.python
-              : source.python
-lambda        : meta.lambda-function.python, source.python, storage.type.function.lambda.python
-              : meta.function.lambda.parameters.python, meta.lambda-function.python, source.python
-->            : invalid.illegal.annotation.python, meta.function.lambda.parameters.python, meta.lambda-function.python, source.python
- qqq[None]    : meta.function.lambda.parameters.python, meta.lambda-function.python, source.python
-:             : meta.lambda-function.python, punctuation.section.function.lambda.begin.python, source.python
-              : source.python
-None          : constant.language.python, source.python
-def           : meta.function.python, source.python, storage.type.function.python
-              : meta.function.python, source.python
-f             : entity.name.function.python, meta.function.python, source.python
-(             : meta.function.parameters.python, meta.function.python, punctuation.definition.parameters.begin.python, source.python
-)             : meta.function.parameters.python, meta.function.python, punctuation.definition.parameters.end.python, source.python
-:             : meta.function.python, punctuation.section.function.begin.python, source.python
-              : source.python
-return        : keyword.control.flow.python, source.python
-              : source.python
-1             : constant.numeric.dec.python, source.python
-              : source.python
-#             : comment.line.number-sign.python, punctuation.definition.comment.python, source.python
- this line should not break : comment.line.number-sign.python, source.python
+anon          : source.scenic
+              : source.scenic
+=             : keyword.operator.assignment.scenic, source.scenic
+              : source.scenic
+lambda        : meta.lambda-function.scenic, source.scenic, storage.type.function.lambda.scenic
+              : meta.function.lambda.parameters.scenic, meta.lambda-function.scenic, source.scenic
+->            : invalid.illegal.annotation.scenic, meta.function.lambda.parameters.scenic, meta.lambda-function.scenic, source.scenic
+ qqq[None]    : meta.function.lambda.parameters.scenic, meta.lambda-function.scenic, source.scenic
+:             : meta.lambda-function.scenic, punctuation.section.function.lambda.begin.scenic, source.scenic
+              : source.scenic
+None          : constant.language.scenic, source.scenic
+def           : meta.function.scenic, source.scenic, storage.type.function.scenic
+              : meta.function.scenic, source.scenic
+f             : entity.name.function.scenic, meta.function.scenic, source.scenic
+(             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.parameters.begin.scenic, source.scenic
+)             : meta.function.parameters.scenic, meta.function.scenic, punctuation.definition.parameters.end.scenic, source.scenic
+:             : meta.function.scenic, punctuation.section.function.begin.scenic, source.scenic
+              : source.scenic
+return        : keyword.control.flow.scenic, source.scenic
+              : source.scenic
+1             : constant.numeric.dec.scenic, source.scenic
+              : source.scenic
+#             : comment.line.number-sign.scenic, punctuation.definition.comment.scenic, source.scenic
+ this line should not break : comment.line.number-sign.scenic, source.scenic

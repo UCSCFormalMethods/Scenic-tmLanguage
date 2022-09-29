@@ -3,11 +3,11 @@
 
 
 
-1             : constant.numeric.dec.python, source.python
-              : source.python
-+             : keyword.operator.arithmetic.python, source.python
-              : source.python
-\             : punctuation.separator.continuation.line.python, source.python
-              : source.python
-              : source.python
-3             : constant.numeric.dec.python, source.python
+1             : constant.numeric.dec.scenic, source.scenic
+              : source.scenic
++             : keyword.operator.arithmetic.scenic, source.scenic
+              : source.scenic
+\             : punctuation.separator.continuation.line.scenic, source.scenic
+              : source.scenic
+              : source.scenic
+3             : constant.numeric.dec.scenic, source.scenic
