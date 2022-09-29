@@ -1,6 +1,6 @@
 {
   "name": "Scenic",
-  "version": "1.0",
+  "version": "1.0.0",
   "engines": {
     "atom": "*",
     "node": "*",
@@ -17,7 +17,7 @@
   "license": "MIT",
   "publisher": "Daniel J. Fremont",
   "categories": [
-    "Languages"
+    "Programming Languages"
   ],
   "keywords": [
     "scenic",
