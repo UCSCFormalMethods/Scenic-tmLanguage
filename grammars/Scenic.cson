@@ -32,13 +32,19 @@ repository:
         include: "#scenario-declaration"
       }
       {
-        include: "#monitor-declaration"
+        include: "#old-monitor-declaration"
       }
       {
         include: "#statement-keyword"
       }
       {
+        include: "#override-statement"
+      }
+      {
         include: "#param-statement"
+      }
+      {
+        include: "#require-statement"
       }
       {
         include: "#statement-keyword-scenic"
@@ -59,7 +65,7 @@ repository:
         include: "#semicolon"
       }
       {
-        include: "#instance-statement"
+        include: "#old-instance-statement"
       }
     ]
   "statement-keyword-scenic":
@@ -71,15 +77,16 @@ repository:
           (?x)
             ^\\s*(
               model | simulator | param
-              | require\\ always | require\\ eventually | require
+              | require\\ monitor | require
               | terminate\\ when | terminate\\ after
+              | terminate\\ simulation\\ when
               | mutate
               | record\\ initial | record\\ final | record
-              | take | wait | terminate
+              | take | wait | terminate\\ simulation | terminate
               | do\\ choose | do\\ shuffle | do
               | abort | override
-              | try | interrupt\\ when
-            )\\b
+              | interrupt\\ when
+            )\\b (?!\\s*[:.;,])
           
         '''
       }
@@ -89,17 +96,6 @@ repository:
         match: '''
           (?x)
             \\b(?<!\\.)(seconds | steps)\\b (?= \\s*(\\#.*)? $)
-          
-        '''
-      }
-      {
-        comment: "These keywords occur mid-line and have to be matched everywhere."
-        name: "keyword.control.flow.scenic"
-        match: '''
-          (?x)
-            \\b(?<!\\.)(
-              initial\\ scenario | until
-            )\\b
           
         '''
       }
@@ -117,20 +113,96 @@ repository:
             name: "punctuation.section.function.begin.scenic"
       }
     ]
+  "inline-keywords":
+    comment: "These keywords occur mid-line and have to be matched everywhere."
+    match: '''
+      (?x)
+        \\b(?<!\\.)(
+          initial\\ scenario | until | to | by | from
+        )\\b
+      
+    '''
+    captures:
+      "1":
+        name: "keyword.control.flow.scenic"
   "param-statement":
-    comment: "Extra rule to prevent param names from being colored if they happen to agree with a built-in name"
+    begin: "^\\s*(param)\\s+"
+    end: "(\\#.*)?\\n"
+    beginCaptures:
+      "1":
+        name: "keyword.control.flow.scenic"
+    endCaptures:
+      "1":
+        name: "comment.line.number-sign.scenic"
     patterns: [
       {
+        name: "meta.param.scenic"
         match: '''
           (?x)
-            ^\\s*(param) \\s* [[:alpha:]_]\\w* \\s* (=)
+            ([[:alpha:]_]\\w* | '[^\\\\'"%{\\n]+' | "[^\\\\'"%{\\n]+")
+            \\s* (=) \\s*
           
         '''
         captures:
           "1":
-            name: "keyword.control.flow.scenic"
+            name: "variable.parameter.global.scenic"
           "2":
             name: "keyword.operator.assignment.scenic"
+      }
+      {
+        include: "#expression"
+      }
+    ]
+  "require-statement":
+    patterns: [
+      {
+        name: "meta.requirement.scenic"
+        begin: '''
+          (?x)
+            ^\\s* (require) \\s+ (?!monitor)
+          
+        '''
+        end: "(?x) (\\#.*)? \\n"
+        beginCaptures:
+          "1":
+            name: "keyword.control.flow.scenic"
+        endCaptures:
+          "1":
+            name: "comment.line.number-sign.scenic"
+        patterns: [
+          {
+            include: "#temporal-expression"
+          }
+        ]
+      }
+    ]
+  "temporal-expression":
+    patterns: [
+      {
+        name: "keyword.control.flow.scenic"
+        match: '''
+          (?x)
+            (always | eventually | next | until | implies)\\b
+          
+        '''
+      }
+      {
+        begin: "\\("
+        end: "\\)"
+        beginCaptures:
+          "0":
+            name: "punctuation.parenthesis.begin.scenic"
+        endCaptures:
+          "0":
+            name: "punctuation.parenthesis.end.scenic"
+        patterns: [
+          {
+            include: "#temporal-expression"
+          }
+        ]
+      }
+      {
+        include: "#expression"
       }
     ]
   "property-declaration":
@@ -177,11 +249,6 @@ repository:
       {
         name: "storage.type.property.scenic"
         match: "\\b(additive|dynamic|final)\\b"
-      }
-      {
-        comment: "Allow unknown attributes just in case."
-        name: "storage.scenic"
-        match: "\\b[[:alpha:]_]\\w*\\b"
       }
     ]
   semicolon:
@@ -431,6 +498,9 @@ repository:
         include: "#lambda"
       }
       {
+        include: "#inline-keywords"
+      }
+      {
         include: "#illegal-operator"
       }
       {
@@ -450,6 +520,9 @@ repository:
       }
       {
         include: "#function-call"
+      }
+      {
+        include: "#instance-creation"
       }
       {
         include: "#builtin-functions"
@@ -668,30 +741,79 @@ repository:
           | =(?!=)
       
     '''
-  "instance-statement":
+  "instance-creation":
     name: "meta.instance.scenic"
     begin: '''
       (?x)
+        (new) \\s+
+        (?: (Point | OrientedPoint | Object)\\b | ([[:alpha:]_]\\w*))
+        [^\\S\\n]*
+      
+    '''
+    end: "(?=[\\S\\n])"
+    applyEndPatternLast: 1
+    beginCaptures:
+      "1":
+        name: "keyword.other.new.scenic"
+      "2":
+        name: "entity.name.instance.scenic markup.bold markup.italic"
+      "3":
+        name: "entity.name.instance.scenic markup.bold"
+    endCaptures:
+      "1":
+        name: "comment.line.number-sign.scenic"
+    patterns: [
+      {
+        include: "#specifier"
+      }
+      {
+        include: "#line-continuation"
+      }
+    ]
+  "old-instance-statement":
+    comment: '''
+      Heuristic rule for pre-Scenic 3 instance creations.
+      
+    '''
+    name: "meta.instance.scenic"
+    begin: '''
+      (?x)
+        # Case 1: at least one specifier.
         ^\\s*
         (?: (?: (ego) | [[:alpha:]_]\\w* ) \\s* (=) | (return))? \\s*
-        (?! True|False|None|NotImplemented|Ellipsis) ([[:upper:]]\\w*)
+        (?! True|False|None|NotImplemented|Ellipsis)
+        (?: (Point | OrientedPoint | Object)\\b | ([[:upper:]]\\w*))
         (?=
-          \\s* (\\#.*)? $
-          | \\s+ (
-            (with) \\s+ \\b[[:alpha:]_]\\w*
-            | (
+          \\s+ (?:
+            (?: with) \\s+ \\b[[:alpha:]_]\\w*
+            | (?:
               at | offset\\ by | offset\\ along
-              | ((left | right | ahead)\\ of) | behind
+              | (?: (?: left | right | ahead)\\ of) | behind
+              | above | below
               | beyond
               | visible\\ from | visible
               | not\\ visible\\ from | not\\ visible
               | in | on
+              | contained\\ in
               | following
-              | facing\\ (toward | away\\ from) | facing
-              | apparently\\ facing
+              | facing\\ (?: directly\\ )? (?: toward | away\\ from)
+              | facing | apparently\\ facing
             )
           )
         )\\b
+      
+      # Case 2: assignment with no specifiers. Only match ego since otherwise
+      #   we'd get annoying false positives while typing Python lines like
+      #   'x = MyPythonClass()' before adding the parentheses.
+      | ^\\s* (ego) \\s* (=) \\s*
+        (?: (Object)\\b | ([[:upper:]]\\w*))
+        (?= \\s* (?: \\#.*)? $ )
+      
+      # Case 3: name with no specifiers. We'll allow this since we only match
+      #   capitalized names, which are rare as variable or side-effecting
+      #   function names so we should get few false positives.
+      | ^\\s* (?: (Object)\\b | ([[:upper:]]\\w*))
+        (?= \\s* (?: \\#.*)? $ )
       
     '''
     end: "\\n"
@@ -703,6 +825,20 @@ repository:
       "3":
         name: "keyword.control.flow.scenic"
       "4":
+        name: "entity.name.instance.scenic markup.bold markup.italic"
+      "5":
+        name: "entity.name.instance.scenic markup.bold"
+      "6":
+        name: "variable.language.special.ego.scenic"
+      "7":
+        name: "keyword.operator.assignment.scenic"
+      "8":
+        name: "entity.name.instance.scenic markup.bold markup.italic"
+      "9":
+        name: "entity.name.instance.scenic markup.bold"
+      "10":
+        name: "entity.name.instance.scenic markup.bold markup.italic"
+      "11":
         name: "entity.name.instance.scenic markup.bold"
     patterns: [
       {
@@ -717,17 +853,19 @@ repository:
     begin: '''
       (?x)
         \\b(?<!\\.) (?:
-          (with) \\s+ \\b[[:alpha:]_]\\w*
+          (with) \\s+ \\b([[:alpha:]_]\\w*)
           | (
             at | offset\\ by | offset\\ along
             | ((left | right | ahead)\\ of) | behind
+            | above | below
             | beyond
             | visible\\ from | visible
             | not\\ visible\\ from | not\\ visible
             | in | on
+            | contained\\ in
             | following
-            | facing\\ (toward | away\\ from) | facing
-            | apparently\\ facing
+            | facing\\ (?:directly\\ )? (toward | away\\ from)
+            | facing | apparently\\ facing
           )
         )\\b
       
@@ -735,13 +873,15 @@ repository:
     end: '''
       (?x)
         (,) \\s* (?: (\\#.*)? \\n)?
-        | (?=\\n)
+        | (?=[)}\\]\\n])
       
     '''
     beginCaptures:
       "1":
         name: "keyword.other.specifier.scenic"
       "2":
+        name: "entity.name.property.scenic"
+      "3":
         name: "keyword.other.specifier.scenic"
     endCaptures:
       "1":
@@ -758,6 +898,29 @@ repository:
       }
       {
         include: "#expression"
+      }
+    ]
+  "override-statement":
+    name: "meta.override.scenic"
+    begin: '''
+      (?x)
+        ^\\s*
+        (override) \\s+ (?: (ego) | [[:alpha:]_]\\w*)
+        \\s+
+      
+    '''
+    end: "\\n"
+    beginCaptures:
+      "1":
+        name: "keyword.control.flow.scenic"
+      "2":
+        name: "variable.language.special.ego.scenic"
+    patterns: [
+      {
+        include: "#specifier"
+      }
+      {
+        include: "#line-continuation"
       }
     ]
   operator:
@@ -781,15 +944,16 @@ repository:
             deg
             | (?:
                 (?:relative | apparent)\\ heading\\ of
-                | distance\\ (?:from | to) | distance
-                | angle\\ from | angle | can\\ see
+                | distance\\ (?:from | to | past)
+                | (?:angle | altitude)\\ (?:from | to) | can\\ see
                 | at | relative\\ to
                 | offset\\ by | offset\\ along
                 | visible | not\\ visible
-                | (?:front | back | left | right)\\ of
-                | (?:(?:front | back)\\ (?:left | right))\\ of
-                | to | by
-              )\\b(?!\\s*[)}\\]])
+                | (?:front | back | left | right | top | bottom)\\ of
+                | (?:(?:front | back | top | bottom)\\ (?:left | right))\\ of
+                | (?:(?:top | bottom)\\ (?:front | back))\\ of
+                | (?:(?:top | bottom)\\ (?:front | back)\\ (?:left | right))\\ of
+              )\\b(?!\\s*[)}\\]=:.;,])
             )
       
     '''
@@ -1522,12 +1686,12 @@ repository:
       }
     ]
   "scenario-declaration":
-    comment: "Also handles behavior declarations."
+    comment: "Also handles behavior and monitor declarations."
     name: "meta.function.scenic"
     begin: '''
       (?x)
         ^\\s*
-        \\b(scenario | behavior)\\s+
+        (scenario | behavior | monitor)\\s+
           (?=
             [[:alpha:]_][[:word:]]* \\s* \\(
           )
@@ -1554,12 +1718,13 @@ repository:
         include: "#return-annotation"
       }
     ]
-  "monitor-declaration":
+  "old-monitor-declaration":
+    comment: "Rule for old-style monitor definitions without arguments."
     name: "meta.function.scenic"
     begin: '''
       (?x)
         ^\\s*
-        \\b(monitor)\\s+
+        (monitor)\\s+
           (?=
             [[:alpha:]_][[:word:]]* \\s* :
           )
@@ -2088,9 +2253,11 @@ repository:
       (?x)
         (?<!\\.) \\b(
           Point | OrientedPoint | Object
-          | Vector | VectorField | PolygonalVectorField
+          | Vector | Orientation | VectorField | PolygonalVectorField
+          | Shape | MeshShape | BoxShape | CylinderShape | ConeShape | SpheroidShape
           | Region | PointSetRegion | RectangularRegion | CircularRegion
-          | SectorRegion | PolygonalRegion | PolylineRegion
+          | SectorRegion | PolygonalRegion | PolylineRegion | PathRegion
+          | MeshVolumeRegion | MeshSurfaceRegion | BoxRegion | SpheroidRegion
           | Workspace
           | Range | DiscreteRange | Options | Discrete | Uniform
           | Normal | TruncatedNormal
@@ -2180,6 +2347,7 @@ repository:
             | if | in | is | (?<=\\.)lambda | lambda(?=\\s*[\\.=])
             | nonlocal | not | or | pass | raise | return | try | while | with
             | yield
+            | at | by | do | of | to | until
           ) | (
             import
           )

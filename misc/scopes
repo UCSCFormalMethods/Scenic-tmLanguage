@@ -62,8 +62,10 @@ keyword.operator.quantifier.regexp
 keyword.operator.scenic
 keyword.operator.unpacking.arguments.scenic
 keyword.operator.unpacking.parameter.scenic
+keyword.other.new.scenic
 keyword.other.specifier.scenic
 markup.bold
+markup.italic
 meta.backreference.named.regexp
 meta.backreference.regexp
 meta.character.set.regexp
@@ -81,7 +83,10 @@ meta.instance.scenic
 meta.item-access.scenic
 meta.lambda-function.scenic
 meta.named.regexp
+meta.override.scenic
+meta.param.scenic
 meta.property.scenic
+meta.requirement.scenic
 meta.specifier.scenic
 meta.typehint.comment.scenic
 punctuation.character.set.begin.regexp
@@ -135,7 +140,6 @@ punctuation.separator.slice.scenic
 punctuation.separator.specifier.scenic
 storage.modifier.declaration.scenic
 storage.modifier.flag.regexp
-storage.scenic
 storage.type.class.scenic
 storage.type.format.scenic
 storage.type.function.async.scenic
@@ -183,3 +187,4 @@ variable.parameter.function-call.scenic
 variable.parameter.function.language.scenic
 variable.parameter.function.language.special.cls.scenic
 variable.parameter.function.language.special.self.scenic
+variable.parameter.global.scenic

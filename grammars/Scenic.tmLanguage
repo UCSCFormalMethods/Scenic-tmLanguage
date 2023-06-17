@@ -55,7 +55,7 @@
           </dict>
           <dict>
             <key>include</key>
-            <string>#monitor-declaration</string>
+            <string>#old-monitor-declaration</string>
           </dict>
           <dict>
             <key>include</key>
@@ -63,7 +63,15 @@
           </dict>
           <dict>
             <key>include</key>
+            <string>#override-statement</string>
+          </dict>
+          <dict>
+            <key>include</key>
             <string>#param-statement</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#require-statement</string>
           </dict>
           <dict>
             <key>include</key>
@@ -91,7 +99,7 @@
           </dict>
           <dict>
             <key>include</key>
-            <string>#instance-statement</string>
+            <string>#old-instance-statement</string>
           </dict>
         </array>
       </dict>
@@ -108,15 +116,16 @@
             <string>(?x)
   ^\s*(
     model | simulator | param
-    | require\ always | require\ eventually | require
+    | require\ monitor | require
     | terminate\ when | terminate\ after
+    | terminate\ simulation\ when
     | mutate
     | record\ initial | record\ final | record
-    | take | wait | terminate
+    | take | wait | terminate\ simulation | terminate
     | do\ choose | do\ shuffle | do
     | abort | override
-    | try | interrupt\ when
-  )\b
+    | interrupt\ when
+  )\b (?!\s*[:.;,])
 </string>
           </dict>
           <dict>
@@ -127,18 +136,6 @@
             <key>match</key>
             <string>(?x)
   \b(?&lt;!\.)(seconds | steps)\b (?= \s*(\#.*)? $)
-</string>
-          </dict>
-          <dict>
-            <key>comment</key>
-            <string>These keywords occur mid-line and have to be matched everywhere.</string>
-            <key>name</key>
-            <string>keyword.control.flow.scenic</string>
-            <key>match</key>
-            <string>(?x)
-  \b(?&lt;!\.)(
-    initial\ scenario | until
-  )\b
 </string>
           </dict>
           <dict>
@@ -164,23 +161,63 @@
           </dict>
         </array>
       </dict>
-      <key>param-statement</key>
+      <key>inline-keywords</key>
       <dict>
         <key>comment</key>
-        <string>Extra rule to prevent param names from being colored if they happen to agree with a built-in name</string>
+        <string>These keywords occur mid-line and have to be matched everywhere.</string>
+        <key>match</key>
+        <string>(?x)
+  \b(?&lt;!\.)(
+    initial\ scenario | until | to | by | from
+  )\b
+</string>
+        <key>captures</key>
+        <dict>
+          <key>1</key>
+          <dict>
+            <key>name</key>
+            <string>keyword.control.flow.scenic</string>
+          </dict>
+        </dict>
+      </dict>
+      <key>param-statement</key>
+      <dict>
+        <key>begin</key>
+        <string>^\s*(param)\s+</string>
+        <key>end</key>
+        <string>(\#.*)?\n</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>1</key>
+          <dict>
+            <key>name</key>
+            <string>keyword.control.flow.scenic</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>1</key>
+          <dict>
+            <key>name</key>
+            <string>comment.line.number-sign.scenic</string>
+          </dict>
+        </dict>
         <key>patterns</key>
         <array>
           <dict>
+            <key>name</key>
+            <string>meta.param.scenic</string>
             <key>match</key>
             <string>(?x)
-  ^\s*(param) \s* [[:alpha:]_]\w* \s* (=)
+  ([[:alpha:]_]\w* | '[^\\'"%{\n]+' | "[^\\'"%{\n]+")
+  \s* (=) \s*
 </string>
             <key>captures</key>
             <dict>
               <key>1</key>
               <dict>
                 <key>name</key>
-                <string>keyword.control.flow.scenic</string>
+                <string>variable.parameter.global.scenic</string>
               </dict>
               <key>2</key>
               <dict>
@@ -188,6 +225,96 @@
                 <string>keyword.operator.assignment.scenic</string>
               </dict>
             </dict>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#expression</string>
+          </dict>
+        </array>
+      </dict>
+      <key>require-statement</key>
+      <dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>meta.requirement.scenic</string>
+            <key>begin</key>
+            <string>(?x)
+  ^\s* (require) \s+ (?!monitor)
+</string>
+            <key>end</key>
+            <string>(?x) (\#.*)? \n</string>
+            <key>beginCaptures</key>
+            <dict>
+              <key>1</key>
+              <dict>
+                <key>name</key>
+                <string>keyword.control.flow.scenic</string>
+              </dict>
+            </dict>
+            <key>endCaptures</key>
+            <dict>
+              <key>1</key>
+              <dict>
+                <key>name</key>
+                <string>comment.line.number-sign.scenic</string>
+              </dict>
+            </dict>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>#temporal-expression</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>temporal-expression</key>
+      <dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>keyword.control.flow.scenic</string>
+            <key>match</key>
+            <string>(?x)
+  (always | eventually | next | until | implies)\b
+</string>
+          </dict>
+          <dict>
+            <key>begin</key>
+            <string>\(</string>
+            <key>end</key>
+            <string>\)</string>
+            <key>beginCaptures</key>
+            <dict>
+              <key>0</key>
+              <dict>
+                <key>name</key>
+                <string>punctuation.parenthesis.begin.scenic</string>
+              </dict>
+            </dict>
+            <key>endCaptures</key>
+            <dict>
+              <key>0</key>
+              <dict>
+                <key>name</key>
+                <string>punctuation.parenthesis.end.scenic</string>
+              </dict>
+            </dict>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>#temporal-expression</string>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#expression</string>
           </dict>
         </array>
       </dict>
@@ -261,14 +388,6 @@
             <string>storage.type.property.scenic</string>
             <key>match</key>
             <string>\b(additive|dynamic|final)\b</string>
-          </dict>
-          <dict>
-            <key>comment</key>
-            <string>Allow unknown attributes just in case.</string>
-            <key>name</key>
-            <string>storage.scenic</string>
-            <key>match</key>
-            <string>\b[[:alpha:]_]\w*\b</string>
           </dict>
         </array>
       </dict>
@@ -660,6 +779,10 @@
           </dict>
           <dict>
             <key>include</key>
+            <string>#inline-keywords</string>
+          </dict>
+          <dict>
+            <key>include</key>
             <string>#illegal-operator</string>
           </dict>
           <dict>
@@ -685,6 +808,10 @@
           <dict>
             <key>include</key>
             <string>#function-call</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#instance-creation</string>
           </dict>
           <dict>
             <key>include</key>
@@ -1024,32 +1151,103 @@
     | =(?!=)
 </string>
       </dict>
-      <key>instance-statement</key>
+      <key>instance-creation</key>
       <dict>
         <key>name</key>
         <string>meta.instance.scenic</string>
         <key>begin</key>
         <string>(?x)
+  (new) \s+
+  (?: (Point | OrientedPoint | Object)\b | ([[:alpha:]_]\w*))
+  [^\S\n]*
+</string>
+        <key>end</key>
+        <string>(?=[\S\n])</string>
+        <key>applyEndPatternLast</key>
+        <integer>1</integer>
+        <key>beginCaptures</key>
+        <dict>
+          <key>1</key>
+          <dict>
+            <key>name</key>
+            <string>keyword.other.new.scenic</string>
+          </dict>
+          <key>2</key>
+          <dict>
+            <key>name</key>
+            <string>markup.italic markup.bold entity.name.instance.scenic</string>
+          </dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>markup.bold entity.name.instance.scenic</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>1</key>
+          <dict>
+            <key>name</key>
+            <string>comment.line.number-sign.scenic</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>include</key>
+            <string>#specifier</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#line-continuation</string>
+          </dict>
+        </array>
+      </dict>
+      <key>old-instance-statement</key>
+      <dict>
+        <key>comment</key>
+        <string>Heuristic rule for pre-Scenic 3 instance creations.
+</string>
+        <key>name</key>
+        <string>meta.instance.scenic</string>
+        <key>begin</key>
+        <string>(?x)
+  # Case 1: at least one specifier.
   ^\s*
   (?: (?: (ego) | [[:alpha:]_]\w* ) \s* (=) | (return))? \s*
-  (?! True|False|None|NotImplemented|Ellipsis) ([[:upper:]]\w*)
+  (?! True|False|None|NotImplemented|Ellipsis)
+  (?: (Point | OrientedPoint | Object)\b | ([[:upper:]]\w*))
   (?=
-    \s* (\#.*)? $
-    | \s+ (
-      (with) \s+ \b[[:alpha:]_]\w*
-      | (
+    \s+ (?:
+      (?: with) \s+ \b[[:alpha:]_]\w*
+      | (?:
         at | offset\ by | offset\ along
-        | ((left | right | ahead)\ of) | behind
+        | (?: (?: left | right | ahead)\ of) | behind
+        | above | below
         | beyond
         | visible\ from | visible
         | not\ visible\ from | not\ visible
         | in | on
+        | contained\ in
         | following
-        | facing\ (toward | away\ from) | facing
-        | apparently\ facing
+        | facing\ (?: directly\ )? (?: toward | away\ from)
+        | facing | apparently\ facing
       )
     )
   )\b
+
+# Case 2: assignment with no specifiers. Only match ego since otherwise
+#   we'd get annoying false positives while typing Python lines like
+#   'x = MyPythonClass()' before adding the parentheses.
+| ^\s* (ego) \s* (=) \s*
+  (?: (Object)\b | ([[:upper:]]\w*))
+  (?= \s* (?: \#.*)? $ )
+
+# Case 3: name with no specifiers. We'll allow this since we only match
+#   capitalized names, which are rare as variable or side-effecting
+#   function names so we should get few false positives.
+| ^\s* (?: (Object)\b | ([[:upper:]]\w*))
+  (?= \s* (?: \#.*)? $ )
 </string>
         <key>end</key>
         <string>\n</string>
@@ -1071,6 +1269,41 @@
             <string>keyword.control.flow.scenic</string>
           </dict>
           <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>markup.italic markup.bold entity.name.instance.scenic</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>markup.bold entity.name.instance.scenic</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>variable.language.special.ego.scenic</string>
+          </dict>
+          <key>7</key>
+          <dict>
+            <key>name</key>
+            <string>keyword.operator.assignment.scenic</string>
+          </dict>
+          <key>8</key>
+          <dict>
+            <key>name</key>
+            <string>markup.italic markup.bold entity.name.instance.scenic</string>
+          </dict>
+          <key>9</key>
+          <dict>
+            <key>name</key>
+            <string>markup.bold entity.name.instance.scenic</string>
+          </dict>
+          <key>10</key>
+          <dict>
+            <key>name</key>
+            <string>markup.italic markup.bold entity.name.instance.scenic</string>
+          </dict>
+          <key>11</key>
           <dict>
             <key>name</key>
             <string>markup.bold entity.name.instance.scenic</string>
@@ -1095,24 +1328,26 @@
         <key>begin</key>
         <string>(?x)
   \b(?&lt;!\.) (?:
-    (with) \s+ \b[[:alpha:]_]\w*
+    (with) \s+ \b([[:alpha:]_]\w*)
     | (
       at | offset\ by | offset\ along
       | ((left | right | ahead)\ of) | behind
+      | above | below
       | beyond
       | visible\ from | visible
       | not\ visible\ from | not\ visible
       | in | on
+      | contained\ in
       | following
-      | facing\ (toward | away\ from) | facing
-      | apparently\ facing
+      | facing\ (?:directly\ )? (toward | away\ from)
+      | facing | apparently\ facing
     )
   )\b
 </string>
         <key>end</key>
         <string>(?x)
   (,) \s* (?: (\#.*)? \n)?
-  | (?=\n)
+  | (?=[)}\]\n])
 </string>
         <key>beginCaptures</key>
         <dict>
@@ -1122,6 +1357,11 @@
             <string>keyword.other.specifier.scenic</string>
           </dict>
           <key>2</key>
+          <dict>
+            <key>name</key>
+            <string>entity.name.property.scenic</string>
+          </dict>
+          <key>3</key>
           <dict>
             <key>name</key>
             <string>keyword.other.specifier.scenic</string>
@@ -1162,6 +1402,43 @@
           </dict>
         </array>
       </dict>
+      <key>override-statement</key>
+      <dict>
+        <key>name</key>
+        <string>meta.override.scenic</string>
+        <key>begin</key>
+        <string>(?x)
+  ^\s*
+  (override) \s+ (?: (ego) | [[:alpha:]_]\w*)
+  \s+
+</string>
+        <key>end</key>
+        <string>\n</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>1</key>
+          <dict>
+            <key>name</key>
+            <string>keyword.control.flow.scenic</string>
+          </dict>
+          <key>2</key>
+          <dict>
+            <key>name</key>
+            <string>variable.language.special.ego.scenic</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>include</key>
+            <string>#specifier</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#line-continuation</string>
+          </dict>
+        </array>
+      </dict>
       <key>operator</key>
       <dict>
         <key>match</key>
@@ -1184,15 +1461,16 @@
       deg
       | (?:
           (?:relative | apparent)\ heading\ of
-          | distance\ (?:from | to) | distance
-          | angle\ from | angle | can\ see
+          | distance\ (?:from | to | past)
+          | (?:angle | altitude)\ (?:from | to) | can\ see
           | at | relative\ to
           | offset\ by | offset\ along
           | visible | not\ visible
-          | (?:front | back | left | right)\ of
-          | (?:(?:front | back)\ (?:left | right))\ of
-          | to | by
-        )\b(?!\s*[)}\]])
+          | (?:front | back | left | right | top | bottom)\ of
+          | (?:(?:front | back | top | bottom)\ (?:left | right))\ of
+          | (?:(?:top | bottom)\ (?:front | back))\ of
+          | (?:(?:top | bottom)\ (?:front | back)\ (?:left | right))\ of
+        )\b(?!\s*[)}\]=:.;,])
       )
 </string>
         <key>captures</key>
@@ -2356,13 +2634,13 @@
       <key>scenario-declaration</key>
       <dict>
         <key>comment</key>
-        <string>Also handles behavior declarations.</string>
+        <string>Also handles behavior and monitor declarations.</string>
         <key>name</key>
         <string>meta.function.scenic</string>
         <key>begin</key>
         <string>(?x)
   ^\s*
-  \b(scenario | behavior)\s+
+  (scenario | behavior | monitor)\s+
     (?=
       [[:alpha:]_][[:word:]]* \s* \(
     )
@@ -2405,14 +2683,16 @@
           </dict>
         </array>
       </dict>
-      <key>monitor-declaration</key>
+      <key>old-monitor-declaration</key>
       <dict>
+        <key>comment</key>
+        <string>Rule for old-style monitor definitions without arguments.</string>
         <key>name</key>
         <string>meta.function.scenic</string>
         <key>begin</key>
         <string>(?x)
   ^\s*
-  \b(monitor)\s+
+  (monitor)\s+
     (?=
       [[:alpha:]_][[:word:]]* \s* :
     )
@@ -3218,9 +3498,11 @@
         <string>(?x)
   (?&lt;!\.) \b(
     Point | OrientedPoint | Object
-    | Vector | VectorField | PolygonalVectorField
+    | Vector | Orientation | VectorField | PolygonalVectorField
+    | Shape | MeshShape | BoxShape | CylinderShape | ConeShape | SpheroidShape
     | Region | PointSetRegion | RectangularRegion | CircularRegion
-    | SectorRegion | PolygonalRegion | PolylineRegion
+    | SectorRegion | PolygonalRegion | PolylineRegion | PathRegion
+    | MeshVolumeRegion | MeshSurfaceRegion | BoxRegion | SpheroidRegion
     | Workspace
     | Range | DiscreteRange | Options | Discrete | Uniform
     | Normal | TruncatedNormal
@@ -3330,6 +3612,7 @@ indirectly through syntactic constructs
       | if | in | is | (?&lt;=\.)lambda | lambda(?=\s*[\.=])
       | nonlocal | not | or | pass | raise | return | try | while | with
       | yield
+      | at | by | do | of | to | until
     ) | (
       import
     )

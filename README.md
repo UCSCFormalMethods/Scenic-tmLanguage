@@ -1,6 +1,7 @@
 # TextMate Grammar for Scenic
 
 This repository provides a [TextMate-format](https://macromates.com/manual/en/language_grammars) grammar for the [Scenic](https://scenic-lang.readthedocs.io/) scenario description language, suitable for use with Sublime Text, Atom, and Visual Studio Code.
+The grammar gives best results on Scenic 3 code, but should largely work for older versions as well.
 The grammar is based on the [MagicPython grammar](https://github.com/MagicStack/MagicPython) by MagicStack Inc., which is also available under the MIT license (see `LICENSE`).
 The rest of this README is adapted from parts of the MagicPython README.
 
