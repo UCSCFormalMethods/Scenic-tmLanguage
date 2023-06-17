@@ -109,82 +109,6 @@ repository:
         bquote: '(""")'
         equote: '(""")'
 
-    - file: 'regexp.inc.syntax.yaml'
-      vars:
-        prefix: 'single-one-'
-        basename: 'fregexp'
-        marker: "|(?=\\')"
-        nested: ''
-        guard: "|((?=(?<!\\\\)\\n))"
-
-    - file: 'regexp.inc.syntax.yaml'
-      vars:
-        prefix: 'single-three-'
-        basename: 'fregexp'
-        marker: "|(?=\\'\\'\\')"
-        nested: "- include: '#comments-string-single-three'"
-        guard: ""
-
-    - file: 'regexp.inc.syntax.yaml'
-      vars:
-        prefix: 'double-one-'
-        basename: 'fregexp'
-        marker: '|(?=")'
-        nested: ''
-        guard: "|((?=(?<!\\\\)\\n))"
-
-    - file: 'regexp.inc.syntax.yaml'
-      vars:
-        prefix: 'double-three-'
-        basename: 'fregexp'
-        marker: '|(?=""")'
-        nested: "- include: '#comments-string-double-three'"
-        guard: ""
-
-    - file: 'regexp.wrapper.syntax.yaml'
-      vars:
-        scopename: string.regexp.quoted.single.scenic
-                   string.interpolated.scenic
-        prefix: 'single-one-'
-        basename: 'fregexp'
-        nested: ''
-        modifier: '[fF]'
-        bquote: "(\\')"
-        equote: "(\\')|(?<!\\\\)(\\n)"
-
-    - file: 'regexp.wrapper.syntax.yaml'
-      vars:
-        scopename: string.regexp.quoted.multi.scenic
-                   string.interpolated.scenic
-        prefix: 'single-three-'
-        basename: 'fregexp'
-        nested: "- include: '#comments-string-single-three'"
-        modifier: '[fF]'
-        bquote: "(\\'\\'\\')"
-        equote: "(\\'\\'\\')"
-
-    - file: 'regexp.wrapper.syntax.yaml'
-      vars:
-        scopename: string.regexp.quoted.single.scenic
-                   string.interpolated.scenic
-        prefix: 'double-one-'
-        basename: 'fregexp'
-        nested: ''
-        modifier: '[fF]'
-        bquote: '(")'
-        equote: '(")|(?<!\\)(\n)'
-
-    - file: 'regexp.wrapper.syntax.yaml'
-      vars:
-        scopename: string.regexp.quoted.multi.scenic
-                   string.interpolated.scenic
-        prefix: 'double-three-'
-        basename: 'fregexp'
-        nested: "- include: '#comments-string-double-three'"
-        modifier: '[fF]'
-        bquote: '(""")'
-        equote: '(""")'
-
     - file: 'pystring.inc.syntax.yaml'
       vars:
         line: single
@@ -506,6 +430,13 @@ repository:
             )\b
       - name: storage.type.class.scenic
         match: \b(?<!\.)(class)\b
+      - match: |
+          (?x)
+            ^\s*(
+              case | match
+            )(?=\s*([-+\w\d(\[{'":#]|$))\b
+        captures:
+          '1': {name: keyword.control.flow.scenic}
 
   expression-bare:
     comment: valid Python expressions w/o comments and line continuation
@@ -809,7 +740,9 @@ repository:
 
           | (!= | == | >= | <= | < | >)                          (?# 5)
 
-          | (                                                    (?# 6)
+          | (:=)                                                 (?# 6)
+
+          | (                                                    (?# 7)
             deg
             | (?:
                 (?:relative | apparent)\ heading\ of
@@ -831,7 +764,8 @@ repository:
       '3': {name: keyword.operator.bitwise.scenic}
       '4': {name: keyword.operator.arithmetic.scenic}
       '5': {name: keyword.operator.comparison.scenic}
-      '6': {name: keyword.operator.scenic}
+      '6': {name: keyword.operator.assignment.scenic}
+      '7': {name: keyword.operator.scenic}
 
   punctuation:
     patterns:
@@ -944,10 +878,6 @@ repository:
       - include: '#regexp-double-three-line'
       - include: '#regexp-single-one-line'
       - include: '#regexp-double-one-line'
-      - include: '#fregexp-single-three-line'
-      - include: '#fregexp-double-three-line'
-      - include: '#fregexp-single-one-line'
-      - include: '#fregexp-double-one-line'
 
   string:
     patterns:
@@ -1240,6 +1170,8 @@ repository:
 
         contentName: meta.function.lambda.parameters.scenic
         patterns:
+          - name: keyword.operator.positional.parameter.scenic
+            match: /
           - name: keyword.operator.unpacking.parameter.scenic
             match: (\*\*|\*)
           - include: '#lambda-nested-incomplete'
@@ -1363,6 +1295,8 @@ repository:
       '1': {name: punctuation.definition.parameters.end.scenic}
 
     patterns:
+      - name: keyword.operator.positional.parameter.scenic
+        match: /
       - name: keyword.operator.unpacking.parameter.scenic
         match: (\*\*|\*)
       - include: '#lambda-incomplete'
@@ -1624,14 +1558,14 @@ repository:
         match: |
           (?x)
             (?<!\.) \b(
-              __import__ | abs | all | any | ascii | bin | breakpoint | callable
-              | chr | compile | copyright | credits | delattr | dir | divmod
-              | enumerate | eval | exec | exit | filter | format | getattr
-              | globals | hasattr | hash | help | hex | id | input
-              | isinstance | issubclass | iter | len | license | locals | map
-              | max | memoryview | min | next | oct | open | ord | pow | print
-              | quit | range | reload | repr | reversed | round
-              | setattr | sorted | sum | vars | zip
+              __import__ | abs | aiter | all | any | anext | ascii | bin
+              | breakpoint | callable | chr | compile | copyright | credits
+              | delattr | dir | divmod | enumerate | eval | exec | exit
+              | filter | format | getattr | globals | hasattr | hash | help
+              | hex | id | input | isinstance | issubclass | iter | len
+              | license | locals | map | max | memoryview | min | next
+              | oct | open | ord | pow | print | quit | range | reload | repr
+              | reversed | round | setattr | sorted | sum | vars | zip
             )\b
 
       - name: support.function.builtin.scenic
@@ -1698,24 +1632,29 @@ repository:
       (?x)
         \b(
           __(?:
-            abs | add | aenter | aexit | aiter | and | anext | await
-            | bool | call | ceil | cmp | coerce | complex | contains
-            | copy | deepcopy | del | delattr | delete | delitem
-            | delslice | dir | div | divmod | enter | eq | exit | float
-            | floor | floordiv | format | ge | get | getattr
-            | getattribute | getinitargs | getitem | getnewargs
-            | getslice | getstate | gt | hash | hex | iadd | iand | idiv
-            | ifloordiv | ilshift | imod | imul | index | init
-            | instancecheck | int | invert | ior | ipow | irshift | isub
-            | iter | itruediv | ixor | le | len | long | lshift | lt
-            | missing | mod | mul | ne | neg | new | next | nonzero | oct | or
-            | pos | pow | radd | rand | rdiv | rdivmod | reduce
-            | reduce_ex | repr | reversed | rfloordiv | rlshift | rmod
-            | rmul | ror | round | rpow | rrshift | rshift | rsub
-            | rtruediv | rxor | set | setattr | setitem | setslice
-            | setstate | sizeof | str | sub | subclasscheck | truediv
-            | trunc | unicode | xor | matmul | rmatmul | imatmul
-            | init_subclass | set_name | fspath | bytes | prepare
+            abs | add | aenter | aexit | aiter | and | anext
+            | await | bool | call | ceil | class_getitem
+            | cmp | coerce | complex | contains | copy
+            | deepcopy | del | delattr | delete | delitem
+            | delslice | dir | div | divmod | enter | eq
+            | exit | float | floor | floordiv | format | ge
+            | get | getattr | getattribute | getinitargs
+            | getitem | getnewargs | getslice | getstate | gt
+            | hash | hex | iadd | iand | idiv | ifloordiv |
+            | ilshift | imod | imul | index | init
+            | instancecheck | int | invert | ior | ipow
+            | irshift | isub | iter | itruediv | ixor | le
+            | len | long | lshift | lt | missing | mod | mul
+            | ne | neg | new | next | nonzero | oct | or | pos
+            | pow | radd | rand | rdiv | rdivmod | reduce
+            | reduce_ex | repr | reversed | rfloordiv |
+            | rlshift | rmod | rmul | ror | round | rpow
+            | rrshift | rshift | rsub | rtruediv | rxor | set
+            | setattr | setitem | set_name | setslice
+            | setstate | sizeof | str | sub | subclasscheck
+            | truediv | trunc | unicode | xor | matmul
+            | rmatmul | imatmul | init_subclass | set_name
+            | fspath | bytes | prepare | length_hint
           )__
         )\b
     captures:
@@ -1727,12 +1666,12 @@ repository:
       (?x)
         \b(
           __(?:
-            all | bases | builtins | class | class_getitem | code | debug
-            | defaults | dict | doc | file | func | kwdefaults | members
-            | metaclass | methods | module | mro | mro_entries | name
-            | qualname | post_init | self | signature | slots | subclasses
-            | version | weakref | wrapped | annotations | classcell
-            | spec | path | package | future | traceback
+            all | annotations | bases | builtins | class
+            | closure | code | debug | defaults | dict | doc | file | func
+            | globals | kwdefaults | match_args | members | metaclass | methods
+            | module | mro | mro_entries | name | qualname | post_init | self
+            | signature | slots | subclasses | version | weakref | wrapped
+            | classcell | spec | path | package | future | traceback
           )__
         )\b
     captures:

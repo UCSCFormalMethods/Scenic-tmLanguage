@@ -58,6 +58,7 @@ keyword.operator.lookahead.regexp
 keyword.operator.lookbehind.negative.regexp
 keyword.operator.lookbehind.regexp
 keyword.operator.negation.regexp
+keyword.operator.positional.parameter.scenic
 keyword.operator.quantifier.regexp
 keyword.operator.scenic
 keyword.operator.unpacking.arguments.scenic

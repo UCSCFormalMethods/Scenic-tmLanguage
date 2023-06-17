@@ -40,6 +40,9 @@ some.__path__
 some.__prepare__
 some.__package__
 some.__traceback__
+some.__closure__
+some.__globals__
+some.__match_args__
 some.__notspecial__
 
 
@@ -181,6 +184,15 @@ __package__   : meta.member.access.scenic, source.scenic, support.variable.magic
 some          : source.scenic
 .             : meta.member.access.scenic, punctuation.separator.period.scenic, source.scenic
 __traceback__ : meta.member.access.scenic, source.scenic, support.variable.magic.scenic
+some          : source.scenic
+.             : meta.member.access.scenic, punctuation.separator.period.scenic, source.scenic
+__closure__   : meta.member.access.scenic, source.scenic, support.variable.magic.scenic
+some          : source.scenic
+.             : meta.member.access.scenic, punctuation.separator.period.scenic, source.scenic
+__globals__   : meta.member.access.scenic, source.scenic, support.variable.magic.scenic
+some          : source.scenic
+.             : meta.member.access.scenic, punctuation.separator.period.scenic, source.scenic
+__match_args__ : meta.member.access.scenic, source.scenic, support.variable.magic.scenic
 some          : source.scenic
 .             : meta.member.access.scenic, punctuation.separator.period.scenic, source.scenic
 __notspecial__ : meta.attribute.scenic, meta.member.access.scenic, source.scenic
