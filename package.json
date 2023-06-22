@@ -38,11 +38,12 @@
       {
         "id": "scenic",
         "aliases": [
-          "scenic"
+          "Scenic"
         ],
         "extensions": [
           ".scenic"
-        ]
+        ],
+        "configuration": "./settings/language-configuration.json"
       }
     ],
     "grammars": [
