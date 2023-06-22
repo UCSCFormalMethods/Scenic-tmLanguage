@@ -1488,7 +1488,7 @@
           | (?:(?:front | back | top | bottom)\ (?:left | right))\ of
           | (?:(?:top | bottom)\ (?:front | back))\ of
           | (?:(?:top | bottom)\ (?:front | back)\ (?:left | right))\ of
-        )\b(?!\s*[)}\]=:.;,])
+        )\b(?! \s* (?: [)}\]=:.;,#] | $))
       )
 </string>
         <key>captures</key>
